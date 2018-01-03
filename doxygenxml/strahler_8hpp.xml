@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="strahler_8hpp" kind="file" language="C++">
+    <compoundname>strahler.hpp</compoundname>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <invincdepgraph>
+      <node id="985">
+        <label>/z/richdem/include/richdem/methods/strahler.hpp</label>
+        <link refid="strahler_8hpp"/>
+        <childnode refid="986" relation="include">
+        </childnode>
+      </node>
+      <node id="986">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_richdem_strahler_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_strahler_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>template&lt;class<sp/>A&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>static<sp/>inline<sp/>void<sp/>StrahlerNumber(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>int<sp/>x,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>int<sp/>y,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>int<sp/>n,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>dep_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;dep,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Array2D&lt;A&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;strahler,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>std::queue&lt;GridCell&gt;<sp/>&amp;q,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>constexpr<sp/>A<sp/>msb<sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>(std::numeric_limits&lt;A&gt;::digits-1);<sp/>//First<sp/>time<sp/>this<sp/>Strahler<sp/>#<sp/>was<sp/>seen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>constexpr<sp/>A<sp/>smsb<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>(std::numeric_limits&lt;A&gt;::digits-2);<sp/>//This<sp/>Strahler<sp/>number<sp/>arose<sp/>from<sp/>combining<sp/>two<sp/>other<sp/>neighbours<sp/>and<sp/>should<sp/>be<sp/>overriden<sp/>if<sp/>appropriate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>auto<sp/>s<sp/>=<sp/>strahler(x,y)<sp/>&amp;<sp/>(~msb)<sp/>&amp;<sp/>(~smsb);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>int<sp/><sp/><sp/>nx<sp/>=<sp/>x+dx[n];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>int<sp/><sp/><sp/>ny<sp/>=<sp/>y+dy[n];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto&amp;<sp/>ns<sp/>=<sp/>strahler(nx,ny);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>bool<sp/>first_time<sp/>=<sp/>ns<sp/>&amp;<sp/>msb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>const<sp/>bool<sp/>emergent<sp/><sp/><sp/>=<sp/>ns<sp/>&amp;<sp/>smsb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>//Clear<sp/>info<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ns<sp/>&amp;=<sp/>~msb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>ns<sp/>&amp;=<sp/>~smsb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>if(ns==0){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>ns<sp/>=<sp/>s<sp/>|<sp/>msb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>}<sp/>else<sp/>if(ns==s<sp/>&amp;&amp;<sp/>first_time){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>ns<sp/>=<sp/>(s+1)<sp/>|<sp/>smsb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>}<sp/>else<sp/>if(ns==s<sp/>&amp;&amp;<sp/>emergent){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>ns<sp/>=<sp/>s<sp/>|<sp/>msb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>//<sp/>if(--dep(nx,ny)&lt;=0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>//<sp/><sp/><sp/>q.emplace(nx,ny);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">template&lt;class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">static<sp/>inline<sp/>void<sp/>CleanseStrahler(Array2D&lt;A&gt;<sp/>&amp;accum){</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/>constexpr<sp/>A<sp/>msb<sp/><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>(std::numeric_limits&lt;A&gt;::digits-1);<sp/>//First<sp/>time<sp/>this<sp/>Strahler<sp/>#<sp/>was<sp/>seen</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>constexpr<sp/>A<sp/>smsb<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>(std::numeric_limits&lt;A&gt;::digits-2);<sp/>//This<sp/>Strahler<sp/>number<sp/>arose<sp/>from<sp/>combining<sp/>two<sp/>other<sp/>neighbours<sp/>and<sp/>should<sp/>be<sp/>overriden<sp/>if<sp/>appropriate</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/>for(typename<sp/>Array2D&lt;A&gt;::i_t<sp/>i=0;i&lt;accum.size();i++)</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>accum(i)<sp/>=<sp/>accum(i)<sp/>&amp;<sp/>(~msb)<sp/>&amp;<sp/>(~smsb);</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment">template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">void<sp/>Strahler_FairfieldLeymarie(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum){</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;&quot;Fairfield<sp/>(1991)<sp/>\&quot;Rho8\&quot;<sp/>Strahler&quot;;</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>RDLOG_CITATION&lt;&lt;&quot;Fairfield,<sp/>J.,<sp/>Leymarie,<sp/>P.,<sp/>1991.<sp/>Drainage<sp/>networks<sp/>from<sp/>grid<sp/>digital<sp/>elevation<sp/>models.<sp/>Water<sp/>resources<sp/>research<sp/>27,<sp/>709–717.&quot;;</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>Array2D&lt;d8_flowdir_t&gt;<sp/>fd(elevations);</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/>KernelFlowdir(KernelFairfieldLeymarie&lt;decltype(StrahlerNumber&lt;A&gt;),E,A&gt;,StrahlerNumber&lt;A&gt;,elevations,accum,fd);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/>CleanseStrahler(accum);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment">template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">void<sp/>Strahler_Rho8(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum){</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/>//Algorithm<sp/>headers<sp/>are<sp/>taken<sp/>care<sp/>of<sp/>in<sp/>Strahler_FairfieldLeymarie()</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/>Strahler_FairfieldLeymarie(elevations,accum);</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment">template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">void<sp/>Strahler_Quinn(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum){</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;&quot;Quinn<sp/>(1991)<sp/>Strahler&quot;;</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/>RDLOG_CITATION&lt;&lt;&quot;Quinn,<sp/>P.,<sp/>Beven,<sp/>K.,<sp/>Chevallier,<sp/>P.,<sp/>Planchon,<sp/>O.,<sp/>1991.<sp/>The<sp/>Prediction<sp/>Of<sp/>Hillslope<sp/>Flow<sp/>Paths<sp/>For<sp/>Distributed<sp/>Hydrological<sp/>Modelling<sp/>Using<sp/>Digital<sp/>Terrain<sp/>Models.<sp/>Hydrological<sp/>Processes<sp/>5,<sp/>59–79.&quot;;<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/>KernelFlowdir(KernelHolmgren&lt;decltype(StrahlerNumber&lt;A&gt;),E,A&gt;,StrahlerNumber&lt;A&gt;,elevations,accum,(double)1.0);</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/>CleanseStrahler(accum);</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment">template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">void<sp/>Strahler_Holmgren(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum,<sp/>double<sp/>x){</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;&quot;Holmgren<sp/>(1994)<sp/>Strahler&quot;;</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/>RDLOG_CITATION&lt;&lt;&quot;Holmgren,<sp/>P.,<sp/>1994.<sp/>Multiple<sp/>flow<sp/>direction<sp/>algorithms<sp/>for<sp/>runoff<sp/>modelling<sp/>in<sp/>grid<sp/>based<sp/>elevation<sp/>models:<sp/>an<sp/>empirical<sp/>evaluation.<sp/>Hydrological<sp/>processes<sp/>8,<sp/>327–334.&quot;;</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/>KernelFlowdir(KernelHolmgren&lt;decltype(StrahlerNumber&lt;A&gt;),E,A&gt;,StrahlerNumber&lt;A&gt;,elevations,accum,x);</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/>CleanseStrahler(accum);</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment">template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">void<sp/>Strahler_Tarboton(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum){</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;&quot;Tarboton<sp/>(1997)<sp/>\&quot;D-Infinity\&quot;<sp/>Strahler&quot;;</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/>RDLOG_CITATION&lt;&lt;&quot;Tarboton,<sp/>D.G.,<sp/>1997.<sp/>A<sp/>new<sp/>method<sp/>for<sp/>the<sp/>determination<sp/>of<sp/>flow<sp/>directions<sp/>and<sp/>upslope<sp/>areas<sp/>in<sp/>grid<sp/>digital<sp/>elevation<sp/>models.<sp/>Water<sp/>resources<sp/>research<sp/>33,<sp/>309–319.&quot;;</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/>Array2D&lt;<sp/>std::pair&lt;float,int8_t&gt;<sp/>&gt;<sp/>fd(elevations);</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/>KernelFlowdir(KernelTarboton&lt;decltype(StrahlerNumber&lt;A&gt;),E,A&gt;,StrahlerNumber&lt;A&gt;,elevations,accum,fd);</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/>CleanseStrahler(accum);</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment">//<sp/>template&lt;class<sp/>E,<sp/>class<sp/>A&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">//<sp/>void<sp/>Strahler_SeibertMcGlynn(const<sp/>Array2D&lt;E&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;A&gt;<sp/>&amp;accum,<sp/>double<sp/>xparam){</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">//<sp/><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;&quot;Seibert<sp/>and<sp/>McGlynn<sp/>Strahler<sp/>(TODO)&quot;;</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">//<sp/><sp/><sp/>RDLOG_WARN&lt;&lt;&quot;TODO:<sp/>This<sp/>flow<sp/>accumulation<sp/>method<sp/>is<sp/>not<sp/>yet<sp/>functional.&quot;;</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">//<sp/><sp/><sp/>KernelFlowdir(KernelSeibertMcGlynn&lt;decltype(StrahlerNumber&lt;A&gt;),E,A&gt;,StrahlerNumber&lt;A&gt;,elevations,accum,xparam);</highlight></codeline>
+<codeline lineno="101"><highlight class="comment">//<sp/><sp/><sp/>CleanseStrahler(accum);</highlight></codeline>
+<codeline lineno="102"><highlight class="comment">//<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight></codeline>
+<codeline lineno="104"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/methods/strahler.hpp"/>
+  </compounddef>
+</doxygen>

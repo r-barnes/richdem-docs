@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="version_8hpp" kind="file" language="C++">
+    <compoundname>version.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="Array2D_8hpp" local="yes">/z/richdem/include/richdem/common/Array2D.hpp</includedby>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="290">
+        <label>string</label>
+      </node>
+      <node id="289">
+        <label>/z/richdem/include/richdem/common/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="311">
+        <label>/z/richdem/include/richdem/methods/d8_methods.hpp</label>
+        <link refid="d8__methods_8hpp"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>/z/richdem/include/richdem/tiled/A2Array2D.hpp</label>
+        <link refid="A2Array2D_8hpp"/>
+      </node>
+      <node id="315">
+        <label>/z/richdem/include/richdem/misc/misc_methods.hpp</label>
+        <link refid="misc__methods_8hpp"/>
+      </node>
+      <node id="295">
+        <label>/z/richdem/include/richdem/depressions/depressions.hpp</label>
+        <link refid="depressions_8hpp_source"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</label>
+        <link refid="flow__accumulation__generic_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>/z/richdem/include/richdem/flowmet/Freeman1991.hpp</label>
+        <link refid="Freeman1991_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>/z/richdem/include/richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>/z/richdem/include/richdem/depressions/Zhou2016.hpp</label>
+        <link refid="Zhou2016_8hpp"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>/z/richdem/include/richdem/flowmet/Quinn1991.hpp</label>
+        <link refid="Quinn1991_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>/z/richdem/include/richdem/flats/flat_resolution_dinf.hpp</label>
+        <link refid="flat__resolution__dinf_8hpp"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</label>
+        <link refid="d8__flowdirs_8hpp"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>/z/richdem/include/richdem/common/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>/z/richdem/include/richdem/depressions/Lindsay2016.hpp</label>
+        <link refid="Lindsay2016_8hpp_source"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>/z/richdem/include/richdem/flats/garbrecht.hpp</label>
+        <link refid="garbrecht_8hpp_source"/>
+      </node>
+      <node id="301">
+        <label>/z/richdem/include/richdem/flats/flat_resolution.hpp</label>
+        <link refid="flat__resolution_8hpp"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</label>
+        <link refid="Tarboton1997_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+      <node id="314">
+        <label>/z/richdem/include/richdem/methods/terrain_attributes.hpp</label>
+        <link refid="terrain__attributes_8hpp_source"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>/z/richdem/include/richdem/depressions/Barnes2014.hpp</label>
+        <link refid="Barnes2014_8hpp"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</label>
+        <link refid="dinf__flowdirs_8hpp"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</label>
+        <link refid="Holmgren1994_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+    <briefdescription>
+<para>Defines RichDEM version, git hash, compilation time. Used for program/app headers and for processing history entries. </para>    </briefdescription>
+    <detaileddescription>
+<para>Richard Barnes (<ulink url="mailto:rbarnes@umn.edu">rbarnes@umn.edu</ulink>), 2015 </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>_richdem_version_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_version_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RICHDEM_GIT_HASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>message<sp/>&quot;Compiling<sp/>without<sp/>a<sp/>git<sp/>hash!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1a433cffd19424e299dacf773bbf6e4d70" kindref="member">git_hash</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NO<sp/>HASH<sp/>SPECIFIED!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>git_hash<sp/>=<sp/>std::string(RICHDEM_GIT_HASH).substr(0,16);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RICHDEM_COMPILE_TIME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>message<sp/>&quot;Compiling<sp/>without<sp/>UTC<sp/>compile<sp/>time<sp/>falling<sp/>back<sp/>to<sp/>local!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1a4cb04403c7ece2671538d0f2bd6f20e3" kindref="member">compilation_datetime</ref><sp/>=<sp/>__DATE__<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>__TIME__;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>compilation_datetime<sp/>=<sp/>RICHDEM_COMPILE_TIME;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="version_8hpp_1a279c4bad616b7a8dafc41103722d156b" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1a279c4bad616b7a8dafc41103722d156b" kindref="member">program_name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;RichDEM<sp/>v0.0.0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="version_8hpp_1a61fcf01dde36f777889ae2168331ad85" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1a61fcf01dde36f777889ae2168331ad85" kindref="member">author_name</ref><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Richard<sp/>Barnes&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="version_8hpp_1a79e708d0ce1764564a33a9eb9389da0b" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1a79e708d0ce1764564a33a9eb9389da0b" kindref="member">copyright</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Richard<sp/>Barnes<sp/>©<sp/>2016&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="version_8hpp_1aa2172aa0c68dee7c2f39761699305bc5" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="version_8hpp_1aa2172aa0c68dee7c2f39761699305bc5" kindref="member">program_identifier</ref><sp/>=<sp/>program_name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(hash=&quot;</highlight><highlight class="normal"><sp/>+<sp/>git_hash<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>compiled=&quot;</highlight><highlight class="normal">+compilation_datetime<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">std::string<sp/>rdHash(){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>git_hash;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">std::string<sp/>rdCompileTime()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compilation_datetime;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="version_8hpp_1abe02c96e2f60f969af19b7a970c6d1ec" refkind="member"><highlight class="normal">std::string<sp/><ref refid="version_8hpp_1abe02c96e2f60f969af19b7a970c6d1ec" kindref="member">PrintRichdemHeader</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>std::string<sp/>analysis;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;argc;i++)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>analysis<sp/>+=<sp/>std::string(argv[i])+</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;c<sp/>Program<sp/>name<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;program_name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;c<sp/>Script<sp/>compiled<sp/>at<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;rdCompileTime()<sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;c<sp/>Git<sp/>hash<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;rdHash()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;c<sp/>Copyright<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;copyright<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;a<sp/>Analysis<sp/>command<sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;analysis<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>analysis;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/common/version.hpp"/>
+  </compounddef>
+</doxygen>

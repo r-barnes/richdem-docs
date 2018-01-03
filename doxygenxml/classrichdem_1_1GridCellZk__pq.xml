@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1GridCellZk__pq" kind="class" language="C++" prot="public">
+    <compoundname>richdem::GridCellZk_pq</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::priority_queue&lt; GridCellZk&lt; T &gt;, std::vector&lt; GridCellZk&lt; T &gt; &gt;, std::greater&lt; GridCellZk&lt; T &gt; &gt; &gt;</basecompoundref>
+    <includes refid="grid__cell_8hpp" local="no">grid_cell.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1GridCellZk__pq_1ace22a9c6c8193cbe011d63c7d428cda1" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t richdem::GridCellZk_pq&lt; T &gt;::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="98" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk__pq_1ad81ab333cafe01d41cde7bf8f9c0afe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::GridCellZk_pq&lt; T &gt;::push</definition>
+        <argsstring>()</argsstring>
+        <name>push</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="100" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk__pq_1a489a3324a10c26d86c5e78d07f341f17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::GridCellZk_pq&lt; T &gt;::emplace</definition>
+        <argsstring>(int x, int y, T z)</argsstring>
+        <name>emplace</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="103" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A priority queue of <ref refid="classrichdem_1_1GridCellZk" kindref="compound">GridCellZk</ref>, sorted by ascending height or, if heights are equal, by the order of insertion. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>richdem::GridCellZk_pq&lt; T &gt;</label>
+        <link refid="classrichdem_1_1GridCellZk__pq"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>std::priority_queue&lt; GridCellZk&lt; T &gt;, std::vector&lt; GridCellZk&lt; T &gt; &gt;, std::greater&lt; GridCellZk&lt; T &gt; &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>richdem::GridCellZk_pq&lt; T &gt;</label>
+        <link refid="classrichdem_1_1GridCellZk__pq"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>std::priority_queue&lt; GridCellZk&lt; T &gt;, std::vector&lt; GridCellZk&lt; T &gt; &gt;, std::greater&lt; GridCellZk&lt; T &gt; &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="96" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="96" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1GridCellZk__pq_1ace22a9c6c8193cbe011d63c7d428cda1" prot="private" virt="non-virtual"><scope>richdem::GridCellZk_pq</scope><name>count</name></member>
+      <member refid="classrichdem_1_1GridCellZk__pq_1a489a3324a10c26d86c5e78d07f341f17" prot="public" virt="non-virtual"><scope>richdem::GridCellZk_pq</scope><name>emplace</name></member>
+      <member refid="classrichdem_1_1GridCellZk__pq_1ad81ab333cafe01d41cde7bf8f9c0afe4" prot="public" virt="non-virtual"><scope>richdem::GridCellZk_pq</scope><name>push</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

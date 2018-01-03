@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_61f32089a83c1baaa6391b44dff4ade3" kind="dir">
+    <compoundname>/z/richdem/include/richdem/flats</compoundname>
+    <innerfile refid="flat__resolution_8hpp">flat_resolution.hpp</innerfile>
+    <innerfile refid="flat__resolution__dinf_8hpp">flat_resolution_dinf.hpp</innerfile>
+    <innerfile refid="garbrecht_8hpp">garbrecht.hpp</innerfile>
+    <innerfile refid="generate__square__grid_8cpp">generate_square_grid.cpp</innerfile>
+    <innerfile refid="flats_2main_8cpp">main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/z/richdem/include/richdem/flats/"/>
+  </compounddef>
+</doxygen>

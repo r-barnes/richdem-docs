@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1GridCellZk" kind="class" language="C++" prot="public">
+    <compoundname>richdem::GridCellZk</compoundname>
+    <basecompoundref refid="classrichdem_1_1GridCellZ" prot="public" virt="non-virtual">richdem::GridCellZ&lt; elev_t &gt;</basecompoundref>
+    <includes refid="grid__cell_8hpp" local="no">grid_cell.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>elev_t</declname>
+        <defname>elev_t</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1GridCellZk_1a725237c625279ecc2d16aab758b7bbe0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::GridCellZk&lt; elev_t &gt;::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+<para>Used to store an integer to make sorting stable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="77" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk_1a66ac6fdb9d840229f3809fe3ffc77073" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::GridCellZk&lt; elev_t &gt;::GridCellZk</definition>
+        <argsstring>(int x, int y, elev_t z, int k)</argsstring>
+        <name>GridCellZk</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>elev_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="78" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk_1ae061dfbfd9d5a9e2088f59c10d328183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::GridCellZk&lt; elev_t &gt;::GridCellZk</definition>
+        <argsstring>()</argsstring>
+        <name>GridCellZk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="79" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk_1ae3c617af87b7e6ae8f4656d4a84f295c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::GridCellZk&lt; elev_t &gt;::operator&lt;</definition>
+        <argsstring>(const GridCellZk&lt; elev_t &gt; &amp;a) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classrichdem_1_1GridCellZk" kindref="compound">GridCellZk</ref>&lt; elev_t &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="81" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1GridCellZk_1a0afd90170d1dd064c7e74087cc56aac2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::GridCellZk&lt; elev_t &gt;::operator&gt;</definition>
+        <argsstring>(const GridCellZk&lt; elev_t &gt; &amp;a) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classrichdem_1_1GridCellZk" kindref="compound">GridCellZk</ref>&lt; elev_t &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="82" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores the (x,y,z) coordinates of a grid cell and a priority indicator k; used by <ref refid="classrichdem_1_1GridCellZk__pq" kindref="compound">GridCellZk_pq</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>richdem::GridCellZ&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZ"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>richdem::GridCell</label>
+        <link refid="classrichdem_1_1GridCell"/>
+      </node>
+      <node id="23">
+        <label>richdem::GridCellZk&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZk"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>richdem::GridCellZ&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZ"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>richdem::GridCell</label>
+        <link refid="classrichdem_1_1GridCell"/>
+      </node>
+      <node id="26">
+        <label>richdem::GridCellZk&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZk"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="75" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="75" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1GridCell_1aa4919ca2a8fbd0faffb2303ff8cd0eec" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCell</name></member>
+      <member refid="classrichdem_1_1GridCell_1af7bb9c5f4a4721bc12899c5825283f70" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCell</name></member>
+      <member refid="classrichdem_1_1GridCellZ_1aef204ac773f932c73ebccafe16ee90c6" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCellZ</name></member>
+      <member refid="classrichdem_1_1GridCellZ_1a629467e64ffe7665dbcf23d0a06deff0" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCellZ</name></member>
+      <member refid="classrichdem_1_1GridCellZk_1a66ac6fdb9d840229f3809fe3ffc77073" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCellZk</name></member>
+      <member refid="classrichdem_1_1GridCellZk_1ae061dfbfd9d5a9e2088f59c10d328183" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>GridCellZk</name></member>
+      <member refid="classrichdem_1_1GridCellZk_1a725237c625279ecc2d16aab758b7bbe0" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>k</name></member>
+      <member refid="classrichdem_1_1GridCellZk_1ae3c617af87b7e6ae8f4656d4a84f295c" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>operator&lt;</name></member>
+      <member refid="classrichdem_1_1GridCellZk_1a0afd90170d1dd064c7e74087cc56aac2" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>operator&gt;</name></member>
+      <member refid="classrichdem_1_1GridCellZ_1afd066d493749ab588824c3b8869b718b" prot="public" virt="non-virtual" ambiguityscope="richdem::GridCellZ::"><scope>richdem::GridCellZk</scope><name>operator&gt;</name></member>
+      <member refid="classrichdem_1_1GridCell_1ad0720d4f9d57365fc5abe3f4f63e32c9" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>x</name></member>
+      <member refid="classrichdem_1_1GridCell_1acdf9ef83d894321472076b7562356485" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>y</name></member>
+      <member refid="classrichdem_1_1GridCellZ_1af493b78909ba0172fced847becafbb5a" prot="public" virt="non-virtual"><scope>richdem::GridCellZk</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

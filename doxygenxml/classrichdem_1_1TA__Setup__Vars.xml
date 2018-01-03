@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1TA__Setup__Vars" kind="class" language="C++" prot="public">
+    <compoundname>richdem::TA_Setup_Vars</compoundname>
+    <includes refid="terrain__attributes_8hpp" local="no">terrain_attributes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a71ce7db8fde1f325d50c245c96bd7219" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1adf869256e395fa56c34a79bbbe15cc16" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a9f27c16f6383cab5044fe1ef9d84b4dd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a31815e7c6782afbe3ec1d2f584115e98" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a05bca08a012a5af6a54abc80328e70fd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a9b8fc2b98cbdf6391bade706548ead64" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a064fb756cb5eea7e073532b5f4196380" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a440cd1d7c356198a73e71fbef1f7c39e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Vars_1a08beede4e5634ed872d8899755a153f0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Vars::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="146" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Calculate a variety of terrain attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Richard Barnes (<ulink url="mailto:rbarnes@umn.edu">rbarnes@umn.edu</ulink>), Burrough (1998)</para></simplesect>
+This calculates a variety of terrain attributes according to the work of Burrough 1998&apos;s &quot;Principles of Geographical
+Information Systems&quot; (p. 190). Algorithms and helpful ArcGIS pages are noted in comments in the code.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;elevations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An elevation grid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate of cell to perform calculation on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate of cell to perform calculation on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&amp;rise_over_run</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns rise-over-run slope as per Horn 1981 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&amp;aspect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns aspect as per Horn 1981 in degrees [0,360). Degrees increase in a clockwise fashion. 0 is north, -1 indicates a flat surface. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&amp;curvature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns the difference of profile and planform curvatures (TODO: Clarify, this is from ArcGIS and was poorly described) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&amp;profile_curvature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns the profile curvature as per Zevenbergen and Thorne 1987. 0 indicates a flat surface. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">&amp;planform_curvature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns the planform curvature as per Zevenbergen and Thorne 1987. 0 indicates a flat surface.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>This function should never be called on a NoData cell </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="144" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="144" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a71ce7db8fde1f325d50c245c96bd7219" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>a</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1adf869256e395fa56c34a79bbbe15cc16" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>b</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a9f27c16f6383cab5044fe1ef9d84b4dd" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>c</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a31815e7c6782afbe3ec1d2f584115e98" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>d</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a05bca08a012a5af6a54abc80328e70fd" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>e</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a9b8fc2b98cbdf6391bade706548ead64" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>f</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a064fb756cb5eea7e073532b5f4196380" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>g</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a440cd1d7c356198a73e71fbef1f7c39e" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>h</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Vars_1a08beede4e5634ed872d8899755a153f0" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Vars</scope><name>i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

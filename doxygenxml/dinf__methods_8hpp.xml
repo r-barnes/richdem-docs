@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dinf__methods_8hpp" kind="file" language="C++">
+    <compoundname>dinf_methods.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">queue</includes>
+    <includes refid="logger_8hpp" local="yes">richdem/common/logger.hpp</includes>
+    <includes refid="Array2D_8hpp" local="yes">richdem/common/Array2D.hpp</includes>
+    <includes refid="constants_8hpp" local="yes">richdem/common/constants.hpp</includes>
+    <includes refid="ProgressBar_8hpp" local="yes">richdem/common/ProgressBar.hpp</includes>
+    <includes refid="grid__cell_8hpp" local="yes">richdem/common/grid_cell.hpp</includes>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="910">
+        <label>richdem/common/ProgressBar.hpp</label>
+        <link refid="ProgressBar_8hpp"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+      </node>
+      <node id="897">
+        <label>iomanip</label>
+      </node>
+      <node id="888">
+        <label>queue</label>
+      </node>
+      <node id="902">
+        <label>limits</label>
+      </node>
+      <node id="887">
+        <label>cmath</label>
+      </node>
+      <node id="898">
+        <label>cassert</label>
+      </node>
+      <node id="901">
+        <label>stdexcept</label>
+      </node>
+      <node id="892">
+        <label>string</label>
+      </node>
+      <node id="893">
+        <label>richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="904" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>map</label>
+      </node>
+      <node id="904">
+        <label>unordered_set</label>
+      </node>
+      <node id="896">
+        <label>fstream</label>
+      </node>
+      <node id="886">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>typeinfo</label>
+      </node>
+      <node id="906">
+        <label>richdem/common/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="903">
+        <label>ctime</label>
+      </node>
+      <node id="895">
+        <label>vector</label>
+      </node>
+      <node id="891">
+        <label>sstream</label>
+      </node>
+      <node id="911">
+        <label>sys/time.h</label>
+      </node>
+      <node id="890">
+        <label>iostream</label>
+      </node>
+      <node id="908">
+        <label>richdem/common/ManagedVector.hpp</label>
+        <link refid="ManagedVector_8hpp_source"/>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>gdal.hpp</label>
+        <link refid="gdal_8hpp_source"/>
+      </node>
+      <node id="912">
+        <label>richdem/common/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+      </node>
+      <node id="907">
+        <label>richdem/common/constants.hpp</label>
+        <link refid="constants_8hpp"/>
+      </node>
+      <node id="899">
+        <label>algorithm</label>
+      </node>
+      <node id="909">
+        <label>memory</label>
+      </node>
+      <node id="913">
+        <label>richdem/common/grid_cell.hpp</label>
+        <link refid="grid__cell_8hpp"/>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>richdem/common/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="914">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="915" relation="include">
+        </childnode>
+      </node>
+      <node id="915">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+    <briefdescription>
+<para>Terrain attributes that can only be calculated with Tarboton&apos;s D-infinity flow metric. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Richard Barnes (<ulink url="mailto:rbarnes@umn.edu">rbarnes@umn.edu</ulink>), 2015</para></simplesect>
+This file implements the D-infinite flow routing method originally described by Tarboton (1997). It incorporates minor alterations and additional safe-guards described in Barnes (2013, TODO). </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>_richdem_dinf_methods_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_dinf_methods_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;richdem/common/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Array2D_8hpp" kindref="compound">richdem/common/Array2D.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constants_8hpp" kindref="compound">richdem/common/constants.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ProgressBar_8hpp" kindref="compound">richdem/common/ProgressBar.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="grid__cell_8hpp" kindref="compound">richdem/common/grid_cell.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>Can<sp/>these<sp/>be<sp/>merged<sp/>with<sp/>the<sp/>regular<sp/>D8<sp/>directions?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//X-<sp/>and<sp/>Y-offests<sp/>of<sp/>D-inf<sp/>neighbours<sp/>(TODO:<sp/>More<sp/>explanation,<sp/>and<sp/>why<sp/>there<sp/>are<sp/>9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dinf_dx[9]<sp/>=<sp/>{1,<sp/><sp/>1,<sp/><sp/>0,<sp/>-1,<sp/>-1,<sp/>-1,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dinf_dy[9]<sp/>=<sp/>{0,<sp/>-1,<sp/>-1,<sp/>-1,<sp/><sp/>0,<sp/><sp/>1,<sp/>1,<sp/>1,<sp/>0};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">We<sp/>must<sp/>convert<sp/>the<sp/>Dinf<sp/>angle<sp/>system<sp/>to<sp/>cells<sp/>within<sp/>the<sp/>D8<sp/>system</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">I<sp/>use<sp/>the<sp/>following<sp/>grid<sp/>for<sp/>the<sp/>D8<sp/>system</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//234</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">//105</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">//876</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">To<sp/>convert<sp/>Dinf<sp/>to<sp/>this,<sp/>take</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">(int)(flowdir/45)<sp/><sp/><sp/><sp/><sp/><sp/>D8</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4,5</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3,4</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2,3</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,2</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,8</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7,8</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6,7</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5,6</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//These<sp/>arrays<sp/>have<sp/>a<sp/>9th<sp/>element<sp/>which<sp/>repeats<sp/>the<sp/>8th<sp/>element<sp/>because<sp/>floating</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//point<sp/>rounding<sp/>errors<sp/>occassionally<sp/>result<sp/>in<sp/>the<sp/>9th<sp/>element<sp/>being<sp/>accessed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//321</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//4<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//567</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>where_do_i_flow(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>flowdir,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;nhigh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;nlow){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//If<sp/>it<sp/>is<sp/>very<sp/>close<sp/>to<sp/>being<sp/>directed<sp/>into<sp/>just<sp/>one<sp/>cell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//then<sp/>we<sp/>direct<sp/>it<sp/>into<sp/>just<sp/>one<sp/>cell.<sp/>If<sp/>we<sp/>mistakenly<sp/>direct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//it<sp/>into<sp/>2<sp/>cells,<sp/>then<sp/>we<sp/>may<sp/>create<sp/>unresolvable<sp/>loops<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//flow<sp/>accumulation<sp/>algorithm,<sp/>whereas<sp/>nothing<sp/>is<sp/>lost<sp/>if<sp/>we</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//leave<sp/>out<sp/>one<sp/>of<sp/>the<sp/>two<sp/>cells<sp/>(provided<sp/>a<sp/>negligible<sp/>amount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//of<sp/>flow<sp/>is<sp/>directed<sp/>to<sp/>the<sp/>one<sp/>we<sp/>leave<sp/>out).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>assert(flowdir&gt;=0<sp/>&amp;&amp;<sp/>flowdir&lt;=2*M_PI+1e-6);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>flowdir<sp/>/=<sp/>(M_PI/4.);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(std::abs(flowdir-(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)flowdir)&lt;1e-6){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>nlow<sp/><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>nhigh<sp/>=<sp/>(int)std::round(flowdir);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>nlow<sp/><sp/>=<sp/>(int)flowdir;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>nhigh<sp/>=<sp/>nlow+1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//8<sp/>is<sp/>not<sp/>technically<sp/>a<sp/>direction,<sp/>but,<sp/>since<sp/>things<sp/>move<sp/>in<sp/>a<sp/>circle,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//it<sp/>overlaps<sp/>with<sp/>0.<sp/>It<sp/>should<sp/>_never_<sp/>be<sp/>greater<sp/>than<sp/>8.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>assert(nhigh&gt;=0<sp/>&amp;&amp;<sp/>nhigh&lt;=8);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//This<sp/>reacts<sp/>correctly<sp/>if<sp/>the<sp/>flow<sp/>direction<sp/>wedge<sp/>number<sp/>exceeds<sp/>7.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>area_proportion(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>flowdir,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nhigh,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlow,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;phigh,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>&amp;plow){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nlow==-1){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>phigh<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>plow<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>phigh<sp/>=<sp/>(nhigh*(M_PI/4.0)-flowdir)/(M_PI/4.0);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>plow<sp/><sp/>=<sp/>1-phigh;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>assert(phigh+plow==1);<sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>This<sp/>isn&apos;t<sp/>necessarily<sp/>so<sp/>in<sp/>floating-point...<sp/>or<sp/>is<sp/>it?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*//TODO:<sp/>Debugging<sp/>code<sp/>used<sp/>for<sp/>checking<sp/>for<sp/>loops.<sp/>Since<sp/>loops<sp/>should<sp/>not<sp/>occur<sp/>in<sp/>the<sp/>output<sp/>of<sp/>the<sp/>production<sp/>code,<sp/>this<sp/>is<sp/>not<sp/>needed.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">bool<sp/>is_loop(const<sp/>float_2d<sp/>&amp;flowdirs,<sp/>int<sp/>n,<sp/>int<sp/>x,<sp/>int<sp/>y,<sp/>int<sp/>c2x,<sp/>int<sp/>c2y){</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/>int<sp/>nh,nl;</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/>if(!<sp/>flowdirs.inGrid(c2x,<sp/>c2y)<sp/>||<sp/>flowdirs(c2x,c2y)==flowdirs.noData()<sp/>||<sp/>flowdirs(c2x,c2y)==NO_FLOW)</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/>where_do_i_flow(flowdirs(c2x,c2y),nh,nl);</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/>if(n==dinf_d8_inverse[nh]<sp/>||<sp/>(nl!=-1<sp/>&amp;&amp;<sp/>n==dinf_d8_inverse[nl])){</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>printf(&quot;Beware<sp/>dir<sp/>%d<sp/>(%d<sp/>and<sp/>%d).\n&quot;,n,nh,nl);</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>flowdirs.surroundings(x,y,8);</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="117" refid="dinf__methods_8hpp_1af706b9527873b98d6d80516197370b84" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dinf__methods_8hpp_1af706b9527873b98d6d80516197370b84" kindref="member">dinf_upslope_area</ref>(</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrichdem_1_1Array2D" kindref="compound">Array2D&lt;T&gt;</ref><sp/>&amp;flowdirs,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1Array2D" kindref="compound">Array2D&lt;U&gt;</ref><sp/>&amp;area</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1Array2D" kindref="compound">Array2D&lt;int8_t&gt;</ref><sp/>dependency;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>std::queue&lt;GridCell&gt;<sp/>sources;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1ProgressBar" kindref="compound">ProgressBar</ref><sp/>progress;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;</highlight><highlight class="stringliteral">&quot;D-infinity<sp/>Upslope<sp/>Area&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>RDLOG_CITATION&lt;&lt;</highlight><highlight class="stringliteral">&quot;Tarboton,<sp/>D.G.<sp/>1997.<sp/>A<sp/>new<sp/>method<sp/>for<sp/>the<sp/>determination<sp/>of<sp/>flow<sp/>directions<sp/>and<sp/>upslope<sp/>areas<sp/>in<sp/>grid<sp/>digital<sp/>elevation<sp/>models.<sp/>Water<sp/>Resources<sp/>Research.<sp/>Vol.<sp/>33.<sp/>pp<sp/>309-319.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>the<sp/>dependency<sp/>matrix...&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>dependency.<ref refid="classrichdem_1_1Array2D_1a4baf4116eb21f3588877dfd0d0613aa2" kindref="member">resize</ref>(flowdirs);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>dependency.<ref refid="classrichdem_1_1Array2D_1ac4557b9827f5cdb390697611c4a64b2d" kindref="member">setAll</ref>(0);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>the<sp/>area<sp/>matrix...&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>area.<ref refid="classrichdem_1_1Array2D_1a4baf4116eb21f3588877dfd0d0613aa2" kindref="member">resize</ref>(flowdirs);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>area.<ref refid="classrichdem_1_1Array2D_1ac4557b9827f5cdb390697611c4a64b2d" kindref="member">setAll</ref>(0);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>area.<ref refid="classrichdem_1_1Array2D_1a4fa61164507a4b9215e10102337bd784" kindref="member">setNoData</ref>(<ref refid="dinf__flowdirs_8hpp_1afe621d3800f4220d193de0dcf0fa0128" kindref="member">dinf_NO_DATA</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_cells_without_flow_directions=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Calculating<sp/>dependency<sp/>matrix<sp/>&amp;<sp/>setting<sp/>noData()<sp/>cells...&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" kindref="member">start</ref>(<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1aa7c4661b81d89c5c8aaa549b105f63c5" kindref="member">size</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Calculate<sp/>the<sp/>number<sp/>of<sp/>&quot;dependencies&quot;<sp/>each<sp/>cell<sp/>has.<sp/>That<sp/>is,<sp/>count<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//number<sp/>of<sp/>cells<sp/>which<sp/>flow<sp/>into<sp/>each<sp/>cell.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>omp<sp/>parallel<sp/>for<sp/>reduction(|:has_cells_without_flow_directions)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y=0;y&lt;flowdirs.<ref refid="classrichdem_1_1Array2D_1ab2e27ec2c5986596760a5256d92a2eb0" kindref="member">height</ref>();y++){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kindref="member">update</ref>(<sp/>y*flowdirs.<ref refid="classrichdem_1_1Array2D_1ad4d72d15f5a6199631051038088bb306" kindref="member">width</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=0;x&lt;flowdirs.<ref refid="classrichdem_1_1Array2D_1ad4d72d15f5a6199631051038088bb306" kindref="member">width</ref>();x++){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>the<sp/>flow<sp/>direction<sp/>of<sp/>the<sp/>cell<sp/>is<sp/>NoData,<sp/>mark<sp/>its<sp/>area<sp/>as<sp/>NoData</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs.<ref refid="classrichdem_1_1Array2D_1a2d89b410c05e05e7586bda960f4fafac" kindref="member">isNoData</ref>(x,y)){</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area(x,y)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>area.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dependency(x,y)<sp/>=<sp/>9;<sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>This<sp/>is<sp/>an<sp/>unnecessary<sp/>safety<sp/>precaution.<sp/>This<sp/>prevents<sp/>the<sp/>cell<sp/>from<sp/>ever<sp/>being<sp/>enqueued<sp/>(an<sp/>unnecessary<sp/>safe<sp/>guard?<sp/>TODO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Only<sp/>necessary<sp/>if<sp/>there<sp/>are<sp/>bugs<sp/>below<sp/>(TODO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>the<sp/>cell<sp/>has<sp/>no<sp/>flow<sp/>direction,<sp/>note<sp/>that<sp/>so<sp/>we<sp/>can<sp/>warn<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs(x,y)==<ref refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" kindref="member">NO_FLOW</ref>){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>has_cells_without_flow_directions=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>More<sp/>explanation<sp/>of<sp/>what&apos;s<sp/>going<sp/>on<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_high,<sp/>n_low;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nhx,nhy,nlx,nly;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>where_do_i_flow(flowdirs(x,y),n_high,n_low);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nhx=x+dinf_dx[n_high];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nhy=y+dinf_dy[n_high];</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n_low!=-1){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nlx<sp/>=<sp/>x+dinf_dx[n_low];</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nly<sp/>=<sp/>y+dinf_dy[n_low];</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>n_low!=-1<sp/>&amp;&amp;<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kindref="member">inGrid</ref>(nlx,nly)<sp/>&amp;&amp;<sp/>flowdirs(nlx,nly)!=flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dependency(nlx,nly)++;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kindref="member">inGrid</ref>(nhx,nhy)<sp/>&amp;&amp;<sp/>flowdirs(nhx,nhy)!=flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dependency(nhx,nhy)++;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>RDLOG_TIME_USE&lt;&lt;</highlight><highlight class="stringliteral">&quot;Succeeded<sp/>in<sp/>=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;progress.<ref refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" kindref="member">stop</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>s&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(has_cells_without_flow_directions)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>RDLOG_WARN&lt;&lt;</highlight><highlight class="stringliteral">&quot;\033[91mNot<sp/>all<sp/>cells<sp/>had<sp/>defined<sp/>flow<sp/>directions!<sp/>This<sp/>implies<sp/>that<sp/>there<sp/>will<sp/>be<sp/>digital<sp/>dams!\033[39m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Find<sp/>those<sp/>cells<sp/>which<sp/>have<sp/>no<sp/>dependencies.<sp/>These<sp/>are<sp/>the<sp/>places<sp/>to<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//the<sp/>flow<sp/>accumulation<sp/>calculation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Locating<sp/>source<sp/>cells...&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" kindref="member">start</ref>(<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1aa7c4661b81d89c5c8aaa549b105f63c5" kindref="member">size</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y=0;y&lt;flowdirs.<ref refid="classrichdem_1_1Array2D_1ab2e27ec2c5986596760a5256d92a2eb0" kindref="member">height</ref>();y++){</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kindref="member">update</ref>(<sp/>y*flowdirs.<ref refid="classrichdem_1_1Array2D_1ad4d72d15f5a6199631051038088bb306" kindref="member">width</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=0;x&lt;flowdirs.<ref refid="classrichdem_1_1Array2D_1ad4d72d15f5a6199631051038088bb306" kindref="member">width</ref>();x++)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs(x,y)==flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>())</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs(x,y)==<ref refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" kindref="member">NO_FLOW</ref>)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dependency(x,y)==0)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sources.emplace(x,y);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>RDLOG_TIME_USE&lt;&lt;</highlight><highlight class="stringliteral">&quot;Source<sp/>cells<sp/>located<sp/>in<sp/>=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;progress.<ref refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" kindref="member">stop</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>s&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Calculate<sp/>the<sp/>flow<sp/>accumulation<sp/>by<sp/>&quot;pouring&quot;<sp/>a<sp/>cell&apos;s<sp/>flow<sp/>accumulation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//value<sp/>into<sp/>the<sp/>cells<sp/>below<sp/>it,<sp/>as<sp/>indicated<sp/>by<sp/>the<sp/>D-infinite<sp/>flow<sp/>routing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//method.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Calculating<sp/>up-slope<sp/>areas...&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" kindref="member">start</ref>(<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1ac6e1f8d41a25c5dabfbe82483f5dec90" kindref="member">numDataCells</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ccount=0;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(sources.size()&gt;0){</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>sources.front();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>sources.pop();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>progress.<ref refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kindref="member">update</ref>(ccount++);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs.<ref refid="classrichdem_1_1Array2D_1a2d89b410c05e05e7586bda960f4fafac" kindref="member">isNoData</ref>(c.x,c.y))<sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>This<sp/>line<sp/>shouldn&apos;t<sp/>be<sp/>necessary<sp/>since<sp/>NoData&apos;s<sp/>do<sp/>not<sp/>get<sp/>added<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>area(c.x,c.y)+=1;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs(c.x,c.y)==<ref refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" kindref="member">NO_FLOW</ref>)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_high,n_low,nhx,nhy,nlx,nly;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>where_do_i_flow(flowdirs(c.x,c.y),n_high,n_low);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>nhx<sp/>=<sp/>c.x+dinf_dx[n_high];</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>nhy<sp/>=<sp/>c.y+dinf_dy[n_high];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phigh,plow;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>area_proportion(flowdirs(c.x,c.y),<sp/>n_high,<sp/>n_low,<sp/>phigh,<sp/>plow);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs.<ref refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kindref="member">inGrid</ref>(nhx,nhy)<sp/>&amp;&amp;<sp/>flowdirs(nhx,nhy)!=flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>())</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>area(nhx,nhy)+=area(c.x,c.y)*phigh;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n_low!=-1){</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nlx<sp/>=<sp/>c.x+dinf_dx[n_low];</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nly<sp/>=<sp/>c.y+dinf_dy[n_low];</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flowdirs.<ref refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kindref="member">inGrid</ref>(nlx,nly)<sp/>&amp;&amp;<sp/>flowdirs(nlx,nly)!=flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>()){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area(nlx,nly)+=area(c.x,c.y)*plow;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((--dependency(nlx,nly))==0)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sources.emplace(nlx,nly);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>flowdirs.<ref refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kindref="member">inGrid</ref>(nhx,nhy)<sp/>&amp;&amp;<sp/>flowdirs(nhx,nhy)!=flowdirs.<ref refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kindref="member">noData</ref>()<sp/>&amp;&amp;<sp/>(--dependency(nhx,nhy))==0)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sources.emplace(nhx,nhy);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>RDLOG_PROGRESS&lt;&lt;</highlight><highlight class="stringliteral">&quot;Succeeded<sp/>in<sp/>=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;progress.<ref refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" kindref="member">stop</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>s&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/methods/dinf_methods.hpp"/>
+  </compounddef>
+</doxygen>

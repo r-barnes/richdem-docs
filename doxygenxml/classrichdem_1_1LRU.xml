@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1LRU" kind="class" language="C++" prot="public">
+    <compoundname>richdem::LRU</compoundname>
+    <includes refid="lru_8hpp" local="no">lru.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classrichdem_1_1LRU_1a5984737a473d4d97ada78a5276275c37" prot="private" static="no">
+        <type>std::list&lt; T &gt;</type>
+        <definition>typedef std::list&lt;T&gt; richdem::LRU&lt; T &gt;::cachetype</definition>
+        <argsstring></argsstring>
+        <name>cachetype</name>
+        <briefdescription>
+<para>Container used for storage by the cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="19" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1LRU_1ae5c3fd7676997c17a64c8acdcc20f16e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::LRU&lt; T &gt;::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+<para>Number of items in the cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="20" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LRU_1ab4eb1a74218b820e7d3d4289297bbc60" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::LRU&lt; T &gt;::maxlen</definition>
+        <argsstring></argsstring>
+        <name>maxlen</name>
+        <briefdescription>
+<para>Maximum size the cache is allowed to be. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="21" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LRU_1af2182b8cbe021bde3feabfd287f6d098" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T richdem::LRU&lt; T &gt;::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+<para>Copy of the last inserted item. Speeds up insertion. TODO: This&apos;d be better as a pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="22" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LRU_1aa14f31bc79feaa7cd8e09ec8aa7978ad" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; T, typename std::list&lt; T &gt;::iterator &gt;</type>
+        <definition>std::unordered_map&lt;T, typename std::list&lt;T&gt;::iterator&gt; richdem::LRU&lt; T &gt;::visited</definition>
+        <argsstring></argsstring>
+        <name>visited</name>
+        <briefdescription>
+<para>Used for O(1) access to members. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="23" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1LRU_1a5cb35bc772504fb3c4d0d9b432de3f40" prot="public" static="no" mutable="no">
+        <type>cachetype</type>
+        <definition>cachetype richdem::LRU&lt; T &gt;::cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <briefdescription>
+<para>The cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="26" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a72e0310bdd0473b945620cd1d8fa1dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::LRU&lt; T &gt;::LRU</definition>
+        <argsstring>()</argsstring>
+        <name>LRU</name>
+        <briefdescription>
+<para>Construct a new <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="29" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1af9c8e2d47e86accb2f019eafa60ef22a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::LRU&lt; T &gt;::insert</definition>
+        <argsstring>(const T &amp;entry)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+<para>Insert an item into the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The item is either added to the queue or its entry is moved to the top of the queue. If the item is new and the length of the queue is greater than maxlen, then the least recently seen item is evicted from the queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The item to add to the queue. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="41" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="41" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1ae664ac3f46117ebbae24fca854fd68db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int richdem::LRU&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns the number of itmes in the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of items in the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="61" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a9b455b8d651e07369aaf8d9a47aceed5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::LRU&lt; T &gt;::full</definition>
+        <argsstring>() const</argsstring>
+        <name>full</name>
+        <briefdescription>
+<para>Is the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache full? </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache is full; otherwise, false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="67" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1adc11d8729f22431883638f021709116e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::LRU&lt; T &gt;::setCapacity</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setCapacity</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum capacity of the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="72" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a728965881ef6050db07fbea86a712d89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int richdem::LRU&lt; T &gt;::getCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Returns the capacity of the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The capacity of the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="78" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a861ad85d148d20c373103a0378ba9c3f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T richdem::LRU&lt; T &gt;::back</definition>
+        <argsstring>() const</argsstring>
+        <name>back</name>
+        <briefdescription>
+<para>Return the least-recently used item in the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The least-recently used item in the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="84" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a9303032204dbabeddecfce4f103998db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::LRU&lt; T &gt;::pop_back</definition>
+        <argsstring>()</argsstring>
+        <name>pop_back</name>
+        <briefdescription>
+<para>Evict the least-recently used item out of the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="89" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LRU_1a49d903a3b9c75b090b1ee6bc74305842" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::LRU&lt; T &gt;::prune</definition>
+        <argsstring>()</argsstring>
+        <name>prune</name>
+        <briefdescription>
+<para>Evict items from the <ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref> cache until it is within its capacity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="96" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="96" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Least-Recently Used (<ref refid="classrichdem_1_1LRU" kindref="compound">LRU</ref>) cache. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/z/richdem/include/richdem/tiled/lru.hpp" line="17" column="1" bodyfile="/z/richdem/include/richdem/tiled/lru.hpp" bodystart="17" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1LRU_1a861ad85d148d20c373103a0378ba9c3f" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>back</name></member>
+      <member refid="classrichdem_1_1LRU_1a5cb35bc772504fb3c4d0d9b432de3f40" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>cache</name></member>
+      <member refid="classrichdem_1_1LRU_1a5984737a473d4d97ada78a5276275c37" prot="private" virt="non-virtual"><scope>richdem::LRU</scope><name>cachetype</name></member>
+      <member refid="classrichdem_1_1LRU_1a9b455b8d651e07369aaf8d9a47aceed5" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>full</name></member>
+      <member refid="classrichdem_1_1LRU_1a728965881ef6050db07fbea86a712d89" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>getCapacity</name></member>
+      <member refid="classrichdem_1_1LRU_1af9c8e2d47e86accb2f019eafa60ef22a" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>insert</name></member>
+      <member refid="classrichdem_1_1LRU_1af2182b8cbe021bde3feabfd287f6d098" prot="private" virt="non-virtual"><scope>richdem::LRU</scope><name>last</name></member>
+      <member refid="classrichdem_1_1LRU_1ae5c3fd7676997c17a64c8acdcc20f16e" prot="private" virt="non-virtual"><scope>richdem::LRU</scope><name>len</name></member>
+      <member refid="classrichdem_1_1LRU_1a72e0310bdd0473b945620cd1d8fa1dd2" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>LRU</name></member>
+      <member refid="classrichdem_1_1LRU_1ab4eb1a74218b820e7d3d4289297bbc60" prot="private" virt="non-virtual"><scope>richdem::LRU</scope><name>maxlen</name></member>
+      <member refid="classrichdem_1_1LRU_1a9303032204dbabeddecfce4f103998db" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>pop_back</name></member>
+      <member refid="classrichdem_1_1LRU_1a49d903a3b9c75b090b1ee6bc74305842" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>prune</name></member>
+      <member refid="classrichdem_1_1LRU_1adc11d8729f22431883638f021709116e" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>setCapacity</name></member>
+      <member refid="classrichdem_1_1LRU_1ae664ac3f46117ebbae24fca854fd68db" prot="public" virt="non-virtual"><scope>richdem::LRU</scope><name>size</name></member>
+      <member refid="classrichdem_1_1LRU_1aa14f31bc79feaa7cd8e09ec8aa7978ad" prot="private" virt="non-virtual"><scope>richdem::LRU</scope><name>visited</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1GridCell" kind="class" language="C++" prot="public">
+    <compoundname>richdem::GridCell</compoundname>
+    <derivedcompoundref refid="classrichdem_1_1GridCellZ" prot="public" virt="non-virtual">richdem::GridCellZ&lt; elev_t &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrichdem_1_1GridCellZ_3_01double_01_4" prot="public" virt="non-virtual">richdem::GridCellZ&lt; double &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrichdem_1_1GridCellZ_3_01float_01_4" prot="public" virt="non-virtual">richdem::GridCellZ&lt; float &gt;</derivedcompoundref>
+    <includes refid="grid__cell_8hpp" local="no">grid_cell.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1GridCell_1ad0720d4f9d57365fc5abe3f4f63e32c9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::GridCell::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>Grid cell&apos;s x-coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="19" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1GridCell_1acdf9ef83d894321472076b7562356485" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::GridCell::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Grid cell&apos;s y-coordinate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="20" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1GridCell_1aa4919ca2a8fbd0faffb2303ff8cd0eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::GridCell::GridCell</definition>
+        <argsstring>()</argsstring>
+        <name>GridCell</name>
+        <briefdescription>
+<para>Initiate the grid cell without coordinates; should generally be avoided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="22" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1GridCell_1af7bb9c5f4a4721bc12899c5825283f70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::GridCell::GridCell</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GridCell</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Initiate the grid cell to the coordinates (x0,y0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="24" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores the (x,y) coordinates of a grid cell. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>richdem::GridCellZ&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZ"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>richdem::GridCell</label>
+        <link refid="classrichdem_1_1GridCell"/>
+      </node>
+      <node id="7">
+        <label>richdem::GridCellZ&lt; double &gt;</label>
+        <link refid="classrichdem_1_1GridCellZ_3_01double_01_4"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>richdem::GridCellZk&lt; elev_t &gt;</label>
+        <link refid="classrichdem_1_1GridCellZk"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>richdem::GridCellZ&lt; float &gt;</label>
+        <link refid="classrichdem_1_1GridCellZ_3_01float_01_4"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/z/richdem/include/richdem/common/grid_cell.hpp" line="17" column="1" bodyfile="/z/richdem/include/richdem/common/grid_cell.hpp" bodystart="17" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1GridCell_1aa4919ca2a8fbd0faffb2303ff8cd0eec" prot="public" virt="non-virtual"><scope>richdem::GridCell</scope><name>GridCell</name></member>
+      <member refid="classrichdem_1_1GridCell_1af7bb9c5f4a4721bc12899c5825283f70" prot="public" virt="non-virtual"><scope>richdem::GridCell</scope><name>GridCell</name></member>
+      <member refid="classrichdem_1_1GridCell_1ad0720d4f9d57365fc5abe3f4f63e32c9" prot="public" virt="non-virtual"><scope>richdem::GridCell</scope><name>x</name></member>
+      <member refid="classrichdem_1_1GridCell_1acdf9ef83d894321472076b7562356485" prot="public" virt="non-virtual"><scope>richdem::GridCell</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2 @@
+accum_dinf = rd.FlowAccumulation(dem, method='Dinf')
+rd.rdShow(accum_dinf, zxmin=450, zxmax=550, zymin=550, zymax=450, figsize=(8,5.5), axes=False, cmap='jet', vmin=d8_fig['vmin'], vmax=d8_fig['vmax'])

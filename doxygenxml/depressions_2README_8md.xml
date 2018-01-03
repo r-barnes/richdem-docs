@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="depressions_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Barnes2013-Depressions</highlight></codeline>
+<codeline><highlight class="normal">======================</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Title<sp/>of<sp/>Manuscript**:</highlight></codeline>
+<codeline><highlight class="normal">Priority-Flood:<sp/>An<sp/>Optimal<sp/>Depression-Filling<sp/>and<sp/>Watershed-Labeling<sp/>Algorithm</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>Digital<sp/>Elevation<sp/>Models</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Authors**:<sp/>Richard<sp/>Barnes,<sp/>Clarence<sp/>Lehman,<sp/>David<sp/>Mulla</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Corresponding<sp/>Author**:<sp/>Richard<sp/>Barnes<sp/>(rbarnes@umn.edu)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**DOI<sp/>Number<sp/>of<sp/>Manuscript**</highlight></codeline>
+<codeline><highlight class="normal">[10.1016/j.cageo.2013.04.024](http://dx.doi.org/10.1016/j.cageo.2013.04.024)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Code<sp/>Repositories**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>[Author&apos;s<sp/>GitHub<sp/>Repository](https://github.com/r-barnes/Barnes2013-Depressions)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>[Journal&apos;s<sp/>GitHub<sp/>Repository](https://github.com/cageo)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>repository<sp/>contains<sp/>a<sp/>reference<sp/>implementation<sp/>of<sp/>the<sp/>algorithms<sp/>presented</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>manuscript<sp/>above.<sp/>These<sp/>implementations<sp/>were<sp/>used<sp/>in<sp/>performing<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">tests<sp/>described<sp/>in<sp/>the<sp/>manuscript.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>is<sp/>source<sp/>code<sp/>for<sp/>every<sp/>pseudocode<sp/>algorithm<sp/>presented<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">manuscript.<sp/>All<sp/>the<sp/>code<sp/>can<sp/>be<sp/>compiled<sp/>simply<sp/>by<sp/>running<sp/>**make**.<sp/>The<sp/>result</highlight></codeline>
+<codeline><highlight class="normal">is<sp/>a<sp/>program<sp/>called<sp/>**priority\_flood.exe**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>program<sp/>reads<sp/>in<sp/>a<sp/>DEM<sp/>file<sp/>specified<sp/>on<sp/>the<sp/>command<sp/>line.<sp/>The<sp/>file<sp/>may<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">any<sp/>ArcGrid<sp/>ASCII<sp/>file.<sp/>The<sp/>program<sp/>will<sp/>run<sp/>one<sp/>of<sp/>the<sp/>algorithms<sp/>described<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>manuscript<sp/>(and<sp/>below),<sp/>store<sp/>the<sp/>result<sp/>in<sp/>an<sp/>output<sp/>file,<sp/>and<sp/>report<sp/>how</highlight></codeline>
+<codeline><highlight class="normal">long<sp/>this<sp/>took.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>program<sp/>is<sp/>run<sp/>by<sp/>typing:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./priority_flood.exe<sp/>&lt;ALGORITHM<sp/>NUMBER&gt;<sp/>&lt;INPUT<sp/>DEM&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./priority_flood.exe<sp/>3<sp/>input-data.asc</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>algorithms<sp/>available<sp/>are<sp/>described<sp/>briefly<sp/>below<sp/>and<sp/>in<sp/>greater<sp/>detail<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>manuscript.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>**Algorithm<sp/>1:<sp/>Priority-Flood**<sp/>This<sp/>algorithm<sp/>alters<sp/>the<sp/>input<sp/>DEM<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">produce<sp/>an<sp/>output<sp/>with<sp/>no<sp/>depressions<sp/>or<sp/>digital<sp/>dams.<sp/>Every<sp/>cell<sp/>which<sp/>would</highlight></codeline>
+<codeline><highlight class="normal">have<sp/>been<sp/>in<sp/>a<sp/>depression<sp/>is<sp/>increased<sp/>to<sp/>the<sp/>level<sp/>of<sp/>that<sp/>depression&apos;s</highlight></codeline>
+<codeline><highlight class="normal">outlet,<sp/>leaving<sp/>a<sp/>flat<sp/>region<sp/>in<sp/>its<sp/>place.<sp/>It<sp/>runs<sp/>slower<sp/>than<sp/>Algorithm<sp/>2,</highlight></codeline>
+<codeline><highlight class="normal">but<sp/>is<sp/>otherwise<sp/>the<sp/>same.<sp/>The<sp/>result<sp/>is<sp/>saved<sp/>to<sp/>**out-pf-original**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>**Algorithm<sp/>2:<sp/>Improved<sp/>Priority-Flood**<sp/>This<sp/>algorithm<sp/>alters<sp/>the<sp/>input<sp/>DEM</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>produce<sp/>an<sp/>output<sp/>with<sp/>no<sp/>depressions<sp/>or<sp/>digital<sp/>dams.<sp/>Every<sp/>cell<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">would<sp/>have<sp/>been<sp/>in<sp/>a<sp/>depression<sp/>is<sp/>increased<sp/>to<sp/>the<sp/>level<sp/>of<sp/>that<sp/>depression&apos;s</highlight></codeline>
+<codeline><highlight class="normal">outlet,<sp/>leaving<sp/>a<sp/>flat<sp/>region<sp/>in<sp/>its<sp/>place.<sp/>It<sp/>runs<sp/>faster<sp/>than<sp/>Algorithm<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal">but<sp/>is<sp/>otherwise<sp/>the<sp/>same.<sp/>The<sp/>result<sp/>is<sp/>saved<sp/>to<sp/>**out-pf-improved**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>**Algorithm<sp/>3:<sp/>Priority-Flood+Epsilon**<sp/>This<sp/>algorithm<sp/>alters<sp/>the<sp/>input<sp/>DEM</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>produce<sp/>an<sp/>output<sp/>with<sp/>no<sp/>depressions<sp/>or<sp/>digital<sp/>dams.<sp/>Every<sp/>cell<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">would<sp/>have<sp/>been<sp/>in<sp/>a<sp/>depression<sp/>is<sp/>increased<sp/>to<sp/>the<sp/>level<sp/>of<sp/>that<sp/>depression&apos;s</highlight></codeline>
+<codeline><highlight class="normal">output,<sp/>plus<sp/>an<sp/>additional<sp/>increment<sp/>which<sp/>is<sp/>sufficient<sp/>to<sp/>direct<sp/>flow<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">periphery<sp/>of<sp/>the<sp/>DEM.<sp/>The<sp/>result<sp/>is<sp/>saved<sp/>to<sp/>**out-pf-epsilon**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>**Algorithm<sp/>4:<sp/>Priority-Flood+FlowDirs**<sp/>This<sp/>algorithm<sp/>determines<sp/>a<sp/>D8<sp/>flow</highlight></codeline>
+<codeline><highlight class="normal">direction<sp/>for<sp/>every<sp/>cell<sp/>in<sp/>the<sp/>DEM<sp/>by<sp/>implicitly<sp/>filling<sp/>depressions<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">eliminating<sp/>digital<sp/>dams.<sp/>Though<sp/>all<sp/>depressions<sp/>are<sp/>guaranteed<sp/>to<sp/>drain,<sp/>local</highlight></codeline>
+<codeline><highlight class="normal">elevation<sp/>information<sp/>is<sp/>still<sp/>used<sp/>to<sp/>determine<sp/>flow<sp/>directions<sp/>within<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">depression.<sp/>It<sp/>is,<sp/>in<sp/>essence,<sp/>a<sp/>depression-carving<sp/>algorithm.<sp/>The<sp/>result<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">saved<sp/>to<sp/>**out-pf-flowdirs**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>**Algorithm<sp/>5:<sp/>Priority-Flood+Watershed<sp/>Labels**<sp/>For<sp/>each<sp/>cell<sp/>_c_<sp/>in<sp/>a<sp/>DEM,</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>algorithm<sp/>determines<sp/>which<sp/>cell<sp/>on<sp/>the<sp/>DEM&apos;s<sp/>periphery<sp/>_c_<sp/>will<sp/>drain<sp/>to.</highlight></codeline>
+<codeline><highlight class="normal">_c_<sp/>is<sp/>then<sp/>given<sp/>a<sp/>label<sp/>which<sp/>corresponds<sp/>to<sp/>the<sp/>peripheral<sp/>cell.<sp/>All<sp/>cells</highlight></codeline>
+<codeline><highlight class="normal">bearing<sp/>a<sp/>common<sp/>label<sp/>belong<sp/>to<sp/>the<sp/>same<sp/>watershed.<sp/>The<sp/>result<sp/>is<sp/>saved<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">**out-pf-wlabels**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Algorithm<sp/>4:<sp/>Priority-Flood+FlowDirs**<sp/>and<sp/>its<sp/>output,<sp/>**out-pf-flowdirs**,</highlight></codeline>
+<codeline><highlight class="normal">use<sp/>the<sp/>D8<sp/>neighbour<sp/>system<sp/>to<sp/>indicate<sp/>flow<sp/>directions.<sp/>In<sp/>this<sp/>system<sp/>all<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">flow<sp/>from<sp/>a<sp/>central<sp/>cell<sp/>is<sp/>directed<sp/>to<sp/>a<sp/>single<sp/>neighbour<sp/>which<sp/>is<sp/>represented</highlight></codeline>
+<codeline><highlight class="normal">by<sp/>a<sp/>number<sp/>according<sp/>to<sp/>the<sp/>following<sp/>system<sp/>where<sp/>0<sp/>indicates<sp/>the<sp/>central</highlight></codeline>
+<codeline><highlight class="normal">cell.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>234</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>105</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>876</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>directory<sp/>**src/**<sp/>contains<sp/>the<sp/>source<sp/>code<sp/>for<sp/>the<sp/>reference</highlight></codeline>
+<codeline><highlight class="normal">implementations.<sp/>All<sp/>the<sp/>source<sp/>code<sp/>is<sp/>drawn<sp/>from<sp/>the<sp/>RichDEM<sp/>hydroanalysis</highlight></codeline>
+<codeline><highlight class="normal">package.<sp/>At<sp/>the<sp/>time<sp/>of<sp/>writing,<sp/>the<sp/>entire<sp/>RichDEM<sp/>code<sp/>base<sp/>could<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">downloaded<sp/>from:<sp/>[https://github.com/r-barnes](https://github.com/r-barnes)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Assumptions</highlight></codeline>
+<codeline><highlight class="normal">=======================</highlight></codeline>
+<codeline><highlight class="normal">All<sp/>of<sp/>the<sp/>algorithms<sp/>assume<sp/>that<sp/>cells<sp/>marked<sp/>as<sp/>having<sp/>NoData<sp/>will<sp/>have</highlight></codeline>
+<codeline><highlight class="normal">extremely<sp/>negative<sp/>numerical<sp/>values:<sp/>less<sp/>than<sp/>the<sp/>value<sp/>of<sp/>any<sp/>of<sp/>the<sp/>actual</highlight></codeline>
+<codeline><highlight class="normal">data.<sp/>NaN<sp/>is<sp/>considered<sp/>to<sp/>be<sp/>less<sp/>than<sp/>all<sp/>values,<sp/>including<sp/>negative<sp/>infinity.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Notes<sp/>on<sp/>the<sp/>Manuscript</highlight></codeline>
+<codeline><highlight class="normal">=======================</highlight></codeline>
+<codeline><highlight class="normal">Work<sp/>by<sp/>Cris<sp/>Luengo<sp/>on<sp/>the<sp/>speed<sp/>of<sp/>various<sp/>priority<sp/>queue<sp/>algorithms<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">discussed<sp/>in<sp/>the<sp/>manuscript.<sp/>His<sp/>website<sp/>providing<sp/>code<sp/>for<sp/>his</highlight></codeline>
+<codeline><highlight class="normal">implementatations<sp/>is<sp/>[here](http://www.cb.uu.se/~cris/priorityqueues.html).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Updates</highlight></codeline>
+<codeline><highlight class="normal">=======================</highlight></codeline>
+<codeline><highlight class="normal">Commit<sp/>**51f9a7838d3e88628ef6c74846edd0cb18e7ffe6**<sp/>(02015-09-25)<sp/>introduced<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">number<sp/>of<sp/>changes<sp/>to<sp/>the<sp/>code<sp/>versus<sp/>what<sp/>was<sp/>originally<sp/>published<sp/>with<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">manuscript.<sp/>The<sp/>old<sp/>codebase<sp/>uses<sp/>ASCII-formatted<sp/>data<sp/>for<sp/>input<sp/>and<sp/>output;<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">new<sp/>codebase<sp/>uses<sp/>GDAL<sp/>to<sp/>handle<sp/>many<sp/>kinds<sp/>of<sp/>data.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>old<sp/>codebase<sp/>had<sp/>the<sp/>advantage<sp/>of<sp/>not<sp/>relying<sp/>on<sp/>external<sp/>libraries<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">being<sp/>readily<sp/>accessible<sp/>to<sp/>all<sp/>parties.<sp/>It<sp/>had<sp/>the<sp/>disadvantage<sp/>of<sp/>being<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">slow,<sp/>clumsy,<sp/>and<sp/>limited<sp/>way<sp/>to<sp/>work<sp/>with<sp/>the<sp/>data.<sp/>As<sp/>of<sp/>02015-09-25,<sp/>the<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">requires<sp/>the<sp/>use<sp/>of<sp/>the<sp/>GDAL<sp/>library<sp/>greatly<sp/>expanding<sp/>the<sp/>data<sp/>formats<sp/>and<sp/>data</highlight></codeline>
+<codeline><highlight class="normal">types<sp/>which<sp/>can<sp/>be<sp/>worked<sp/>with,<sp/>as<sp/>well<sp/>as<sp/>greatly<sp/>speeding<sp/>up<sp/>I/O.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>using<sp/>the<sp/>aforementioned<sp/>**51f9a7838d**<sp/>directly<sp/>will<sp/>result<sp/>in<sp/>silent</highlight></codeline>
+<codeline><highlight class="normal">casting<sp/>of<sp/>your<sp/>data<sp/>to<sp/>the<sp/>`float`<sp/>type;<sp/>commit</highlight></codeline>
+<codeline><highlight class="normal">**8b11f535af23368d3bd26609cc88df3dbb7111f1**<sp/>(02015-09-28)<sp/>fixes<sp/>this<sp/>issue.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Additionally,<sp/>the<sp/>library<sp/>now<sp/>uses<sp/>C++<sp/>for<sp/>all<sp/>streaming<sp/>operations<sp/>except<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">progress<sp/>bar.</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/depressions/README.md"/>
+  </compounddef>
+</doxygen>

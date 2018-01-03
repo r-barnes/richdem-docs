@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="logger_8hpp" kind="file" language="C++">
+    <compoundname>logger.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includedby refid="Array2D_8hpp" local="yes">/z/richdem/include/richdem/common/Array2D.hpp</includedby>
+    <includedby refid="Layoutfile_8hpp" local="yes">/z/richdem/include/richdem/common/Layoutfile.hpp</includedby>
+    <includedby refid="Barnes2014_8hpp" local="yes">/z/richdem/include/richdem/depressions/Barnes2014.hpp</includedby>
+    <includedby refid="Lindsay2016_8hpp" local="yes">/z/richdem/include/richdem/depressions/Lindsay2016.hpp</includedby>
+    <includedby refid="Zhou2016_8hpp" local="yes">/z/richdem/include/richdem/depressions/Zhou2016.hpp</includedby>
+    <includedby refid="flat__resolution_8hpp" local="yes">/z/richdem/include/richdem/flats/flat_resolution.hpp</includedby>
+    <includedby refid="flat__resolution__dinf_8hpp" local="yes">/z/richdem/include/richdem/flats/flat_resolution_dinf.hpp</includedby>
+    <includedby refid="garbrecht_8hpp" local="yes">/z/richdem/include/richdem/flats/garbrecht.hpp</includedby>
+    <includedby refid="d8__flowdirs_8hpp" local="yes">/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</includedby>
+    <includedby refid="dinf__flowdirs_8hpp" local="yes">/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</includedby>
+    <includedby refid="Fairfield1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</includedby>
+    <includedby refid="Freeman1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Freeman1991.hpp</includedby>
+    <includedby refid="Holmgren1994_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</includedby>
+    <includedby refid="OCallaghan1984_8hpp" local="yes">/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</includedby>
+    <includedby refid="Quinn1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Quinn1991.hpp</includedby>
+    <includedby refid="Tarboton1997_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</includedby>
+    <includedby refid="d8__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/d8_methods.hpp</includedby>
+    <includedby refid="dinf__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/dinf_methods.hpp</includedby>
+    <includedby refid="flow__accumulation__generic_8hpp" local="no">/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</includedby>
+    <includedby refid="terrain__attributes_8hpp" local="yes">/z/richdem/include/richdem/methods/terrain_attributes.hpp</includedby>
+    <includedby refid="richdem_8cpp" local="yes">/z/richdem/include/richdem/richdem.cpp</includedby>
+    <includedby refid="A2Array2D_8hpp" local="yes">/z/richdem/include/richdem/tiled/A2Array2D.hpp</includedby>
+    <incdepgraph>
+      <node id="155">
+        <label>string</label>
+      </node>
+      <node id="154">
+        <label>sstream</label>
+      </node>
+      <node id="153">
+        <label>iostream</label>
+      </node>
+      <node id="152">
+        <label>/z/richdem/include/richdem/common/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="175">
+        <label>/z/richdem/include/richdem/methods/d8_methods.hpp</label>
+        <link refid="d8__methods_8hpp"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>/z/richdem/include/richdem/tiled/A2Array2D.hpp</label>
+        <link refid="A2Array2D_8hpp"/>
+      </node>
+      <node id="179">
+        <label>/z/richdem/include/richdem/misc/misc_methods.hpp</label>
+        <link refid="misc__methods_8hpp"/>
+      </node>
+      <node id="159">
+        <label>/z/richdem/include/richdem/depressions/depressions.hpp</label>
+        <link refid="depressions_8hpp_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</label>
+        <link refid="flow__accumulation__generic_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>/z/richdem/include/richdem/flowmet/Freeman1991.hpp</label>
+        <link refid="Freeman1991_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>/z/richdem/include/richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>/z/richdem/include/richdem/depressions/Zhou2016.hpp</label>
+        <link refid="Zhou2016_8hpp"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>/z/richdem/include/richdem/flowmet/Quinn1991.hpp</label>
+        <link refid="Quinn1991_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>/z/richdem/include/richdem/flats/flat_resolution_dinf.hpp</label>
+        <link refid="flat__resolution__dinf_8hpp"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</label>
+        <link refid="d8__flowdirs_8hpp"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>/z/richdem/include/richdem/depressions/Lindsay2016.hpp</label>
+        <link refid="Lindsay2016_8hpp_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>/z/richdem/include/richdem/flats/garbrecht.hpp</label>
+        <link refid="garbrecht_8hpp_source"/>
+      </node>
+      <node id="165">
+        <label>/z/richdem/include/richdem/flats/flat_resolution.hpp</label>
+        <link refid="flat__resolution_8hpp"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</label>
+        <link refid="Tarboton1997_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+      <node id="178">
+        <label>/z/richdem/include/richdem/methods/terrain_attributes.hpp</label>
+        <link refid="terrain__attributes_8hpp_source"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>/z/richdem/include/richdem/common/Layoutfile.hpp</label>
+        <link refid="Layoutfile_8hpp"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>/z/richdem/include/richdem/depressions/Barnes2014.hpp</label>
+        <link refid="Barnes2014_8hpp"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</label>
+        <link refid="dinf__flowdirs_8hpp"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</label>
+        <link refid="Holmgren1994_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>/z/richdem/include/richdem/common/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrichdem_1_1StreamLogger" prot="public">richdem::StreamLogger</innerclass>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="logger_8hpp_1a11b3b0770f37629ec61f15992c7fea49" prot="public" static="no">
+        <name>RDLOG</name>
+        <param><defname>flag</defname></param>
+        <initializer>StreamLogger(flag,              __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="61" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1ae1d136d8329e931c9c486047fe0d0ae4" prot="public" static="no">
+        <name>RDLOG_ALG_NAME</name>
+        <initializer>StreamLogger(LogFlag::ALG_NAME, __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="62" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a634102b97964c8ed1631f843c902a8d9" prot="public" static="no">
+        <name>RDLOG_CITATION</name>
+        <initializer>StreamLogger(LogFlag::CITATION, __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="63" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a4d588f57e74802645d8d5dccdaf0b3c5" prot="public" static="no">
+        <name>RDLOG_CONFIG</name>
+        <initializer>StreamLogger(LogFlag::CONFIG,   __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="64" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a3e45f561b75ce88a4b4f3c60fc3d4d55" prot="public" static="no">
+        <name>RDLOG_DEBUG</name>
+        <initializer>StreamLogger(LogFlag::DEBUG,    __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="65" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a7d76e1bb7210a10d53c44f1d80e2f215" prot="public" static="no">
+        <name>RDLOG_ERROR</name>
+        <initializer>StreamLogger(LogFlag::ERROR,    __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="66" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a435aca5de6544c6c6bcfdc627f798364" prot="public" static="no">
+        <name>RDLOG_MEM_USE</name>
+        <initializer>StreamLogger(LogFlag::MEM_USE,  __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="67" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1af10bebe6a1dd10933593dd366a26291f" prot="public" static="no">
+        <name>RDLOG_MISC</name>
+        <initializer>StreamLogger(LogFlag::MISC,     __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="68" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a44549b022a0053d1e8f5f9f1a0ea631e" prot="public" static="no">
+        <name>RDLOG_PROGRESS</name>
+        <initializer>StreamLogger(LogFlag::PROGRESS, __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="69" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a94f728f47fd4ef27e1aaa1626b27f8ad" prot="public" static="no">
+        <name>RDLOG_TIME_USE</name>
+        <initializer>StreamLogger(LogFlag::TIME_USE, __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="70" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="logger_8hpp_1a3fdf59b5b6a653c92fd3c333adca7976" prot="public" static="no">
+        <name>RDLOG_WARN</name>
+        <initializer>StreamLogger(LogFlag::WARN,     __FILE__, __func__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/logger.hpp" line="71" column="9" bodyfile="/z/richdem/include/richdem/common/logger.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_richdem_logger_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_logger_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LogFlag<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>ALG_NAME,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>CITATION,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>CONFIG,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>DEBUG,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>ERROR,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>MEM_USE,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>MISC,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>PROGRESS,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>TIME_USE,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>WARN</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RICHDEM_LOGGING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RDLOGfunc(LogFlag<sp/>flag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>line,<sp/>std::string<sp/>msg);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classrichdem_1_1StreamLogger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrichdem_1_1StreamLogger" kindref="compound">StreamLogger</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>LogFlag<sp/><sp/><sp/><sp/><sp/>flag;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>line;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>std::ostringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1StreamLogger" kindref="compound">StreamLogger</ref>(LogFlag<sp/>flag0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func0,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>line0)<sp/>:<sp/>flag(flag0),<sp/>file(file0),<sp/>func(func0),<sp/>line(line0)<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>~<ref refid="classrichdem_1_1StreamLogger" kindref="compound">StreamLogger</ref>()<sp/>noexcept(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>RICHDEM_LOGGING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RDLOGfunc(flag,<sp/>file,<sp/>func,<sp/>line,<sp/>ss.str());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1StreamLogger" kindref="compound">StreamLogger</ref>&amp;<sp/>operator&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>t){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>RICHDEM_LOGGING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>t;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::endl<sp/>and<sp/>other<sp/>iomanip:s.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="classrichdem_1_1StreamLogger" kindref="compound">StreamLogger</ref>&amp;<sp/>operator&lt;&lt;(std::ostream&amp;(*f)(std::ostream&amp;)){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>RICHDEM_LOGGING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>f(ss);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG(flag)<sp/><sp/><sp/><sp/>StreamLogger(flag,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_ALG_NAME<sp/>StreamLogger(LogFlag::ALG_NAME,<sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_CITATION<sp/>StreamLogger(LogFlag::CITATION,<sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_CONFIG<sp/><sp/><sp/>StreamLogger(LogFlag::CONFIG,<sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_DEBUG<sp/><sp/><sp/><sp/>StreamLogger(LogFlag::DEBUG,<sp/><sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_ERROR<sp/><sp/><sp/><sp/>StreamLogger(LogFlag::ERROR,<sp/><sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_MEM_USE<sp/><sp/>StreamLogger(LogFlag::MEM_USE,<sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_MISC<sp/><sp/><sp/><sp/><sp/>StreamLogger(LogFlag::MISC,<sp/><sp/><sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_PROGRESS<sp/>StreamLogger(LogFlag::PROGRESS,<sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_TIME_USE<sp/>StreamLogger(LogFlag::TIME_USE,<sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RDLOG_WARN<sp/><sp/><sp/><sp/><sp/>StreamLogger(LogFlag::WARN,<sp/><sp/><sp/><sp/><sp/>__FILE__,<sp/>__func__,<sp/>__LINE__)<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/common/logger.hpp"/>
+  </compounddef>
+</doxygen>

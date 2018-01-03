@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="random_8hpp" kind="file" language="C++">
+    <compoundname>random.hpp</compoundname>
+    <includes local="no">random</includes>
+    <includes local="no">string</includes>
+    <includedby refid="random_8cpp" local="yes">/z/richdem/include/richdem/common/random.cpp</includedby>
+    <includedby refid="Fairfield1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</includedby>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="257">
+        <label>string</label>
+      </node>
+      <node id="256">
+        <label>random</label>
+      </node>
+      <node id="255">
+        <label>/z/richdem/include/richdem/common/random.hpp</label>
+        <link refid="random_8hpp"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="260">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>/z/richdem/include/richdem/common/random.hpp</label>
+        <link refid="random_8hpp"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+      <node id="259">
+        <label>/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="random_8hpp_1aa27036445ebe04a12972c1713322463d" prot="public" static="no">
+        <name>PRNG_THREAD_MAX</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>Maximum number of threads this class should deal with. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/random.hpp" line="12" column="9" bodyfile="/z/richdem/include/richdem/common/random.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="random_8hpp_1a889ec205c635b219999c761b28cc39ba" prot="public" static="no">
+        <name>omp_get_thread_num</name>
+        <param></param>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/random.hpp" line="17" column="12" bodyfile="/z/richdem/include/richdem/common/random.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="random_8hpp_1a4353281743925f182316dba7cda58fee" prot="public" static="no">
+        <name>omp_get_num_threads</name>
+        <param></param>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/random.hpp" line="18" column="11" bodyfile="/z/richdem/include/richdem/common/random.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="random_8hpp_1a59e73060d1552ccda56039c7f3d25a84" prot="public" static="no">
+        <name>omp_get_max_threads</name>
+        <param></param>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/random.hpp" line="19" column="11" bodyfile="/z/richdem/include/richdem/common/random.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//This<sp/>file<sp/>contains<sp/>a<sp/>number<sp/>of<sp/>functions<sp/>for<sp/>getting<sp/>seeding<sp/>random<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//generators<sp/>and<sp/>pulling<sp/>numbers<sp/>from<sp/>them<sp/>in<sp/>a<sp/>thread-safe<sp/>manner.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_richdem_random_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_random_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#define<sp/>PRNG_THREAD_MAX<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_OPENMP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;omp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>omp_get_thread_num()<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>omp_get_num_threads()<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>omp_get_max_threads()<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::string<sp/>RandomEngineState;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::mt19937<sp/>our_random_engine;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//Returns<sp/>a<sp/>PRNG<sp/>engine<sp/>specific<sp/>to<sp/>the<sp/>calling<sp/>thread</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">our_random_engine&amp;<sp/>rand_engine();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//Seeds<sp/>the<sp/>PRNG<sp/>engines<sp/>using<sp/>entropy<sp/>from<sp/>the<sp/>computer&apos;s<sp/>random<sp/>device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>seed_rand(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>seed);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//Returns<sp/>an<sp/>integer<sp/>value<sp/>on<sp/>the<sp/>closed<sp/>interval<sp/>[from,thru]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//Thread-safe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uniform_rand_int(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>from,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>thru);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//Returns<sp/>an<sp/>floating-point<sp/>value<sp/>on<sp/>the<sp/>interval<sp/>[from,thru)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//Thread-safe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>uniform_rand_real(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>from,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>thru);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//Returns<sp/>a<sp/>Gaussian-distributed<sp/>value<sp/>with<sp/>specified<sp/>mean<sp/>and<sp/>standard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//deviation.<sp/>Thread-safe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>normal_rand(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>stddev);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">T<sp/>uniform_bits(){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>std::uniform_int_distribution&lt;T&gt;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>dist(std::numeric_limits&lt;T&gt;::lowest(),std::numeric_limits&lt;T&gt;::max());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist(<sp/>rand_engine()<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">RandomEngineState<sp/>SaveRandomState();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRandomState(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RandomEngineState<sp/>&amp;res);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/common/random.hpp"/>
+  </compounddef>
+</doxygen>

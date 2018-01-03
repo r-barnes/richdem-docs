@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1ProgressBar" kind="class" language="C++" prot="public">
+    <compoundname>richdem::ProgressBar</compoundname>
+    <includes refid="ProgressBar_8hpp" local="no">ProgressBar.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1abb4e6b64bb3777475edea35eb37c12d3" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t richdem::ProgressBar::total_work</definition>
+        <argsstring></argsstring>
+        <name>total_work</name>
+        <briefdescription>
+<para>Total work to be accomplished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="45" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1a49f6e671b0cc37850a6a113c1c02d764" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t richdem::ProgressBar::next_update</definition>
+        <argsstring></argsstring>
+        <name>next_update</name>
+        <briefdescription>
+<para>Next point to update the visible progress bar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="46" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1af71d587c87e6c261f56304f7dec8d161" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t richdem::ProgressBar::call_diff</definition>
+        <argsstring></argsstring>
+        <name>call_diff</name>
+        <briefdescription>
+<para>Interval between updates in work units. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="47" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1ad1465ee7848c83fb3629e46fdbb939b1" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t richdem::ProgressBar::work_done</definition>
+        <argsstring></argsstring>
+        <name>work_done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="48" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1a9d510e2415dd5d0c26a042e402b52133" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t richdem::ProgressBar::old_percent</definition>
+        <argsstring></argsstring>
+        <name>old_percent</name>
+        <briefdescription>
+<para>Old percentage value (aka: should we update the progress bar) TODO: Maybe that we do not need this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="49" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ProgressBar_1af0882216c9ff7dc32b66d8be78528389" prot="private" static="no" mutable="no">
+        <type><ref refid="classrichdem_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer richdem::ProgressBar::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+<para>Used for generating ETA. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="50" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a32b78ad94c731570557c202929a203fb" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::ProgressBar::clearConsoleLine</definition>
+        <argsstring>() const</argsstring>
+        <name>clearConsoleLine</name>
+        <briefdescription>
+<para>Clear current line on console so a new progress bar can be written. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="53" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::ProgressBar::start</definition>
+        <argsstring>(uint32_t total_work)</argsstring>
+        <name>start</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>total_work</declname>
+        </param>
+        <briefdescription>
+<para>Start/reset the progress bar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>total_work</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of work to be completed, usually specified in cells. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="60" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::ProgressBar::update</definition>
+        <argsstring>(uint32_t work_done0)</argsstring>
+        <name>update</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>work_done0</declname>
+        </param>
+        <briefdescription>
+<para>Update the visible progress bar, but only if enough work has been done. </para>        </briefdescription>
+        <detaileddescription>
+<para>Define the global <computeroutput>NOPROGRESS</computeroutput> flag to prevent this from having an effect. Doing so may speed up the program&apos;s execution. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="75" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="75" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a7ec00bd76a94841f8d069fee90394ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrichdem_1_1ProgressBar" kindref="compound">ProgressBar</ref> &amp;</type>
+        <definition>ProgressBar&amp; richdem::ProgressBar::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Increment by one the work done and update the progress bar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="107" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double richdem::ProgressBar::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the progress bar. Throws an exception if it wasn&apos;t started. <simplesect kind="return"><para>The number of seconds the progress bar was running. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="115" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a1c40aee1793e0aad20851ead4c928a96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double richdem::ProgressBar::time_it_took</definition>
+        <argsstring>()</argsstring>
+        <name>time_it_took</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Return the time the progress bar ran for. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="123" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ProgressBar_1a9ad5ea9b9f50318286d1de1c470352cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t richdem::ProgressBar::cellsProcessed</definition>
+        <argsstring>() const</argsstring>
+        <name>cellsProcessed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="127" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="127" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages a console-based progress bar to keep the user entertained. </para>    </briefdescription>
+    <detaileddescription>
+<para>Defining the global <computeroutput>NOPROGRESS</computeroutput> will disable all progress operations, potentially speeding up a program. The look of the progress bar is shown in <ref refid="ProgressBar_8hpp" kindref="compound">ProgressBar.hpp</ref>. </para>    </detaileddescription>
+    <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="43" column="1" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="43" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1ProgressBar_1af71d587c87e6c261f56304f7dec8d161" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>call_diff</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a9ad5ea9b9f50318286d1de1c470352cb" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>cellsProcessed</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a32b78ad94c731570557c202929a203fb" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>clearConsoleLine</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a49f6e671b0cc37850a6a113c1c02d764" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>next_update</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a9d510e2415dd5d0c26a042e402b52133" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>old_percent</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a7ec00bd76a94841f8d069fee90394ade" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>operator++</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>start</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>stop</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1a1c40aee1793e0aad20851ead4c928a96" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>time_it_took</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1af0882216c9ff7dc32b66d8be78528389" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>timer</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1abb4e6b64bb3777475edea35eb37c12d3" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>total_work</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" prot="public" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>update</name></member>
+      <member refid="classrichdem_1_1ProgressBar_1ad1465ee7848c83fb3629e46fdbb939b1" prot="private" virt="non-virtual"><scope>richdem::ProgressBar</scope><name>work_done</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1ManagedVector" kind="class" language="C++" prot="public">
+    <compoundname>richdem::ManagedVector</compoundname>
+    <includes refid="ManagedVector_8hpp" local="no">ManagedVector.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrichdem_1_1ManagedVector_1a1dcadfbe1bc838a0b93ef8db3eb56af8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class ManagedVector</definition>
+        <argsstring></argsstring>
+        <name>ManagedVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="13" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1ManagedVector_1ab29ca23b8420eda0aac804b307a1c519" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; T[]&gt;</type>
+        <definition>std::unique_ptr&lt;T[]&gt; richdem::ManagedVector&lt; T &gt;::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="15" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ManagedVector_1ad1e317e13f42894303f92e8fbdc71318" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool richdem::ManagedVector&lt; T &gt;::_owned</definition>
+        <argsstring></argsstring>
+        <name>_owned</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If this is true, we are responsible for clean-up of the data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="16" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1ManagedVector_1a03e3bb1b04c4fc228577d22ac26bca2e" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t richdem::ManagedVector&lt; T &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of elements being managed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="17" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a0a6e08e636ec4b3b5c5c8992796abb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>()=default</argsstring>
+        <name>ManagedVector</name>
+        <briefdescription>
+<para>Creates an empty <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a713178244b109532e619553f44402203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>(size_t size, T default_val=T())</argsstring>
+        <name>ManagedVector</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>default_val</declname>
+          <defval>T()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref> with <computeroutput>size</computeroutput> members each set to <computeroutput>default_val</computeroutput> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements to be created in the vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">default_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial value of the elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="27" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1acbef53dc494b12bb2a88daf370221b70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>(T *data, size_t size)</argsstring>
+        <name>ManagedVector</name>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref> which wraps <computeroutput>data0</computeroutput> of length <computeroutput>size0</computeroutput> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory to wrap </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements to wrap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="39" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a0fb901ad4fa0bc6766dca5cbd758fb8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>(const ManagedVector&lt; U &gt; &amp;other)</argsstring>
+        <name>ManagedVector</name>
+        <param>
+          <type>const <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="48" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a71bcca1a1066a2eac481b1535283b838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>(const ManagedVector&lt; T &gt; &amp;other)</argsstring>
+        <name>ManagedVector</name>
+        <param>
+          <type>const <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="58" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a37332448ae291f4b641c87c56012e6d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::ManagedVector</definition>
+        <argsstring>(ManagedVector&lt; U &gt; &amp;&amp;other) noexcept</argsstring>
+        <name>ManagedVector</name>
+        <param>
+          <type><ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; U &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="69" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="69" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a00d2e5401f09b84cf871e9b30a3d44f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::ManagedVector&lt; T &gt;::~ManagedVector</definition>
+        <argsstring>()</argsstring>
+        <name>~ManagedVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="78" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="78" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a31fd864f8b0bf39721fe6bd207ff5ef2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; T &gt; &amp;</type>
+        <definition>ManagedVector&lt;T&gt;&amp; richdem::ManagedVector&lt; T &gt;::operator=</definition>
+        <argsstring>(const ManagedVector&lt; U &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="92" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a1817b0aa00b875eeb8f52366b34fde5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; T &gt; &amp;</type>
+        <definition>ManagedVector&lt;T&gt;&amp; richdem::ManagedVector&lt; T &gt;::operator=</definition>
+        <argsstring>(ManagedVector&lt; U &gt; &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref>&lt; U &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move assignment operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="101" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="101" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a24c9b22b6ca110d41e965e0b1a12b83a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* richdem::ManagedVector&lt; T &gt;::data</definition>
+        <argsstring>()</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a raw pointer to the managed data</para><para><simplesect kind="return"><para>A raw pointer to the managed data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="114" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a1bb3b649ad11e3095bf0aee90c31989e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* richdem::ManagedVector&lt; T &gt;::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a raw constant pointer to the managed data</para><para><simplesect kind="return"><para>A raw constant pointer to the managed data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="121" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a0c7347cc8f769de977d375ad65e30d01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::ManagedVector&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Are there more than zero elements being managed?</para><para><simplesect kind="return"><para>True, if zero elements are managed; otherwise, false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="128" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a1c9b5baebb94d6e39fb01005e28a7ffb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t richdem::ManagedVector&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of elements being managed</para><para><simplesect kind="return"><para>The number of elements being managed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="135" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1af91432fe168346fe0d572da276bb10a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::ManagedVector&lt; T &gt;::owned</definition>
+        <argsstring>() const</argsstring>
+        <name>owned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine whether the <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref> owns the memory it is managing</para><para><simplesect kind="return"><para>True, if this <ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref> owns its memory; otherwise, false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="142" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a5e6cdb5a4942c3db7237553507b09787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void richdem::ManagedVector&lt; T &gt;::resize</definition>
+        <argsstring>(size_t new_size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="147" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="147" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a937031adcbe654943b72a03e0c4ea855" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; richdem::ManagedVector&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="162" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1ManagedVector_1a2c60d6fdc32e5b323c2fd701d7f1236e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; richdem::ManagedVector&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="166" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="166" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classrichdem_1_1ManagedVector" kindref="compound">ManagedVector</ref> works like a regular vector, but can wrap external memory. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/z/richdem/include/richdem/common/ManagedVector.hpp" line="11" column="1" bodyfile="/z/richdem/include/richdem/common/ManagedVector.hpp" bodystart="11" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1ManagedVector_1ab29ca23b8420eda0aac804b307a1c519" prot="private" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>_data</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1ad1e317e13f42894303f92e8fbdc71318" prot="private" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>_owned</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a03e3bb1b04c4fc228577d22ac26bca2e" prot="private" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>_size</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a24c9b22b6ca110d41e965e0b1a12b83a" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>data</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a1bb3b649ad11e3095bf0aee90c31989e" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>data</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a0c7347cc8f769de977d375ad65e30d01" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>empty</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a1dcadfbe1bc838a0b93ef8db3eb56af8" prot="private" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a0a6e08e636ec4b3b5c5c8992796abb17" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a713178244b109532e619553f44402203" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1acbef53dc494b12bb2a88daf370221b70" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a0fb901ad4fa0bc6766dca5cbd758fb8c" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a71bcca1a1066a2eac481b1535283b838" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a37332448ae291f4b641c87c56012e6d7" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>ManagedVector</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a31fd864f8b0bf39721fe6bd207ff5ef2" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>operator=</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a1817b0aa00b875eeb8f52366b34fde5f" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>operator=</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a937031adcbe654943b72a03e0c4ea855" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>operator[]</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a2c60d6fdc32e5b323c2fd701d7f1236e" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>operator[]</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1af91432fe168346fe0d572da276bb10a4" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>owned</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a5e6cdb5a4942c3db7237553507b09787" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>resize</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a1c9b5baebb94d6e39fb01005e28a7ffb" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>size</name></member>
+      <member refid="classrichdem_1_1ManagedVector_1a00d2e5401f09b84cf871e9b30a3d44f1" prot="public" virt="non-virtual"><scope>richdem::ManagedVector</scope><name>~ManagedVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

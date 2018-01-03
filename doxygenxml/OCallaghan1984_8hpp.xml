@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="OCallaghan1984_8hpp" kind="file" language="C++">
+    <compoundname>OCallaghan1984.hpp</compoundname>
+    <includes refid="logger_8hpp" local="yes">richdem/common/logger.hpp</includes>
+    <includes refid="Array2D_8hpp" local="yes">richdem/common/Array2D.hpp</includes>
+    <includes refid="ProgressBar_8hpp" local="yes">richdem/common/ProgressBar.hpp</includes>
+    <includedby refid="flow__accumulation_8hpp" local="no">/z/richdem/include/richdem/methods/flow_accumulation.hpp</includedby>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="786">
+        <label>richdem/common/ProgressBar.hpp</label>
+        <link refid="ProgressBar_8hpp"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>iomanip</label>
+      </node>
+      <node id="778">
+        <label>limits</label>
+      </node>
+      <node id="774">
+        <label>cassert</label>
+      </node>
+      <node id="777">
+        <label>stdexcept</label>
+      </node>
+      <node id="764">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp"/>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>string</label>
+      </node>
+      <node id="769">
+        <label>richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>map</label>
+      </node>
+      <node id="780">
+        <label>unordered_set</label>
+      </node>
+      <node id="772">
+        <label>fstream</label>
+      </node>
+      <node id="776">
+        <label>typeinfo</label>
+      </node>
+      <node id="782">
+        <label>richdem/common/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>ctime</label>
+      </node>
+      <node id="771">
+        <label>vector</label>
+      </node>
+      <node id="767">
+        <label>sstream</label>
+      </node>
+      <node id="787">
+        <label>sys/time.h</label>
+      </node>
+      <node id="766">
+        <label>iostream</label>
+      </node>
+      <node id="784">
+        <label>richdem/common/ManagedVector.hpp</label>
+        <link refid="ManagedVector_8hpp_source"/>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>gdal.hpp</label>
+        <link refid="gdal_8hpp_source"/>
+      </node>
+      <node id="788">
+        <label>richdem/common/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>richdem/common/constants.hpp</label>
+        <link refid="constants_8hpp"/>
+      </node>
+      <node id="775">
+        <label>algorithm</label>
+      </node>
+      <node id="785">
+        <label>memory</label>
+      </node>
+      <node id="765">
+        <label>richdem/common/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="789">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp"/>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="791" relation="include">
+        </childnode>
+      </node>
+      <node id="791">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_richdem_OCallaghan1984_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_OCallaghan1984_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;richdem/common/logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Array2D_8hpp" kindref="compound">richdem/common/Array2D.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ProgressBar_8hpp" kindref="compound">richdem/common/ProgressBar.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>Add<sp/>Marks<sp/>et<sp/>al<sp/>(1984)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/>FM_OCallaghan(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;E&gt;<sp/>&amp;elevations){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>RDLOG_ALG_NAME&lt;&lt;</highlight><highlight class="stringliteral">&quot;O&apos;Callaghan<sp/>(1984)/Marks<sp/>(1984)<sp/>Flow<sp/>Accumulation<sp/>(aka<sp/>D8)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>RDLOG_CITATION&lt;&lt;</highlight><highlight class="stringliteral">&quot;O&apos;Callaghan,<sp/>J.F.,<sp/>Mark,<sp/>D.M.,<sp/>1984.<sp/>The<sp/>Extraction<sp/>of<sp/>Drainage<sp/>Networks<sp/>from<sp/>Digital<sp/>Elevation<sp/>Data.<sp/>Computer<sp/>vision,<sp/>graphics,<sp/>and<sp/>image<sp/>processing<sp/>28,<sp/>323--344.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>std::vector&lt;float&gt;<sp/>props(9*elevations.size(),0);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>ProgressBar<sp/>progress;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>progress.start(elevations.size());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>omp<sp/>parallel<sp/>for<sp/>collapse(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y=1;y&lt;elevations.height()-1;y++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=1;x&lt;elevations.width()-1;x++){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>++progress;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ci<sp/>=<sp/>elevations.xyToI(x,y);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>E<sp/><sp/><sp/>e<sp/><sp/>=<sp/>elevations(x,y);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lowest_n<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>E<sp/><sp/><sp/>lowest_n_elev<sp/>=<sp/>std::numeric_limits&lt;E&gt;::max();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n=1;n&lt;=8;n++){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ni<sp/>=<sp/>ci<sp/>+<sp/>elevations.nshift(n);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(elevations.isNoData(ni))<sp/></highlight><highlight class="comment">//TODO:<sp/>Don&apos;t<sp/>I<sp/>want<sp/>water<sp/>to<sp/>drain<sp/>this<sp/>way?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>E<sp/>ne<sp/>=<sp/>elevations(ni);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ne&gt;=e)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ne&lt;lowest_n_elev){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lowest_n_elev<sp/>=<sp/>ne;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lowest_n<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lowest_n==0)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(elevations(ci)&gt;=elevations(ci+elevations.nshift(lowest_n)));<sp/></highlight><highlight class="comment">//Ensure<sp/>flow<sp/>goes<sp/>downhill</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>props.at(9*ci+lowest_n)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>progress.stop();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>props;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">std::vector&lt;float&gt;<sp/>FM_D8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;E&gt;<sp/>&amp;elevations){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FM_OCallaghan(elevations);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp"/>
+  </compounddef>
+</doxygen>

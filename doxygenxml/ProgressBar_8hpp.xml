@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ProgressBar_8hpp" kind="file" language="C++">
+    <compoundname>ProgressBar.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">sys/time.h</includes>
+    <includes local="no">stdexcept</includes>
+    <includes refid="timer_8hpp" local="yes">richdem/common/timer.hpp</includes>
+    <includedby refid="Lindsay2016_8hpp" local="yes">/z/richdem/include/richdem/depressions/Lindsay2016.hpp</includedby>
+    <includedby refid="flat__resolution_8hpp" local="yes">/z/richdem/include/richdem/flats/flat_resolution.hpp</includedby>
+    <includedby refid="d8__flowdirs_8hpp" local="yes">/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</includedby>
+    <includedby refid="dinf__flowdirs_8hpp" local="yes">/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</includedby>
+    <includedby refid="Fairfield1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</includedby>
+    <includedby refid="Freeman1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Freeman1991.hpp</includedby>
+    <includedby refid="Holmgren1994_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</includedby>
+    <includedby refid="OCallaghan1984_8hpp" local="yes">/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</includedby>
+    <includedby refid="Quinn1991_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Quinn1991.hpp</includedby>
+    <includedby refid="Tarboton1997_8hpp" local="yes">/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</includedby>
+    <includedby refid="d8__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/d8_methods.hpp</includedby>
+    <includedby refid="dinf__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/dinf_methods.hpp</includedby>
+    <includedby refid="flow__accumulation__generic_8hpp" local="no">/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</includedby>
+    <includedby refid="terrain__attributes_8hpp" local="yes">/z/richdem/include/richdem/methods/terrain_attributes.hpp</includedby>
+    <includedby refid="misc__methods_8hpp" local="yes">/z/richdem/include/richdem/misc/misc_methods.hpp</includedby>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="214">
+        <label>/z/richdem/include/richdem/common/ProgressBar.hpp</label>
+        <link refid="ProgressBar_8hpp"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>iomanip</label>
+      </node>
+      <node id="219">
+        <label>stdexcept</label>
+      </node>
+      <node id="215">
+        <label>string</label>
+      </node>
+      <node id="218">
+        <label>sys/time.h</label>
+      </node>
+      <node id="216">
+        <label>iostream</label>
+      </node>
+      <node id="220">
+        <label>richdem/common/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="221">
+        <label>/z/richdem/include/richdem/common/ProgressBar.hpp</label>
+        <link refid="ProgressBar_8hpp"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>/z/richdem/include/richdem/methods/d8_methods.hpp</label>
+        <link refid="d8__methods_8hpp"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>/z/richdem/include/richdem/misc/misc_methods.hpp</label>
+        <link refid="misc__methods_8hpp"/>
+      </node>
+      <node id="228">
+        <label>/z/richdem/include/richdem/depressions/depressions.hpp</label>
+        <link refid="depressions_8hpp_source"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</label>
+        <link refid="flow__accumulation__generic_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>/z/richdem/include/richdem/flowmet/Freeman1991.hpp</label>
+        <link refid="Freeman1991_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>/z/richdem/include/richdem/flowmet/Quinn1991.hpp</label>
+        <link refid="Quinn1991_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>/z/richdem/include/richdem/flats/flat_resolution_dinf.hpp</label>
+        <link refid="flat__resolution__dinf_8hpp"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</label>
+        <link refid="d8__flowdirs_8hpp"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>/z/richdem/include/richdem/depressions/Lindsay2016.hpp</label>
+        <link refid="Lindsay2016_8hpp_source"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>/z/richdem/include/richdem/flats/garbrecht.hpp</label>
+        <link refid="garbrecht_8hpp_source"/>
+      </node>
+      <node id="224">
+        <label>/z/richdem/include/richdem/flats/flat_resolution.hpp</label>
+        <link refid="flat__resolution_8hpp"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</label>
+        <link refid="Tarboton1997_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+      <node id="241">
+        <label>/z/richdem/include/richdem/methods/terrain_attributes.hpp</label>
+        <link refid="terrain__attributes_8hpp_source"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>/z/richdem/include/richdem/depressions/Barnes2014.hpp</label>
+        <link refid="Barnes2014_8hpp"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</label>
+        <link refid="dinf__flowdirs_8hpp"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</label>
+        <link refid="Holmgren1994_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrichdem_1_1ProgressBar" prot="public">richdem::ProgressBar</innerclass>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ProgressBar_8hpp_1a889ec205c635b219999c761b28cc39ba" prot="public" static="no">
+        <name>omp_get_thread_num</name>
+        <param></param>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Macros used to disguise the fact that we do not have multithreading enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="34" column="12" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ProgressBar_8hpp_1a4353281743925f182316dba7cda58fee" prot="public" static="no">
+        <name>omp_get_num_threads</name>
+        <param></param>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/ProgressBar.hpp" line="35" column="11" bodyfile="/z/richdem/include/richdem/common/ProgressBar.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a handy progress bar object so users don&apos;t get impatient. </para>    </briefdescription>
+    <detaileddescription>
+<para>The progress bar indicates to the user how much work has been completed, how much is left, and how long it is estimated to take. It accounts for multithreading by assuming uniform progress by all threads.</para><para>Define the global macro <computeroutput>NOPROGRESS</computeroutput> disables the progress bar, which may speed up the program.</para><para>The progress bar looks like this: <verbatim>[===================================               ] (70% - 0.2s - 1 threads)
+</verbatim></para><para>Richard Barnes (<ulink url="mailto:rbarnes@umn.edu">rbarnes@umn.edu</ulink>), 2015 </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_richdem_progress_bar_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_progress_bar_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8hpp" kindref="compound">richdem/common/timer.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#ifdef<sp/>_OPENMP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;omp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="ProgressBar_8hpp_1a889ec205c635b219999c761b28cc39ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>omp_get_thread_num()<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>omp_get_num_threads()<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classrichdem_1_1ProgressBar" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrichdem_1_1ProgressBar" kindref="compound">ProgressBar</ref>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>total_work;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>next_update;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>call_diff;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>work_done;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>old_percent;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrichdem_1_1Timer" kindref="compound">Timer</ref><sp/><sp/><sp/><sp/>timer;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearConsoleLine()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;\r\033[2K&quot;</highlight><highlight class="normal">&lt;&lt;std::flush;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" kindref="member">start</ref>(uint32_t<sp/>total_work){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timer<sp/>=<sp/><ref refid="classrichdem_1_1Timer" kindref="compound">Timer</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timer.<ref refid="classrichdem_1_1Timer_1a6c1403aed0cc07ac87309e63a87d2217" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;total_work<sp/>=<sp/>total_work;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>next_update<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>call_diff<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>total_work/200;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>old_percent<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>work_done<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>clearConsoleLine();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kindref="member">update</ref>(uint32_t<sp/>work_done0){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>NOPROGRESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="ProgressBar_8hpp_1a889ec205c635b219999c761b28cc39ba" kindref="member">omp_get_thread_num</ref>()!=0)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>work_done<sp/>=<sp/>work_done0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(work_done&lt;next_update)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>next_update<sp/>+=<sp/>call_diff;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>percent<sp/>=<sp/>(uint8_t)(work_done*omp_get_num_threads()*100/total_work);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(percent&gt;100)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percent=100;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(percent==old_percent)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>old_percent=percent;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;\r\033[2K[&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::string(percent/2,<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">)&lt;&lt;std::string(50-percent/2,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]<sp/>(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;percent&lt;&lt;</highlight><highlight class="stringliteral">&quot;%<sp/>-<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;std::fixed&lt;&lt;std::setprecision(1)&lt;&lt;timer.<ref refid="classrichdem_1_1Timer_1a8d1281c24a59112849fe554156eba7dd" kindref="member">lap</ref>()/percent*(100-percent)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;s<sp/>-<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;omp_get_num_threads()&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>threads)&quot;</highlight><highlight class="normal">&lt;&lt;std::flush;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classrichdem_1_1ProgressBar_1a7ec00bd76a94841f8d069fee90394ade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrichdem_1_1ProgressBar" kindref="compound">ProgressBar</ref>&amp;<sp/><ref refid="classrichdem_1_1ProgressBar_1a7ec00bd76a94841f8d069fee90394ade" kindref="member">operator++</ref>(){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>work_done++;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kindref="member">update</ref>(work_done);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" kindref="member">stop</ref>(){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>clearConsoleLine();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>timer.<ref refid="classrichdem_1_1Timer_1a94adfb2b628004e774b8d8ac4d6654b2" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timer.<ref refid="classrichdem_1_1Timer_1a3866ded735d646bf1749eb4c553a7b75" kindref="member">accumulated</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classrichdem_1_1ProgressBar_1a1c40aee1793e0aad20851ead4c928a96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classrichdem_1_1ProgressBar_1a1c40aee1793e0aad20851ead4c928a96" kindref="member">time_it_took</ref>(){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timer.<ref refid="classrichdem_1_1Timer_1a3866ded735d646bf1749eb4c553a7b75" kindref="member">accumulated</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>cellsProcessed()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>work_done;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/common/ProgressBar.hpp"/>
+  </compounddef>
+</doxygen>

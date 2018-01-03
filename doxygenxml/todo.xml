@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Member <ref refid="d8__flowdirs_8hpp_1a772bed1aeafb81da6bfbc8b251526eaa" kindref="member">richdem::d8_flow_directions</ref>  (const Array2D&lt; T &gt; &amp;elevations, Array2D&lt; U &gt; &amp;flowdirs)</term></varlistentry>
+<listitem><para>Combine dinf and d8 neighbour systems</para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

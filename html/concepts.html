@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Concepts &mdash; RichDEM 0.0.03 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="RichDEM 0.0.03 documentation" href="index.html"/>
+        <link rel="next" title="Example DEMs" href="example_dems.html"/>
+        <link rel="prev" title="Ways To Use It" href="using_it.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RichDEM
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">RichDEM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Design Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parsable_output.html">Parsable Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citations.html">Citing RichDEM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_it.html">Ways To Use It</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Operations</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gridded-data">Gridded Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metadata">Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geotransform">Geotransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nodata-values">NoData values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#processing-history">Processing History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#in-place-operations">In-Place Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_dems.html">Example DEMs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loading_data.html">Loading Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="depression_filling.html">Depression-Filling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flow_metrics.html">Flow Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flow_metrics.html#side-by-side-comparisons-of-flow-metrics">Side-by-Side Comparisons of Flow Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flow_accumulation.html">Flow Accumulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terrain_attributes.html">Terrain Attributes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples_python.html">Python Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cpp_api.html">RichDEM C++ Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_api.html">RichDEM Python Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Testing and Correctness</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="testcorrect.html">Testing Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testcorrect.html#correctness">Correctness</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Extra Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Specific Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html#publications">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RichDEM</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Concepts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/concepts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="concepts">
+<h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="gridded-data">
+<h2>Gridded Data<a class="headerlink" href="#gridded-data" title="Permalink to this headline">¶</a></h2>
+<p>RichDEM assumes that data is provided in the form of a rectangular grid of cells
+with some <em>width</em> and <em>height</em>. Furthermore, the data comprising this grid must
+be laid out in a flat array such that the value of any cell <code class="xref cpp cpp-any docutils literal"><span class="pre">(x,y)</span></code> can be
+accessed via the equation <code class="xref cpp cpp-any docutils literal"><span class="pre">y*width+x</span></code>. This is known as <strong>row-major</strong> ordering.</p>
+<p>Data can be passed to RichDEM in one of three ways.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Data can be loaded via GDAL. GDAL handles the heavy lifting of ensuring
+that data is loaded in a form which complies with the above assumptions.</li>
+<li>Data can be manually added to a <code class="xref cpp cpp-any docutils literal"><span class="pre">richdem::Array2D</span></code> object (C++) or a
+<code class="xref cpp cpp-any docutils literal"><span class="pre">richdem.rdarray</span></code> object (Python).</li>
+<li>A <code class="xref cpp cpp-any docutils literal"><span class="pre">richdem::Array2D</span></code> (C++) or <code class="xref cpp cpp-any docutils literal"><span class="pre">richdem.rdarray</span></code> (Python) object can be
+used to wrap existing row-major memory. This capability allows RichDEM to
+easily integrate with existing code.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="metadata">
+<h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<p>A RichDEM array is accompanied by several kinds of metadata. These can be loaded
+by GDAL or specified manually.</p>
+<blockquote>
+<div><ul class="simple">
+<li>A <strong>NoData value</strong>, as discussed below.</li>
+<li>A <strong>projection</strong>. This is, typically, a PROJ4 or WKT string that identifies
+the projection the data maps to. The choice of projection does not affect
+RichDEM’s operations.</li>
+<li>A <strong>geotransform</strong>. This is a six element array which determines where in a
+projection a RichDEM array’s data is located, as well as the cell sizes.
+Further details are below. This setting does affect how RichDEM processes
+data.</li>
+<li>A <strong>metadata</strong> entry which contains arbitrary metadata strings such as
+<code class="xref cpp cpp-any docutils literal"><span class="pre">PROCESSING_HISTORY</span></code> (see below).</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="geotransform">
+<h2>Geotransform<a class="headerlink" href="#geotransform" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>geotransform</strong> is a six element array which determines where in a
+projection a RichDEM array’s data is located, as well as the cell sizes.</p>
+<p>Typically, the geotransform is an affine transform consisting of six
+coefficients which map pixel/line coordinates into a georeferenced space using
+the following relationship:</p>
+<blockquote>
+<div>Xgeo = GT(0) + Xpixel*GT(1) + Yline*GT(2)
+Ygeo = GT(3) + Xpixel*GT(4) + Yline*GT(5)</div></blockquote>
+<p>In case of north up images, the <code class="xref cpp cpp-any docutils literal"><span class="pre">GT(2)</span></code> and <code class="xref cpp cpp-any docutils literal"><span class="pre">GT(4)</span></code> coefficients are zero, and
+the <code class="xref cpp cpp-any docutils literal"><span class="pre">GT(1)</span></code> is pixel width, and <code class="xref cpp cpp-any docutils literal"><span class="pre">GT(5)</span></code> is pixel height. The <code class="xref cpp cpp-any docutils literal"><span class="pre">(GT(0),GT(3))</span></code>
+position is the top left corner of the top left pixel of the raster.</p>
+<p>Note that the pixel/line coordinates in the above are from <code class="xref cpp cpp-any docutils literal"><span class="pre">(0.0,0.0)</span></code> at the
+top left corner of the top left pixel to (width_in_pixels,height_in_pixels) at
+the bottom right corner of the bottom right pixel. The pixel/line location of
+the center of the top left pixel would therefore be <code class="xref cpp cpp-any docutils literal"><span class="pre">(0.5,0.5)</span></code></p>
+<p>(Text drawn from GDAL documentation.)</p>
+</div>
+<div class="section" id="nodata-values">
+<h2>NoData values<a class="headerlink" href="#nodata-values" title="Permalink to this headline">¶</a></h2>
+<p>RichDEM recognizes cells with a <em>NoData</em> value and treats them in special ways.
+The <em>NoData</em> value is a number, such as <code class="xref cpp cpp-any docutils literal"><span class="pre">-9999</span></code> which represents a cell that
+isn’t part of a data set.</p>
+<p>In depression-filling and the determination of flow directions, <em>NoData</em> cells
+are treated as having a lower elevation than any other cell, which enforces
+drainage to the edge of the DEM.</p>
+<p>Because <em>NoData</em> values fundamental affect operations, RichDEM requires that you
+specify what <em>NoData</em> value it should use.</p>
+<p>It is important that you choose a value that doesn’t correspond to any of your
+actual data values. In 1-byte/8-bit DEMs this may not be possible since there
+are only 256 distinct values available. In this case, you should cast your data
+to a 2-byte/16-bit form and choose a <em>NoData</em> value that is not in the range
+<code class="xref cpp cpp-any docutils literal"><span class="pre">0-255</span></code>.</p>
+<p>Other terrain analysis programs may use a binary masking array to indicate which
+cells are <em>NoData</em>. RichDEM does not do this because usually a minority of cells
+are <em>NoData</em> and a separate array increases the amount of memory used and
+reduces cache utilization, both of which may reduce performance.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="32%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Language</th>
+<th class="head">Set</th>
+<th class="head">Get</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Python</td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.no_data=-1</span></code></td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.no_data</span></code></td>
+</tr>
+<tr class="row-odd"><td>C++</td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.setNoData(-1)</span></code></td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.noData(</span> <span class="pre">)</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="processing-history">
+<h2>Processing History<a class="headerlink" href="#processing-history" title="Permalink to this headline">¶</a></h2>
+<p>RichDEM automagically keeps track of what operations are performed on your data.
+This means that your outputs will contain an exact record of what operations
+were used to produce them. This helps ensure reproducibility. And, remember,
+good science is reproducible science.</p>
+<p>In the following, a series of operations is performed and the Processing History
+is then examined.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">richdem</span> <span class="kn">as</span> <span class="nn">rd</span>
+<span class="n">dem</span>   <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">LoadGDAL</span><span class="p">(</span><span class="s2">&quot;../data/beauford.tif&quot;</span><span class="p">)</span>
+<span class="n">rd</span><span class="o">.</span><span class="n">FillDepressions</span><span class="p">(</span><span class="n">dem</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">in_place</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">accum</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">FlowAccumulation</span><span class="p">(</span><span class="n">dem</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;D8&#39;</span><span class="p">)</span>
+<span class="n">rd</span><span class="o">.</span><span class="n">SaveGDAL</span><span class="p">(</span><span class="s1">&#39;/z/out.tif&#39;</span><span class="p">,</span> <span class="n">accum</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">accum</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;PROCESSING_HISTORY&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The processing history of a saved dataset can be viewed using a few different
+commands:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>gdalinfo /z/out.tif
+rd_info  /z/out.tif
+</pre></div>
+</div>
+<p>The processing history appears as follows.</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>2017-12-20 17:55:19.892388 UTC | RichDEM (Python 0.0.4) (hash=e02d5e2, hashdate=2017-12-19 23:52:52 -0600) | LoadGDAL(filename=../data/beauford.tif, no_data=-9999.0)
+2017-12-20 17:55:19.900234 UTC | RichDEM (Python 0.0.4) (hash=e02d5e2, hashdate=2017-12-19 23:52:52 -0600) | FillDepressions(dem, epsilon=False)
+2017-12-20 17:55:20.514098 UTC | RichDEM (Python 0.0.4) (hash=e02d5e2, hashdate=2017-12-19 23:52:52 -0600) | FlowAccumulation(dem, method=D8)
+</pre></div>
+</div>
+<p>Note that the <strong>first column</strong> is the time at which the operation was performed,
+the <strong>second column</strong> is the program which performed the operation, and the
+<strong>third column</strong> is the command which was run.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Language</th>
+<th class="head">Command</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Python</td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.metadata</span></code></td>
+</tr>
+<tr class="row-odd"><td>C++</td>
+<td><code class="xref cpp cpp-any docutils literal"><span class="pre">rda.metadata</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="in-place-operations">
+<h2>In-Place Operations<a class="headerlink" href="#in-place-operations" title="Permalink to this headline">¶</a></h2>
+<p>To save memory RichDEM performs some operations, such as depression-filling, in
+place. This means that the data is modified and the original data will be lost
+unless it has been copied.</p>
+<p>For instance, in Python <code class="xref cpp cpp-any docutils literal"><span class="pre">FillDepressions</span></code> has two distinct forms:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#In-place filling, no return value</span>
+<span class="n">rd</span><span class="o">.</span><span class="n">FillDepressions</span><span class="p">(</span><span class="n">dem</span><span class="p">,</span> <span class="n">in_place</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c1">#Fill a copy</span>
+<span class="n">dem_filled</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">FillDepressions</span><span class="p">(</span><span class="n">dem</span><span class="p">,</span> <span class="n">in_place</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>whereas in C++, a copy must be made:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#In-place filling, no return value</span>
+<span class="n">richdem</span><span class="p">::</span><span class="n">FillDepressions</span><span class="p">(</span><span class="n">dem</span><span class="p">)</span>
+
+<span class="c1">#Fill a copy</span>
+<span class="n">auto</span> <span class="n">demcopy</span> <span class="o">=</span> <span class="n">dem</span><span class="p">;</span> <span class="o">//</span><span class="n">TODO</span><span class="p">:</span> <span class="n">Make</span> <span class="n">sure</span> <span class="n">this</span> <span class="n">syntax</span> <span class="ow">is</span> <span class="n">right</span>
+<span class="n">richdem</span><span class="p">::</span><span class="n">FillDepressions</span><span class="p">(</span><span class="n">demcopy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="example_dems.html" class="btn btn-neutral float-right" title="Example DEMs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="using_it.html" class="btn btn-neutral" title="Ways To Use It" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Richard Barnes.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.03',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

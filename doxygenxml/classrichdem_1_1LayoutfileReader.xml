@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1LayoutfileReader" kind="class" language="C++" prot="public">
+    <compoundname>richdem::LayoutfileReader</compoundname>
+    <includes refid="Layoutfile_8hpp" local="no">Layoutfile.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1a95d80d64adbc229c0128fff6c9d8dcce" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; std::string &gt; &gt; richdem::LayoutfileReader::fgrid</definition>
+        <argsstring></argsstring>
+        <name>fgrid</name>
+        <briefdescription>
+<para>Stores the grid of filenames extracted from the layoutfile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="73" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1a428f4af56b8506178b50e25b8e481db1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::LayoutfileReader::gridy</definition>
+        <argsstring></argsstring>
+        <name>gridy</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="75" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1a2260e3efd788cc5c722a762a8bf01db8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::LayoutfileReader::gridx</definition>
+        <argsstring></argsstring>
+        <name>gridx</name>
+        <initializer>= -2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="76" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1ade7855bcbac72b9717e510bb4db37254" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int richdem::LayoutfileReader::new_row</definition>
+        <argsstring></argsstring>
+        <name>new_row</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="77" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1af36de86a5b0ed0d079effd3eb16176c4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string richdem::LayoutfileReader::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="79" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1a861f7fdd02750969e7fc85c2b4612af6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string richdem::LayoutfileReader::basename</definition>
+        <argsstring></argsstring>
+        <name>basename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="80" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1LayoutfileReader_1a1a3737ff9ea9b041e8f6ad114b58a17d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string richdem::LayoutfileReader::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="81" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1ac9788f7dbe4c442c491fb9572907766f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>richdem::LayoutfileReader::LayoutfileReader</definition>
+        <argsstring>(std::string layout_filename)</argsstring>
+        <name>LayoutfileReader</name>
+        <param>
+          <type>std::string</type>
+          <declname>layout_filename</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classrichdem_1_1LayoutfileReader" kindref="compound">LayoutfileReader</ref> object reading from a given file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Richard Barnes</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layout_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layoutfile to read from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="88" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="88" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a57bb32a2cfe120b283f56bfb466269db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::LayoutfileReader::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>Advance the reader to the next layoutfile entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if reader advanced successfully; false if not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="148" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="148" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a82ac4e947b5a29764f92e6350e37250f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::LayoutfileReader::newRow</definition>
+        <argsstring>() const</argsstring>
+        <name>newRow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the current entry is the beginning of a new row. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="167" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a2dd3f8fe870c9ed81fe81eab3fedadeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; richdem::LayoutfileReader::getFilename</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current entry&apos;s filename without the path (e.g. &quot;file.ext&quot;). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="172" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a9aa2bda19aa1878d518c07c54d34838a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; richdem::LayoutfileReader::getBasename</definition>
+        <argsstring>() const</argsstring>
+        <name>getBasename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current entry&apos;s filename without the path or extension (e.g. &quot;file&quot;). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="177" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a4c90f0b86536fe3261aebcccc00f3832" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string richdem::LayoutfileReader::getFullPath</definition>
+        <argsstring>() const</argsstring>
+        <name>getFullPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current entry&apos;s path + filename (e.g. &quot;path/to/file.ext&quot;). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="182" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1aba8da19424c08a88e47b487e0d61fdab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string richdem::LayoutfileReader::getGridLocName</definition>
+        <argsstring>() const</argsstring>
+        <name>getGridLocName</name>
+        <briefdescription>
+<para>Return a string representation of the current entry&apos;s coordinates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A layoutfile is a 2D grid of file names. This method returns the current entry&apos;s position in that grid as <computeroutput>&lt;X&gt;_&lt;Y&gt;</computeroutput></para><para><simplesect kind="return"><para>Current entry&apos;s position as a string of the form &lt;X&gt;_&lt;Y&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="192" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1aeb0b961f037db5fa7c04f43fffe0d8d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; richdem::LayoutfileReader::getPath</definition>
+        <argsstring>() const</argsstring>
+        <name>getPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Path of layoutfile: of &quot;path/to/layoutfile.layout&quot; returns &quot;path/to/&quot;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="197" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a0bfdfc87d8eac28abd8841b3b8b0a83a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool richdem::LayoutfileReader::isNullTile</definition>
+        <argsstring>() const</argsstring>
+        <name>isNullTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the current entry was a blank </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="202" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a8de9c48378fb5b70859e5e95b12934a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int richdem::LayoutfileReader::getX</definition>
+        <argsstring>() const</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>X-coordinate of the current entry. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="207" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classrichdem_1_1LayoutfileReader_1a5bff4165df79632dd73b96429845dad3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int richdem::LayoutfileReader::getY</definition>
+        <argsstring>() const</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Y-coordinate of the current entry. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="212" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="212" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used for reading a layoutfile describing a tiled dataset. </para>    </briefdescription>
+    <detaileddescription>
+<para>The class acts as a generator. The layoutfile is read on construction and its contents retrieved with <ref refid="classrichdem_1_1LayoutfileReader_1a57bb32a2cfe120b283f56bfb466269db" kindref="member">next()</ref>. The Layoutfile specification can be found in <ref refid="Layoutfile_8hpp" kindref="compound">Layoutfile.hpp</ref>. </para>    </detaileddescription>
+    <location file="/z/richdem/include/richdem/common/Layoutfile.hpp" line="70" column="1" bodyfile="/z/richdem/include/richdem/common/Layoutfile.hpp" bodystart="70" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1LayoutfileReader_1a861f7fdd02750969e7fc85c2b4612af6" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>basename</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a95d80d64adbc229c0128fff6c9d8dcce" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>fgrid</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1af36de86a5b0ed0d079effd3eb16176c4" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>filename</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a9aa2bda19aa1878d518c07c54d34838a" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getBasename</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a2dd3f8fe870c9ed81fe81eab3fedadeb" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getFilename</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a4c90f0b86536fe3261aebcccc00f3832" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getFullPath</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1aba8da19424c08a88e47b487e0d61fdab" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getGridLocName</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1aeb0b961f037db5fa7c04f43fffe0d8d1" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getPath</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a8de9c48378fb5b70859e5e95b12934a7" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getX</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a5bff4165df79632dd73b96429845dad3" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>getY</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a2260e3efd788cc5c722a762a8bf01db8" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>gridx</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a428f4af56b8506178b50e25b8e481db1" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>gridy</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a0bfdfc87d8eac28abd8841b3b8b0a83a" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>isNullTile</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1ac9788f7dbe4c442c491fb9572907766f" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>LayoutfileReader</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1ade7855bcbac72b9717e510bb4db37254" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>new_row</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a82ac4e947b5a29764f92e6350e37250f" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>newRow</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a57bb32a2cfe120b283f56bfb466269db" prot="public" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>next</name></member>
+      <member refid="classrichdem_1_1LayoutfileReader_1a1a3737ff9ea9b041e8f6ad114b58a17d" prot="private" virt="non-virtual"><scope>richdem::LayoutfileReader</scope><name>path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

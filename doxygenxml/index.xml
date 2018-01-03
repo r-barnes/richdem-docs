@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classrichdem_1_1A2Array2D" kind="class"><name>richdem::A2Array2D</name>
+    <member refid="classrichdem_1_1A2Array2D_1a7b34441afc336b7f1c60c28217ab908b" kind="variable"><name>flipH</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ae4a762dd9c003a55ba6c2a43ae023814" kind="variable"><name>flipV</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a894eb3f57435ced6c639e77d83f92698" kind="friend"><name>A2Array2D</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a9d856d61aa7b81aa16b756340cb66e98" kind="variable"><name>null_tile_quick</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1af0722bf842ca10084e677b9261dc32f1" kind="variable"><name>quick_width_in_tiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a1657837ee5957cd4d07ba6def338c3a8" kind="variable"><name>quick_height_in_tiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1add8406d2ff4e194cc51eac15f2be9412" kind="variable"><name>data</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ab50fa2125a80af0575e41a33e240be8a" kind="variable"><name>lru</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ae468b46ab3e19148d7edeb02365e5ac0" kind="variable"><name>not_null_tiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a005a76cd40b303432c2cf798d007d7ea" kind="variable"><name>total_width_in_cells</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a49d0b1c94c3fda0cffea4a75b42e9684" kind="variable"><name>total_height_in_cells</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a51a0cda2ffdf12252bbd49090e2e9de9" kind="variable"><name>per_tile_width</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1acce775fd037bd2a71371402087744d14" kind="variable"><name>per_tile_height</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a609b9828a70b015f614365561d73dab4" kind="variable"><name>evictions</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a7e07fad777ebb611f8d0921d21c322e6" kind="variable"><name>cells_in_not_null_tiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ad68719d2bd32e523869be82b2b7408e8" kind="variable"><name>no_data_to_set</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a87939c96bfdafc99684cfeca20b63fb4" kind="variable"><name>readonly</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1aa39d386f9b661db6535095369157126b" kind="function"><name>_LoadTile</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a018b66e1b51f6f334fd73e02e6ace33d" kind="function"><name>A2Array2D</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ac9f6071604d46898603e92ee84378b18" kind="function"><name>A2Array2D</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1aec6afe852c0808dcb6e835f99daac292" kind="function"><name>A2Array2D</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a91d732549e23bc3a8b68a4fb0fcca062" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1aa7fcca084ad2ab4ada16a60417f6373f" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a840cdf6ed9560f3e422dd94037f17575" kind="function"><name>makeQuadIndex</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a0a488350e75b36097b4f2e7fad862ea4" kind="function"><name>width</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a5efadc14969ba9a525d6d88817825d51" kind="function"><name>height</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ae703da5c118fd614492bb9695561e074" kind="function"><name>widthInTiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a36fd026190a87010ff7a91b0d2eaa165" kind="function"><name>heightInTiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1adb190d654cbd3aea4ba9ff6c0269383e" kind="function"><name>notNullTiles</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1aeed6c7ceafe06815d56045b998fd92fe" kind="function"><name>tileWidth</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a1aec11138aa62766b6c72a3c84624198" kind="function"><name>tileHeight</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ac2462b666e27845636c64ee70903e1a4" kind="function"><name>stdTileHeight</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a13d3632b2331196f8263513756661166" kind="function"><name>stdTileWidth</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a3195d18e6971d3158e99521c4ce4000d" kind="function"><name>setAll</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a89d6dfb8a363e7cf1c7bebdacc657599" kind="function"><name>isNoData</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a4fecd549e778603498d5fd1abe65eed0" kind="function"><name>isNoData</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a1b970f9f776bf9814770a9cc52430b82" kind="function"><name>isReadonly</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a848231aecc8ccf3289aa18174b38c18d" kind="function"><name>myGDALType</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a316aecb774191fb26245d801d06bd210" kind="function"><name>saveGDAL</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a1c693862c748ed3273a2d715d6441be5" kind="function"><name>saveUnifiedGDAL</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1aca6804816e5d85a1e2bba2a492cc3a51" kind="function"><name>setNoData</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1ad032c67197ccdbb183116a7c9dbc37af" kind="function"><name>getEvictions</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1af7bb3f6cc5017d364406952422ff4e20" kind="function"><name>isNullTile</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a85aad7959efab5a78206495968cfc2f3" kind="function"><name>isEdgeCell</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a86f60df807b615c342708244389cc6c3" kind="function"><name>in_grid</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1afb20cd8bdce12e4c52bceed2258c04ca" kind="function"><name>isInteriorCell</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1a2fac3476fd683b41f247e4fa71c4c029" kind="function"><name>printStamp</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1abab2fdf00d93f423d35e9e2315ec22d9" kind="function"><name>loadTile</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1Array2D" kind="class"><name>richdem::Array2D</name>
+    <member refid="classrichdem_1_1Array2D_1a0bfb96a9ffe2a20e53241ac7b5d73b39" kind="variable"><name>view_xoff</name></member>
+    <member refid="classrichdem_1_1Array2D_1ab26940a23b9f9f59feffa3cb917536ee" kind="variable"><name>view_yoff</name></member>
+    <member refid="classrichdem_1_1Array2D_1a4bd7775bf275d5920a9db993cc945111" kind="typedef"><name>xy_t</name></member>
+    <member refid="classrichdem_1_1Array2D_1ad40dc9595d88463c1904fbabc0b8d513" kind="typedef"><name>i_t</name></member>
+    <member refid="classrichdem_1_1Array2D_1a5be102099f10c85498753a2e2b58943a" kind="variable"><name>filename</name></member>
+    <member refid="classrichdem_1_1Array2D_1af11077fd74c421f9c44b2526532032f7" kind="variable"><name>basename</name></member>
+    <member refid="classrichdem_1_1Array2D_1a9d20128cc08bddb3a9abde87f83b6c94" kind="variable"><name>geotransform</name></member>
+    <member refid="classrichdem_1_1Array2D_1a307eeb12fe318485694245293715eb0a" kind="variable"><name>projection</name></member>
+    <member refid="classrichdem_1_1Array2D_1a8f8e1a249f95b716acf3ed3f46bd2727" kind="variable"><name>metadata</name></member>
+    <member refid="classrichdem_1_1Array2D_1a301fb3841e3968ddd623129e2e8bdb95" kind="variable"><name>NO_I</name></member>
+    <member refid="classrichdem_1_1Array2D_1a335c96c00a46d6b064b5af268ae03e42" kind="friend"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a53bd8742a711fc25e68cbf04ed8b42ba" kind="variable"><name>_nshift</name></member>
+    <member refid="classrichdem_1_1Array2D_1ac31a1d103abc98b35036a1d41458a89f" kind="variable"><name>data</name></member>
+    <member refid="classrichdem_1_1Array2D_1a05b4f36ef8eedd8dad058fe27835d1dc" kind="variable"><name>no_data</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa8413c89286ee876bdbb0e9793ca579a" kind="variable"><name>num_data_cells</name></member>
+    <member refid="classrichdem_1_1Array2D_1ad211be87f0d3c1c3636077da2c654984" kind="variable"><name>view_width</name></member>
+    <member refid="classrichdem_1_1Array2D_1af32b79c4532e66c02beca2c3bde2ca4d" kind="variable"><name>view_height</name></member>
+    <member refid="classrichdem_1_1Array2D_1a7279a13a2e1eb62ae300e79c90f73c8d" kind="variable"><name>from_cache</name></member>
+    <member refid="classrichdem_1_1Array2D_1adb08b9d4dc6282bdd434d0d0eb151ae6" kind="function"><name>saveToCache</name></member>
+    <member refid="classrichdem_1_1Array2D_1a86f1c59bca6e9aebaef57684fca70db7" kind="function"><name>loadNative</name></member>
+    <member refid="classrichdem_1_1Array2D_1a3cd2e58b109d06c22fe7289b82d5c11c" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a761396d221d7291556c4d8c55dc47848" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a1d590bcacc7559187afea1968b4162cd" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a148d77b06c27ecaee1609dd62e9aba35" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a25d4416bab099b3d84b5323cc6fadf90" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a1b3a7a505460f34b3afc3081e5bb12f2" kind="function"><name>Array2D</name></member>
+    <member refid="classrichdem_1_1Array2D_1a4698388929ac68a9d773fbcb098b1396" kind="function"><name>setCacheFilename</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa3007abe1173f11a4d4d61ec0ec01987" kind="function"><name>dumpData</name></member>
+    <member refid="classrichdem_1_1Array2D_1a7e766a4b52d54748ef341c6c53f8c63b" kind="function"><name>loadData</name></member>
+    <member refid="classrichdem_1_1Array2D_1aabd697e3bd2323b724814cbd7a4e30aa" kind="function"><name>getData</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa7c4661b81d89c5c8aaa549b105f63c5" kind="function"><name>size</name></member>
+    <member refid="classrichdem_1_1Array2D_1ad4d72d15f5a6199631051038088bb306" kind="function"><name>width</name></member>
+    <member refid="classrichdem_1_1Array2D_1ab2e27ec2c5986596760a5256d92a2eb0" kind="function"><name>height</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae005cc46a59116f73d140ac14d5488e7" kind="function"><name>viewXoff</name></member>
+    <member refid="classrichdem_1_1Array2D_1a7881aac04d3ae1595dfe225822eb8a9b" kind="function"><name>viewYoff</name></member>
+    <member refid="classrichdem_1_1Array2D_1add549f66e781b7a1e786e8d1104a0f09" kind="function"><name>empty</name></member>
+    <member refid="classrichdem_1_1Array2D_1a80cb5415f73417724bb7fee3da21303a" kind="function"><name>noData</name></member>
+    <member refid="classrichdem_1_1Array2D_1ac26c2f3badff22a291a612009244200c" kind="function"><name>min</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae70941b33bafded93cf902039176ea79" kind="function"><name>max</name></member>
+    <member refid="classrichdem_1_1Array2D_1a2889163cf327d0a6fc35642c9dad0928" kind="function"><name>replace</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa378b43240a65521db793d3abcc9d251" kind="function"><name>countval</name></member>
+    <member refid="classrichdem_1_1Array2D_1a31d15a5b376d57f2763849aa97798673" kind="function"><name>i0</name></member>
+    <member refid="classrichdem_1_1Array2D_1a9405a874e0e6e8745eec19c191f92ce7" kind="function"><name>iToxy</name></member>
+    <member refid="classrichdem_1_1Array2D_1a6197b6cf8545ea48560755aad1c4a3ff" kind="function"><name>xyToI</name></member>
+    <member refid="classrichdem_1_1Array2D_1a2f3777d7d025150940044de05b78657c" kind="function"><name>nToI</name></member>
+    <member refid="classrichdem_1_1Array2D_1a87d2eb11c2403184eed1c00803252380" kind="function"><name>getN</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae3b8fe4e4eca43b6c5d0a173af238a84" kind="function"><name>nshift</name></member>
+    <member refid="classrichdem_1_1Array2D_1a59f8c3c430d4a88772cd40ebccaded11" kind="function"><name>operator==</name></member>
+    <member refid="classrichdem_1_1Array2D_1a2d89b410c05e05e7586bda960f4fafac" kind="function"><name>isNoData</name></member>
+    <member refid="classrichdem_1_1Array2D_1acaa72479b0c3c611e8762ee64efeaaa2" kind="function"><name>isNoData</name></member>
+    <member refid="classrichdem_1_1Array2D_1aaea204e9cb9d9663a00c6d4911dbafed" kind="function"><name>flipVert</name></member>
+    <member refid="classrichdem_1_1Array2D_1a5bfd9ca5e365960be0971c5b904cbccd" kind="function"><name>flipHorz</name></member>
+    <member refid="classrichdem_1_1Array2D_1a689b51dff70e674f35d2624c8d84700a" kind="function"><name>transpose</name></member>
+    <member refid="classrichdem_1_1Array2D_1abf160c36c4e75a94e959c0e77472989c" kind="function"><name>inGrid</name></member>
+    <member refid="classrichdem_1_1Array2D_1a0d245ac081a32e941191149031558e8e" kind="function"><name>isEdgeCell</name></member>
+    <member refid="classrichdem_1_1Array2D_1afd028c2d49f45bfc0974f5ae0e83452c" kind="function"><name>isTopLeft</name></member>
+    <member refid="classrichdem_1_1Array2D_1a8a2aa1e0f5db61e06fc69f8551652c05" kind="function"><name>isTopRight</name></member>
+    <member refid="classrichdem_1_1Array2D_1a3a86cbdbdc7f70fee0e9436b0972b431" kind="function"><name>isBottomLeft</name></member>
+    <member refid="classrichdem_1_1Array2D_1adfe6bb9a8defab262aec8c8bafc9d780" kind="function"><name>isBottomRight</name></member>
+    <member refid="classrichdem_1_1Array2D_1a8bd97837e201f46929de98733027118e" kind="function"><name>isTopRow</name></member>
+    <member refid="classrichdem_1_1Array2D_1a234360f3e3f805e5ed7ef5102b7af5cf" kind="function"><name>isBottomRow</name></member>
+    <member refid="classrichdem_1_1Array2D_1a6112a72471f0c1bf68c68bfabbe59af0" kind="function"><name>isLeftCol</name></member>
+    <member refid="classrichdem_1_1Array2D_1ad33b684114d99deb09706c169ec413d6" kind="function"><name>isRightCol</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa27ebf4ce083ee507aa896c440fc4f67" kind="function"><name>isEdgeCell</name></member>
+    <member refid="classrichdem_1_1Array2D_1a4fa61164507a4b9215e10102337bd784" kind="function"><name>setNoData</name></member>
+    <member refid="classrichdem_1_1Array2D_1ac4557b9827f5cdb390697611c4a64b2d" kind="function"><name>setAll</name></member>
+    <member refid="classrichdem_1_1Array2D_1a4baf4116eb21f3588877dfd0d0613aa2" kind="function"><name>resize</name></member>
+    <member refid="classrichdem_1_1Array2D_1a0f30210a07b4e4456a1480c1420347a9" kind="function"><name>resize</name></member>
+    <member refid="classrichdem_1_1Array2D_1accac03eeaa78b7fdffc1d205df0eea27" kind="function"><name>expand</name></member>
+    <member refid="classrichdem_1_1Array2D_1a7952f4d55b0c3d4eb3a07c53ee216f2a" kind="function"><name>countDataCells</name></member>
+    <member refid="classrichdem_1_1Array2D_1ac6e1f8d41a25c5dabfbe82483f5dec90" kind="function"><name>numDataCells</name></member>
+    <member refid="classrichdem_1_1Array2D_1a5853fbe67189c15a11d962607f05d0cb" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae8d34b43a02ca85c0d29497b6833d1ad" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1Array2D_1a3038dcec904dee5d9eaa760c7326f04b" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1Array2D_1a17d5c67b382a19d1ef2030e64d058878" kind="function"><name>operator()</name></member>
+    <member refid="classrichdem_1_1Array2D_1abc210a9b2a1d59cceb4018cd2256356d" kind="function"><name>topRow</name></member>
+    <member refid="classrichdem_1_1Array2D_1a9ac61a350f4f349480280832f755c8a9" kind="function"><name>bottomRow</name></member>
+    <member refid="classrichdem_1_1Array2D_1a4f48cfe4696c64a7d4129ae8a9d6e6f0" kind="function"><name>leftColumn</name></member>
+    <member refid="classrichdem_1_1Array2D_1a423ac5ee3aaa60210250970af2909ba0" kind="function"><name>rightColumn</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae1e38dacbe0c9c19a011bcc6e3b8008f" kind="function"><name>setRow</name></member>
+    <member refid="classrichdem_1_1Array2D_1a82d17862c97bf7009650cbe7c8c2fb07" kind="function"><name>setCol</name></member>
+    <member refid="classrichdem_1_1Array2D_1ae566470fdd3726b00a6bea17d47f1b80" kind="function"><name>getRowData</name></member>
+    <member refid="classrichdem_1_1Array2D_1a7744909fe63a6fde0f764ff3f73de1de" kind="function"><name>getColData</name></member>
+    <member refid="classrichdem_1_1Array2D_1aacd29d414b7407af6b29bd1f4bb92a7a" kind="function"><name>clear</name></member>
+    <member refid="classrichdem_1_1Array2D_1a096db974fe765563929ee9802a37ec3e" kind="function"><name>templateCopy</name></member>
+    <member refid="classrichdem_1_1Array2D_1a163be51f60e717d0a24a823463bf09a8" kind="function"><name>printStamp</name></member>
+    <member refid="classrichdem_1_1Array2D_1a5df6c0fe188199febdc7ebb3e8936773" kind="function"><name>printBlock</name></member>
+    <member refid="classrichdem_1_1Array2D_1aa75024bda64d01337f7c9cad997b70d0" kind="function"><name>printAll</name></member>
+    <member refid="classrichdem_1_1Array2D_1a96b0d0765e87542c9138b7cd29449ea3" kind="function"><name>getCellArea</name></member>
+    <member refid="classrichdem_1_1Array2D_1a33fb7dde408a1d4a49f6411417b4d725" kind="function"><name>getCellLengthX</name></member>
+    <member refid="classrichdem_1_1Array2D_1a826b748b165583ae5d19aef06b8cbaf6" kind="function"><name>getCellLengthY</name></member>
+    <member refid="classrichdem_1_1Array2D_1ad5b05b04051fb953d6c40e9453d60fc5" kind="function"><name>scale</name></member>
+    <member refid="classrichdem_1_1Array2D_1a1304aae0fa0f05ea01fc700d8c90dbbe" kind="function"><name>owned</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCell" kind="class"><name>richdem::GridCell</name>
+    <member refid="classrichdem_1_1GridCell_1ad0720d4f9d57365fc5abe3f4f63e32c9" kind="variable"><name>x</name></member>
+    <member refid="classrichdem_1_1GridCell_1acdf9ef83d894321472076b7562356485" kind="variable"><name>y</name></member>
+    <member refid="classrichdem_1_1GridCell_1aa4919ca2a8fbd0faffb2303ff8cd0eec" kind="function"><name>GridCell</name></member>
+    <member refid="classrichdem_1_1GridCell_1af7bb9c5f4a4721bc12899c5825283f70" kind="function"><name>GridCell</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCellZ" kind="class"><name>richdem::GridCellZ</name>
+    <member refid="classrichdem_1_1GridCellZ_1af493b78909ba0172fced847becafbb5a" kind="variable"><name>z</name></member>
+    <member refid="classrichdem_1_1GridCellZ_1aef204ac773f932c73ebccafe16ee90c6" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_1a629467e64ffe7665dbcf23d0a06deff0" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_1afd066d493749ab588824c3b8869b718b" kind="function"><name>operator&gt;</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCellZ_3_01double_01_4" kind="class"><name>richdem::GridCellZ&lt; double &gt;</name>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1a01ce418293fb7cb1484530eed55d235e" kind="variable"><name>z</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1ad7bdd39a092bd96c381d6bba77862b41" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1ac66d0e6d54b49d2ba15b709c8b6ac22f" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1af3ad718bafcb92a6af70b120b68e1c2a" kind="function"><name>operator&lt;</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1acd6044e315c6349c33f34943609828be" kind="function"><name>operator&gt;</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1aa5f1769aa9d0ef830f52bbb702371f06" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1af2a4c6717f0965ffe76f2a72383ef49e" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1a160be79cf426eed289a8fd87b41cb0e7" kind="function"><name>operator==</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01double_01_4_1aa54cbb7d6d439fdaa307119d051e775b" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCellZ_3_01float_01_4" kind="class"><name>richdem::GridCellZ&lt; float &gt;</name>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a0b9dea9ad9c31e275b0f350ae4e1fa7d" kind="variable"><name>z</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a93bc58f49a1016b267fe46132f858ea2" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a5153ca65b84c8675c6b04c8073683aa8" kind="function"><name>GridCellZ</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1aa48cf65ae3ba56b52ae6ecb616f8b287" kind="function"><name>operator&lt;</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a87bd3ea7d7a2b278df83912596a43516" kind="function"><name>operator&gt;</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a179678780ce8cf6eb9eca64a6f74df9a" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a149b3f09b5cfd741c50735b3f30a09e0" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1a7b8ab9cab3ca05c9b12780ad6dc32203" kind="function"><name>operator==</name></member>
+    <member refid="classrichdem_1_1GridCellZ_3_01float_01_4_1aa6ba82c4c0fbd20d81ec91c342166ac7" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCellZk" kind="class"><name>richdem::GridCellZk</name>
+    <member refid="classrichdem_1_1GridCellZk_1a725237c625279ecc2d16aab758b7bbe0" kind="variable"><name>k</name></member>
+    <member refid="classrichdem_1_1GridCellZk_1a66ac6fdb9d840229f3809fe3ffc77073" kind="function"><name>GridCellZk</name></member>
+    <member refid="classrichdem_1_1GridCellZk_1ae061dfbfd9d5a9e2088f59c10d328183" kind="function"><name>GridCellZk</name></member>
+    <member refid="classrichdem_1_1GridCellZk_1ae3c617af87b7e6ae8f4656d4a84f295c" kind="function"><name>operator&lt;</name></member>
+    <member refid="classrichdem_1_1GridCellZk_1a0afd90170d1dd064c7e74087cc56aac2" kind="function"><name>operator&gt;</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1GridCellZk__pq" kind="class"><name>richdem::GridCellZk_pq</name>
+    <member refid="classrichdem_1_1GridCellZk__pq_1ace22a9c6c8193cbe011d63c7d428cda1" kind="variable"><name>count</name></member>
+    <member refid="classrichdem_1_1GridCellZk__pq_1ad81ab333cafe01d41cde7bf8f9c0afe4" kind="function"><name>push</name></member>
+    <member refid="classrichdem_1_1GridCellZk__pq_1a489a3324a10c26d86c5e78d07f341f17" kind="function"><name>emplace</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1LayoutfileReader" kind="class"><name>richdem::LayoutfileReader</name>
+    <member refid="classrichdem_1_1LayoutfileReader_1a95d80d64adbc229c0128fff6c9d8dcce" kind="variable"><name>fgrid</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a428f4af56b8506178b50e25b8e481db1" kind="variable"><name>gridy</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a2260e3efd788cc5c722a762a8bf01db8" kind="variable"><name>gridx</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1ade7855bcbac72b9717e510bb4db37254" kind="variable"><name>new_row</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1af36de86a5b0ed0d079effd3eb16176c4" kind="variable"><name>filename</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a861f7fdd02750969e7fc85c2b4612af6" kind="variable"><name>basename</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a1a3737ff9ea9b041e8f6ad114b58a17d" kind="variable"><name>path</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1ac9788f7dbe4c442c491fb9572907766f" kind="function"><name>LayoutfileReader</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a57bb32a2cfe120b283f56bfb466269db" kind="function"><name>next</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a82ac4e947b5a29764f92e6350e37250f" kind="function"><name>newRow</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a2dd3f8fe870c9ed81fe81eab3fedadeb" kind="function"><name>getFilename</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a9aa2bda19aa1878d518c07c54d34838a" kind="function"><name>getBasename</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a4c90f0b86536fe3261aebcccc00f3832" kind="function"><name>getFullPath</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1aba8da19424c08a88e47b487e0d61fdab" kind="function"><name>getGridLocName</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1aeb0b961f037db5fa7c04f43fffe0d8d1" kind="function"><name>getPath</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a0bfdfc87d8eac28abd8841b3b8b0a83a" kind="function"><name>isNullTile</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a8de9c48378fb5b70859e5e95b12934a7" kind="function"><name>getX</name></member>
+    <member refid="classrichdem_1_1LayoutfileReader_1a5bff4165df79632dd73b96429845dad3" kind="function"><name>getY</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1LayoutfileWriter" kind="class"><name>richdem::LayoutfileWriter</name>
+    <member refid="classrichdem_1_1LayoutfileWriter_1ad5921937af318fd2a0b037705899ce90" kind="variable"><name>gridx</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a66ea4f16b1cae51a5353ee3c41e47478" kind="variable"><name>gridy</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a7ac5317bb88c2440780f242e8aa26619" kind="variable"><name>path</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a51093ad3067d37865daeb1dd7901e0dc" kind="variable"><name>flout</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a4e79ed81fd628c997e80d3050eba98c4" kind="function"><name>LayoutfileWriter</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a12c196d39618863e111bf36c89a3e660" kind="function"><name>~LayoutfileWriter</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1a790fd544d9e4f1864839ad03365676ca" kind="function"><name>addRow</name></member>
+    <member refid="classrichdem_1_1LayoutfileWriter_1abed8b5ce0c2f9e5f9d754dcf8d951c0b" kind="function"><name>addEntry</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1LRU" kind="class"><name>richdem::LRU</name>
+    <member refid="classrichdem_1_1LRU_1a5984737a473d4d97ada78a5276275c37" kind="typedef"><name>cachetype</name></member>
+    <member refid="classrichdem_1_1LRU_1ae5c3fd7676997c17a64c8acdcc20f16e" kind="variable"><name>len</name></member>
+    <member refid="classrichdem_1_1LRU_1ab4eb1a74218b820e7d3d4289297bbc60" kind="variable"><name>maxlen</name></member>
+    <member refid="classrichdem_1_1LRU_1af2182b8cbe021bde3feabfd287f6d098" kind="variable"><name>last</name></member>
+    <member refid="classrichdem_1_1LRU_1aa14f31bc79feaa7cd8e09ec8aa7978ad" kind="variable"><name>visited</name></member>
+    <member refid="classrichdem_1_1LRU_1a5cb35bc772504fb3c4d0d9b432de3f40" kind="variable"><name>cache</name></member>
+    <member refid="classrichdem_1_1LRU_1a72e0310bdd0473b945620cd1d8fa1dd2" kind="function"><name>LRU</name></member>
+    <member refid="classrichdem_1_1LRU_1af9c8e2d47e86accb2f019eafa60ef22a" kind="function"><name>insert</name></member>
+    <member refid="classrichdem_1_1LRU_1ae664ac3f46117ebbae24fca854fd68db" kind="function"><name>size</name></member>
+    <member refid="classrichdem_1_1LRU_1a9b455b8d651e07369aaf8d9a47aceed5" kind="function"><name>full</name></member>
+    <member refid="classrichdem_1_1LRU_1adc11d8729f22431883638f021709116e" kind="function"><name>setCapacity</name></member>
+    <member refid="classrichdem_1_1LRU_1a728965881ef6050db07fbea86a712d89" kind="function"><name>getCapacity</name></member>
+    <member refid="classrichdem_1_1LRU_1a861ad85d148d20c373103a0378ba9c3f" kind="function"><name>back</name></member>
+    <member refid="classrichdem_1_1LRU_1a9303032204dbabeddecfce4f103998db" kind="function"><name>pop_back</name></member>
+    <member refid="classrichdem_1_1LRU_1a49d903a3b9c75b090b1ee6bc74305842" kind="function"><name>prune</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1ManagedVector" kind="class"><name>richdem::ManagedVector</name>
+    <member refid="classrichdem_1_1ManagedVector_1a1dcadfbe1bc838a0b93ef8db3eb56af8" kind="friend"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1ab29ca23b8420eda0aac804b307a1c519" kind="variable"><name>_data</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1ad1e317e13f42894303f92e8fbdc71318" kind="variable"><name>_owned</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a03e3bb1b04c4fc228577d22ac26bca2e" kind="variable"><name>_size</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a0a6e08e636ec4b3b5c5c8992796abb17" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a713178244b109532e619553f44402203" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1acbef53dc494b12bb2a88daf370221b70" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a0fb901ad4fa0bc6766dca5cbd758fb8c" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a71bcca1a1066a2eac481b1535283b838" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a37332448ae291f4b641c87c56012e6d7" kind="function"><name>ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a00d2e5401f09b84cf871e9b30a3d44f1" kind="function"><name>~ManagedVector</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a31fd864f8b0bf39721fe6bd207ff5ef2" kind="function"><name>operator=</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a1817b0aa00b875eeb8f52366b34fde5f" kind="function"><name>operator=</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a24c9b22b6ca110d41e965e0b1a12b83a" kind="function"><name>data</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a1bb3b649ad11e3095bf0aee90c31989e" kind="function"><name>data</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a0c7347cc8f769de977d375ad65e30d01" kind="function"><name>empty</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a1c9b5baebb94d6e39fb01005e28a7ffb" kind="function"><name>size</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1af91432fe168346fe0d572da276bb10a4" kind="function"><name>owned</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a5e6cdb5a4942c3db7237553507b09787" kind="function"><name>resize</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a937031adcbe654943b72a03e0c4ea855" kind="function"><name>operator[]</name></member>
+    <member refid="classrichdem_1_1ManagedVector_1a2c60d6fdc32e5b323c2fd701d7f1236e" kind="function"><name>operator[]</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1ProgressBar" kind="class"><name>richdem::ProgressBar</name>
+    <member refid="classrichdem_1_1ProgressBar_1abb4e6b64bb3777475edea35eb37c12d3" kind="variable"><name>total_work</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a49f6e671b0cc37850a6a113c1c02d764" kind="variable"><name>next_update</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1af71d587c87e6c261f56304f7dec8d161" kind="variable"><name>call_diff</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1ad1465ee7848c83fb3629e46fdbb939b1" kind="variable"><name>work_done</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a9d510e2415dd5d0c26a042e402b52133" kind="variable"><name>old_percent</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1af0882216c9ff7dc32b66d8be78528389" kind="variable"><name>timer</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a32b78ad94c731570557c202929a203fb" kind="function"><name>clearConsoleLine</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a00e1878d9af52da7397d5965d923bbbd" kind="function"><name>start</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1aa71fef0e8019c8dd64ed7c7e79466511" kind="function"><name>update</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a7ec00bd76a94841f8d069fee90394ade" kind="function"><name>operator++</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a69063c770d5eaee6299590de1d0294b6" kind="function"><name>stop</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a1c40aee1793e0aad20851ead4c928a96" kind="function"><name>time_it_took</name></member>
+    <member refid="classrichdem_1_1ProgressBar_1a9ad5ea9b9f50318286d1de1c470352cb" kind="function"><name>cellsProcessed</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1StreamLogger" kind="class"><name>richdem::StreamLogger</name>
+    <member refid="classrichdem_1_1StreamLogger_1a049bea07ffc08e54c3cc29d55eef6515" kind="variable"><name>flag</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1a03c56d9074da45524f02b2e5c9d91c7f" kind="variable"><name>file</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1ac7e1d0e265a75bbdaffbe1f08a5ffccc" kind="variable"><name>func</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1a72b872d1096c7c09f2b283ce84145575" kind="variable"><name>line</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1a1803e5a0fc612f1acfb773a0bb401f31" kind="variable"><name>ss</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1ae45041f3d2bd6c5edd6be6a2d6b4efe3" kind="function"><name>StreamLogger</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1ab59b822c6887a46502991af777256613" kind="function"><name>~StreamLogger</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1ab038f2cdf6a27d84a64f7a8a74ca812a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="classrichdem_1_1StreamLogger_1a059ad689baa4c994aeb2f7614ad84b4f" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1TA__Setup__Curves__Vars" kind="class"><name>richdem::TA_Setup_Curves_Vars</name>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aa034a6d438897078761fb44ca3c1a955" kind="variable"><name>L</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aff2baafd8fff1bf1e9e27e58856ac07c" kind="variable"><name>D</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1a119a9d74c1fafe42d3477e5d753ed252" kind="variable"><name>E</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aa8493d5fd68cc05921dbb4ab0d743157" kind="variable"><name>F</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aba313603e388e601e84b41fadbff0552" kind="variable"><name>G</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aed246b87b91e70bd51dcd89fad478ce5" kind="variable"><name>H</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1TA__Setup__Vars" kind="class"><name>richdem::TA_Setup_Vars</name>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a71ce7db8fde1f325d50c245c96bd7219" kind="variable"><name>a</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1adf869256e395fa56c34a79bbbe15cc16" kind="variable"><name>b</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a9f27c16f6383cab5044fe1ef9d84b4dd" kind="variable"><name>c</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a31815e7c6782afbe3ec1d2f584115e98" kind="variable"><name>d</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a05bca08a012a5af6a54abc80328e70fd" kind="variable"><name>e</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a9b8fc2b98cbdf6391bade706548ead64" kind="variable"><name>f</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a064fb756cb5eea7e073532b5f4196380" kind="variable"><name>g</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a440cd1d7c356198a73e71fbef1f7c39e" kind="variable"><name>h</name></member>
+    <member refid="classrichdem_1_1TA__Setup__Vars_1a08beede4e5634ed872d8899755a153f0" kind="variable"><name>i</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1Timer" kind="class"><name>richdem::Timer</name>
+    <member refid="classrichdem_1_1Timer_1a1fa79a2daafde3b255d438c5b2a6a691" kind="variable"><name>start_time</name></member>
+    <member refid="classrichdem_1_1Timer_1a01704121c1330fa4be137b3f286b868e" kind="variable"><name>accumulated_time</name></member>
+    <member refid="classrichdem_1_1Timer_1adf5dcb5cc945a9b8f3e1dcc3ead97e70" kind="variable"><name>running</name></member>
+    <member refid="classrichdem_1_1Timer_1a03ddf33d7ed5895fb9318575dde0a80b" kind="function"><name>timediff</name></member>
+    <member refid="classrichdem_1_1Timer_1af3d339851fe92fa83a252c22f579be24" kind="function"><name>Timer</name></member>
+    <member refid="classrichdem_1_1Timer_1a6c1403aed0cc07ac87309e63a87d2217" kind="function"><name>start</name></member>
+    <member refid="classrichdem_1_1Timer_1a94adfb2b628004e774b8d8ac4d6654b2" kind="function"><name>stop</name></member>
+    <member refid="classrichdem_1_1Timer_1a3866ded735d646bf1749eb4c553a7b75" kind="function"><name>accumulated</name></member>
+    <member refid="classrichdem_1_1Timer_1a8d1281c24a59112849fe554156eba7dd" kind="function"><name>lap</name></member>
+    <member refid="classrichdem_1_1Timer_1a292f8580b29a047c77b8de7ff31d21b5" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D" kind="class"><name>richdem::A2Array2D::WrappedArray2D</name>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1a41ba2a86786ff6da74c256ab299ae4b4" kind="variable"><name>null_tile</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1ae68bec15f233ae3b9fe0b86119acca16" kind="variable"><name>loaded</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1afacb5e810b224cc04ca76aefbed82669" kind="variable"><name>created</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1ad3382c028781316021d02be346b9e4df" kind="variable"><name>do_set_all</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1a244beb346d68c4f9e7e519d5168076a0" kind="variable"><name>create_with_width</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1a21721a7201be95a0e9961c9241624d45" kind="variable"><name>create_with_height</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1ada35a077ec47063f4219be094a478fb6" kind="variable"><name>set_all_val</name></member>
+    <member refid="classrichdem_1_1A2Array2D_1_1WrappedArray2D_1a2a365dbf5e7b02682ab201a947d86dcf" kind="function"><name>lazySetAll</name></member>
+  </compound>
+  <compound refid="namespacerichdem" kind="namespace"><name>richdem</name>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861" kind="enum"><name>LogFlag</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861a996fec35f4014ebb767a7667bdbc3533" kind="enumvalue"><name>ALG_NAME</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861aa4b7195c7f18b459ca6de59e5c2cb5f9" kind="enumvalue"><name>CITATION</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861a220f54171564a138dcfab3e17a76806c" kind="enumvalue"><name>CONFIG</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861a9f232b8a27940b840ff9c3210b7758fe" kind="enumvalue"><name>DEBUG</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861aa180e00e72877277cc66187939c556c8" kind="enumvalue"><name>ERROR</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861abd79b31f833a4906e545789228c86223" kind="enumvalue"><name>MEM_USE</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861a545f3f4dc4c60de62b044239e2276ccc" kind="enumvalue"><name>MISC</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861abdc28cd4f257bdd98a8d09437db93b1f" kind="enumvalue"><name>PROGRESS</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861acd5ae75feae9475a2c9366807434d73d" kind="enumvalue"><name>TIME_USE</name></member>
+    <member refid="logger_8hpp_1a07f397cb3f24beb807e4c08ed087b861a833bc8225d4d69c42ee35fddeb64b826" kind="enumvalue"><name>WARN</name></member>
+    <member refid="Lindsay2016_8hpp_1afe1b07817c9f6623f537c5e34a20b7e2" kind="enum"><name>LindsayMode</name></member>
+    <member refid="Lindsay2016_8hpp_1afe1b07817c9f6623f537c5e34a20b7e2ad0787dfbae6ddbb1cc6489a6906379cb" kind="enumvalue"><name>COMPLETE_BREACHING</name></member>
+    <member refid="Lindsay2016_8hpp_1afe1b07817c9f6623f537c5e34a20b7e2a718a30589206f4e03a4e172ae4d31ef2" kind="enumvalue"><name>SELECTIVE_BREACHING</name></member>
+    <member refid="Lindsay2016_8hpp_1afe1b07817c9f6623f537c5e34a20b7e2a90cd64036bfe875b99ba385c71bbca53" kind="enumvalue"><name>CONSTRAINED_BREACHING</name></member>
+    <member refid="Lindsay2016_8hpp_1a8d754d026402cea3c7610facbf899e1a" kind="enum"><name>LindsayCellType</name></member>
+    <member refid="Lindsay2016_8hpp_1a8d754d026402cea3c7610facbf899e1aab5d5f6bdbbc36bc6154232f3bc68ac0b" kind="enumvalue"><name>UNVISITED</name></member>
+    <member refid="Lindsay2016_8hpp_1a8d754d026402cea3c7610facbf899e1aaa4e1be320499616b0ba949d5c694e0fe" kind="enumvalue"><name>VISITED</name></member>
+    <member refid="Lindsay2016_8hpp_1a8d754d026402cea3c7610facbf899e1aa12fb955c3767e88a63d8e27ca6032cb6" kind="enumvalue"><name>EDGE</name></member>
+    <member refid="constants_8hpp_1a3284403c132b2ff480c997a0de5d7d49" kind="typedef"><name>d8_flowdir_t</name></member>
+    <member refid="grid__cell_8hpp_1a92b6e4f23debefdfceb2d3f8cc4d85c6" kind="typedef"><name>GridCellZ_pq</name></member>
+    <member refid="random_8hpp_1a01f2a97e3bad024f641662da578b9f2b" kind="typedef"><name>RandomEngineState</name></member>
+    <member refid="random_8hpp_1ac2fed8c1069e5c67f91b5f582ace2d00" kind="typedef"><name>our_random_engine</name></member>
+    <member refid="Zhou2016_8hpp_1a1f35d4ccd08676f973197a7dd034d4aa" kind="typedef"><name>label_t</name></member>
+    <member refid="garbrecht_8hpp_1a86e521fa6a154f09446c378865ca8889" kind="typedef"><name>flat_type</name></member>
+    <member refid="constants_8hpp_1aa5b197c553cb75cc5bed18478bbeab41" kind="variable"><name>dx</name></member>
+    <member refid="constants_8hpp_1a8eee3f4a3891f1bd2c44ce2df9df4fb6" kind="variable"><name>dy</name></member>
+    <member refid="constants_8hpp_1ae1cae59347aa5e5a245f8c387627ff05" kind="variable"><name>n_diag</name></member>
+    <member refid="constants_8hpp_1aa1178408028bc31fecd19513050d219f" kind="variable"><name>d8_inverse</name></member>
+    <member refid="constants_8hpp_1a6e09a55d55a50ef455b5d18df7fa9d67" kind="variable"><name>fdarrows</name></member>
+    <member refid="constants_8hpp_1a37622d7ed12bb4389b2bb066ddda9970" kind="variable"><name>SQRT2</name></member>
+    <member refid="constants_8hpp_1a8fd8834b599b4523a7fe0d378a832f57" kind="variable"><name>dr</name></member>
+    <member refid="constants_8hpp_1aeaccaa412ae3919c0e0ab6a8ee00848f" kind="variable"><name>d8_arcgis</name></member>
+    <member refid="constants_8hpp_1a464cfb1cd027369dd6e36c1e33369abe" kind="variable"><name>FLOWDIR_NO_DATA</name></member>
+    <member refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" kind="variable"><name>NO_FLOW</name></member>
+    <member refid="constants_8hpp_1ae7c3eb510787052eedc26c9a6eb2072a" kind="variable"><name>ACCUM_NO_DATA</name></member>
+    <member refid="constants_8hpp_1af770d1c22aae5f3114acae5b2e6cd8a6" kind="variable"><name>GRID_LEFT</name></member>
+    <member refid="constants_8hpp_1a795163e9a236e14b8ba7caece3d07280" kind="variable"><name>GRID_TOP</name></member>
+    <member refid="constants_8hpp_1a4d410dde31b397d1a411066e4476aab4" kind="variable"><name>GRID_RIGHT</name></member>
+    <member refid="constants_8hpp_1a229f1a97f2bd40d6e836d1e86a6fee39" kind="variable"><name>GRID_BOTTOM</name></member>
+    <member refid="version_8hpp_1a433cffd19424e299dacf773bbf6e4d70" kind="variable"><name>git_hash</name></member>
+    <member refid="version_8hpp_1a4cb04403c7ece2671538d0f2bd6f20e3" kind="variable"><name>compilation_datetime</name></member>
+    <member refid="version_8hpp_1a279c4bad616b7a8dafc41103722d156b" kind="variable"><name>program_name</name></member>
+    <member refid="version_8hpp_1a61fcf01dde36f777889ae2168331ad85" kind="variable"><name>author_name</name></member>
+    <member refid="version_8hpp_1a79e708d0ce1764564a33a9eb9389da0b" kind="variable"><name>copyright</name></member>
+    <member refid="version_8hpp_1aa2172aa0c68dee7c2f39761699305bc5" kind="variable"><name>program_identifier</name></member>
+    <member refid="flat__resolution__dinf_8hpp_1afb395f3d7b41da22a28702164243c75b" kind="variable"><name>d8_to_dinf</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a64e09d3f9456258d40bab94469681bd7" kind="variable"><name>dy_e1</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a0dec4b83deda363fa93004371df41e62" kind="variable"><name>dx_e1</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a0baefd5b09228ac14399bd559dda23a8" kind="variable"><name>dy_e2</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a01525604cc56da42e65bef1fbe3f7062" kind="variable"><name>dx_e2</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a02f30b8f1b334b892edade94797ba8c4" kind="variable"><name>ac</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a2414e4b18f1e5c37d64ba84be7d80fd1" kind="variable"><name>af</name></member>
+    <member refid="dinf__methods_8hpp_1aed10f65fc87da1a0d3abf8d2833c78d1" kind="variable"><name>dinf_dx</name></member>
+    <member refid="dinf__methods_8hpp_1a630337f7aad6f68195e651c4d0ca0c0d" kind="variable"><name>dinf_dy</name></member>
+    <member refid="richdem_8cpp_1a517fd7f0197b095d997c54b56f89b022" kind="variable"><name>log_flag_chars_begin</name></member>
+    <member refid="richdem_8cpp_1a047c9712eedec596a132674b92532451" kind="variable"><name>log_flag_chars_end</name></member>
+    <member refid="Array2D_8hpp_1a31b2cc3694d7b0830ad70e575d66058a" kind="function"><name>ProcessMetadata</name></member>
+    <member refid="Layoutfile_8hpp_1aca3a07d4fd1052928bdc0215a95d3314" kind="function"><name>trimStr</name></member>
+    <member refid="Layoutfile_8hpp_1a7c75c5db2b44536274fcc724222d38c4" kind="function"><name>GetBaseName</name></member>
+    <member refid="memory_8hpp_1a8ddab201c8162bc55035dd612bbb67d9" kind="function"><name>ProcessMemUsage</name></member>
+    <member refid="random_8cpp_1a0e0c018cf0b8416b25d4a27bab4caf58" kind="function"><name>rand_engine</name></member>
+    <member refid="random_8cpp_1abde574bcbcc999341b41922ce7637695" kind="function"><name>seed_rand</name></member>
+    <member refid="random_8cpp_1a0764ea8e143c9d98e8142440e950ae83" kind="function"><name>uniform_rand_int</name></member>
+    <member refid="random_8cpp_1afe1e593df6c1856954c777c836a72024" kind="function"><name>uniform_rand_real</name></member>
+    <member refid="random_8cpp_1a6234e32ff90bd88bb81aa2423327caa8" kind="function"><name>normal_rand</name></member>
+    <member refid="random_8cpp_1a265b2831bbaec88c0f63f1eab7a9c954" kind="function"><name>SaveRandomState</name></member>
+    <member refid="random_8cpp_1a05739a1af02fdd795364db7ba55dc148" kind="function"><name>SetRandomState</name></member>
+    <member refid="random_8hpp_1a1762858ad29cf7faeebc1f2b0543236a" kind="function"><name>uniform_bits</name></member>
+    <member refid="version_8hpp_1a061d240cc223d22c9a0ff4f71f92ed64" kind="function"><name>rdHash</name></member>
+    <member refid="version_8hpp_1a318d1aa20915b1195445a9ac935b1afc" kind="function"><name>rdCompileTime</name></member>
+    <member refid="version_8hpp_1abe02c96e2f60f969af19b7a970c6d1ec" kind="function"><name>PrintRichdemHeader</name></member>
+    <member refid="Barnes2014_8hpp_1a79622e3cf15ad90e3fcb95d345a09e6b" kind="function"><name>HasDepressions</name></member>
+    <member refid="Barnes2014_8hpp_1a45329a42d3ccd6f3c4c94f402c819104" kind="function"><name>PriorityFlood_Original</name></member>
+    <member refid="Barnes2014_8hpp_1abb482cf1a3407a737642550fd5724285" kind="function"><name>PriorityFlood_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1ab346dd137b42a98d829583c8c5c7c93f" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1a58da3d771ea93e7aaedd977aec039b61" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1ab0e37d08ed51cb919e6fc8f87c7e3f2e" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1ab651b97fb9e2c0fb1bef23ba77fa1d93" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1a5ef71ad7b199eacbf0023f211cc21fe0" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1a4237028d71a87c51a72822a5721512f1" kind="function"><name>PriorityFloodEpsilon_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1ab3ff830ae2cb48afb5bcfac5b585bb04" kind="function"><name>PriorityFloodFlowdirs_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1ad4f7257a4a6401277a4f23af6e0baa56" kind="function"><name>pit_mask</name></member>
+    <member refid="Barnes2014_8hpp_1a9d73ece55c008d18351b6b732893b045" kind="function"><name>PriorityFloodWatersheds_Barnes2014</name></member>
+    <member refid="Barnes2014_8hpp_1a4c85536555853a358dd8a44645dfc100" kind="function"><name>PriorityFlood_Barnes2014_max_dep</name></member>
+    <member refid="depressions_8hpp_1aae37b4f31182bf961ec82c9388287a43" kind="function"><name>FillDepressions</name></member>
+    <member refid="depressions_8hpp_1a58ee06accd39a0fda0c776a2992c8adc" kind="function"><name>FillDepressionsEpsilon</name></member>
+    <member refid="Lindsay2016_8hpp_1a272bd364171a4e16d8b34f1e5995e371" kind="function"><name>Lindsay2016</name></member>
+    <member refid="Lindsay2016_8hpp_1acc7edc1bca05c1559ccc6278c090c0dd" kind="function"><name>Lindsay2016</name></member>
+    <member refid="Lindsay2016_8hpp_1ae306c9c4462016976fff8f0e972a44d7" kind="function"><name>Lindsay2016</name></member>
+    <member refid="Lindsay2016_8hpp_1a1af6c6e5ce5105fb85c73bfc31396e89" kind="function"><name>Lindsay2016</name></member>
+    <member refid="Zhou2016_8hpp_1a618347c8d1f638164f32697733431ca8" kind="function"><name>ProcessTraceQue_onepass</name></member>
+    <member refid="Zhou2016_8hpp_1aaf45e3957d7232b1eaab176d2d77a61d" kind="function"><name>ProcessPit_onepass</name></member>
+    <member refid="Zhou2016_8hpp_1a92303ebbfaabc1415420484264362e68" kind="function"><name>PriorityFlood_Zhou2016</name></member>
+    <member refid="flat__resolution_8hpp_1a100ea24b7ff6b3dbe060cb5f6aacadbc" kind="function"><name>d8_masked_FlowDir</name></member>
+    <member refid="flat__resolution_8hpp_1ad1f33db1167def82613eb31a59dfecb7" kind="function"><name>d8_flow_flats</name></member>
+    <member refid="flat__resolution_8hpp_1a6c55d113be169cf5ba99fb588174c506" kind="function"><name>BuildAwayGradient</name></member>
+    <member refid="flat__resolution_8hpp_1a647fbce811b30262d2f587699f65923a" kind="function"><name>BuildTowardsCombinedGradient</name></member>
+    <member refid="flat__resolution_8hpp_1a72d8e15d118c50fa66258fb755b07bd1" kind="function"><name>label_this</name></member>
+    <member refid="flat__resolution_8hpp_1ad41f991dc7aa4aa84677f450ae1880ea" kind="function"><name>find_flat_edges</name></member>
+    <member refid="flat__resolution_8hpp_1a5a8557edf0f7687059df9ae900ada909" kind="function"><name>resolve_flats_barnes</name></member>
+    <member refid="flat__resolution_8hpp_1a70a55d953a8bf1ac1471d6518466f11a" kind="function"><name>d8_flats_alter_dem</name></member>
+    <member refid="flat__resolution_8hpp_1a259269332eb1ec5a55d3f3636f7b2274" kind="function"><name>barnes_flat_resolution_d8</name></member>
+    <member refid="flat__resolution__dinf_8hpp_1a882f67bba074d5257fa8d18e68f139e0" kind="function"><name>dinf_masked_FlowDir</name></member>
+    <member refid="flat__resolution__dinf_8hpp_1a3b9f6eeb4bf0ef82c477d803bec85849" kind="function"><name>dinf_flow_flats</name></member>
+    <member refid="flat__resolution__dinf_8hpp_1a4242c0e9f38475bd318a92688c422fdd" kind="function"><name>resolve_flats_barnes_dinf</name></member>
+    <member refid="garbrecht_8hpp_1a84977e72b433bd1eb47aa7141494ab52" kind="function"><name>FindFlats</name></member>
+    <member refid="garbrecht_8hpp_1ab886734380b47519a48d647db618ff3a" kind="function"><name>GradientTowardsLower</name></member>
+    <member refid="garbrecht_8hpp_1a18a272119719dd739218a2bd81f95be9" kind="function"><name>GradientAwayFromHigher</name></member>
+    <member refid="garbrecht_8hpp_1a2e7e42ccdf9057dce482822a793f242b" kind="function"><name>CombineGradients</name></member>
+    <member refid="garbrecht_8hpp_1a071b830fbcdf061ef072da0e3503cfde" kind="function"><name>GarbrechtAlg</name></member>
+    <member refid="d8__flowdirs_8hpp_1adcbbfcbe17eb0bbe82bc4d5b4f2b3f0e" kind="function"><name>d8_FlowDir</name></member>
+    <member refid="d8__flowdirs_8hpp_1a772bed1aeafb81da6bfbc8b251526eaa" kind="function"><name>d8_flow_directions</name></member>
+    <member refid="dinf__flowdirs_8hpp_1ac0b5af17b6fe2fe68f80da27a7003a2d" kind="function"><name>dinf_FlowDir</name></member>
+    <member refid="dinf__flowdirs_8hpp_1a83d9406227c452245ed888279395e921" kind="function"><name>dinf_flow_directions</name></member>
+    <member refid="Fairfield1991_8hpp_1a8e056e4603223ce83609a422df0ce7ae" kind="function"><name>FM_FairfieldLeymarie</name></member>
+    <member refid="Fairfield1991_8hpp_1aa64beb4138bfab7b1a6e4672477aceb0" kind="function"><name>FM_Rho8</name></member>
+    <member refid="Freeman1991_8hpp_1a93f1965e7f678f91e3c5fd39c47b9f3c" kind="function"><name>FM_Freeman</name></member>
+    <member refid="Holmgren1994_8hpp_1a8c114e2bc29c4982db0435b8dd6ec019" kind="function"><name>FM_Holmgren</name></member>
+    <member refid="OCallaghan1984_8hpp_1a19ea4f5553e696990c4db8e45bee6376" kind="function"><name>FM_OCallaghan</name></member>
+    <member refid="OCallaghan1984_8hpp_1a786d01b6fc89d1b24c4badaec4df6f19" kind="function"><name>FM_D8</name></member>
+    <member refid="Quinn1991_8hpp_1a965bdc9025d5e24eebf22e39f272e904" kind="function"><name>FM_Quinn</name></member>
+    <member refid="Tarboton1997_8hpp_1ad74b4687c61f7fd7aada66236b066bfe" kind="function"><name>FM_Tarboton</name></member>
+    <member refid="Tarboton1997_8hpp_1a976cb8a427945a60cdf5436bc7728178" kind="function"><name>FM_Dinfinity</name></member>
+    <member refid="d8__methods_8hpp_1a1f7bab20d02164b4e0a58fb6a61c68ba" kind="function"><name>sgn</name></member>
+    <member refid="d8__methods_8hpp_1aa90662f12d76a3974eb32771ab539fbe" kind="function"><name>d8_flow_accum</name></member>
+    <member refid="d8__methods_8hpp_1a2dd58065d62dde9a437d47d568eb1d55" kind="function"><name>d8_upslope_cells</name></member>
+    <member refid="dinf__methods_8hpp_1a0c170e3d0dc54db27b32148a2e464cc8" kind="function"><name>where_do_i_flow</name></member>
+    <member refid="dinf__methods_8hpp_1a5313cab0a6fbec83f58684c91326a764" kind="function"><name>area_proportion</name></member>
+    <member refid="dinf__methods_8hpp_1af706b9527873b98d6d80516197370b84" kind="function"><name>dinf_upslope_area</name></member>
+    <member refid="flow__accumulation_8hpp_1ab7c86015416fd1cf7cea2f1509cbb9b8" kind="function"><name>FA_Tarboton</name></member>
+    <member refid="flow__accumulation_8hpp_1ae6b0c8742e32e4967eba0f6c327116a8" kind="function"><name>FA_Holmgren</name></member>
+    <member refid="flow__accumulation_8hpp_1a67de1a89d71ae378c79d0afd6bf30f01" kind="function"><name>FA_Quinn</name></member>
+    <member refid="flow__accumulation_8hpp_1ae9e31814f3ef797c0c36193f659a7327" kind="function"><name>FA_Freeman</name></member>
+    <member refid="flow__accumulation_8hpp_1ad6e05dcb39fa23516278e7d561c78c77" kind="function"><name>FA_FairfieldLeymarie</name></member>
+    <member refid="flow__accumulation_8hpp_1a4d64ffa0ccb1e7bbcaa2bff3298e71b0" kind="function"><name>FA_Rho8</name></member>
+    <member refid="flow__accumulation_8hpp_1a6e54e7375df2a8e8e62234cca6af3575" kind="function"><name>FA_D8</name></member>
+    <member refid="flow__accumulation_8hpp_1a165f050f771b9ac1dd60db1c683be1a9" kind="function"><name>FA_OCallaghan</name></member>
+    <member refid="flow__accumulation__generic_8hpp_1a3e96f80e3da908f05e64c7fbf0ef6f10" kind="function"><name>FlowAccumulation</name></member>
+    <member refid="terrain__attributes_8hpp_1ae17d858f447605abdc7929ca1906419d" kind="function"><name>TA_SPI</name></member>
+    <member refid="terrain__attributes_8hpp_1a057680886519f909fdd30616f7ad2852" kind="function"><name>TA_CTI</name></member>
+    <member refid="terrain__attributes_8hpp_1aa4af62fd3b2c7bbff41353fa4e952b84" kind="function"><name>TerrainSetup</name></member>
+    <member refid="terrain__attributes_8hpp_1a389c1aeae587927872fb900478d562be" kind="function"><name>TerrainCurvatureSetup</name></member>
+    <member refid="terrain__attributes_8hpp_1a091eda92d4100f76c60d701fc024c629" kind="function"><name>Terrain_Aspect</name></member>
+    <member refid="terrain__attributes_8hpp_1ae4942bbc10662f45176318d149e22f0f" kind="function"><name>Terrain_Slope_RiseRun</name></member>
+    <member refid="terrain__attributes_8hpp_1a632772003cefd5988dcaf91f23e5a1ed" kind="function"><name>Terrain_Curvature</name></member>
+    <member refid="terrain__attributes_8hpp_1a30321c3aa2e68863ff3e9374d7d71f70" kind="function"><name>Terrain_Planform_Curvature</name></member>
+    <member refid="terrain__attributes_8hpp_1ac66bbf9922607da5b3985eabd6140052" kind="function"><name>Terrain_Profile_Curvature</name></member>
+    <member refid="terrain__attributes_8hpp_1aec35c6fb3ef33d8b0b3421a4df9554e1" kind="function"><name>Terrain_Slope_Percent</name></member>
+    <member refid="terrain__attributes_8hpp_1a8eeb881ca6998b797a91f1af07a1937b" kind="function"><name>Terrain_Slope_Radian</name></member>
+    <member refid="terrain__attributes_8hpp_1aee0d47cd0e0d387456f2a577010b3a3d" kind="function"><name>Terrain_Slope_Degree</name></member>
+    <member refid="terrain__attributes_8hpp_1aef29f8d44e767e34722691e255ff5fc5" kind="function"><name>TerrainProcessor</name></member>
+    <member refid="terrain__attributes_8hpp_1a2f3cbc8ced0233f9cb64dd6ae417bde5" kind="function"><name>TA_slope_riserun</name></member>
+    <member refid="terrain__attributes_8hpp_1aa0350fbe14d3fbdf30a7e42ee2218441" kind="function"><name>TA_slope_percentage</name></member>
+    <member refid="terrain__attributes_8hpp_1a4168b7d6d004c018b7d9477def7ab98c" kind="function"><name>TA_slope_degrees</name></member>
+    <member refid="terrain__attributes_8hpp_1ab9f35aac2cc04ba33c1871367414652e" kind="function"><name>TA_slope_radians</name></member>
+    <member refid="terrain__attributes_8hpp_1a47c31e2e2b5d314fb050c4bc0afdbbda" kind="function"><name>TA_aspect</name></member>
+    <member refid="terrain__attributes_8hpp_1a831078da69f8bf6dc1533acc0ead2470" kind="function"><name>TA_curvature</name></member>
+    <member refid="terrain__attributes_8hpp_1ac068fabf6609f914e8f3ac34f6637492" kind="function"><name>TA_planform_curvature</name></member>
+    <member refid="terrain__attributes_8hpp_1aed30c91f33bbfc1d27a7b982c8bdbd3f" kind="function"><name>TA_profile_curvature</name></member>
+    <member refid="richdem_8cpp_1a5fefd232c677b809c8733478551fbb3a" kind="function"><name>RDLOGfunc</name></member>
+    <member refid="A2Array2D_8hpp_1a7635774696a85a2c88c4dab6798d886e" kind="function"><name>peekLayoutType</name></member>
+    <member refid="A2Array2D_8hpp_1a8fb32d8395b1bc2b01c3b8e1ca80cab6" kind="function"><name>peekLayoutTileSize</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="Array2D_8hpp" kind="file"><name>Array2D.hpp</name>
+  </compound>
+  <compound refid="communication-threads_8hpp" kind="file"><name>communication-threads.hpp</name>
+    <member refid="communication-threads_8hpp_1a0d638fe48e408fa87f9b8f86164d38b1" kind="define"><name>_unused</name></member>
+    <member refid="communication-threads_8hpp_1a03576f36e6b2297a3037859211c6464d" kind="function"><name>CommInit</name></member>
+    <member refid="communication-threads_8hpp_1ada8e5954afd4a72b9ed8260c588aaa52" kind="function"><name>CommSend</name></member>
+    <member refid="communication-threads_8hpp_1a90d78d292d28ce3814471310d90ee80a" kind="function"><name>CommSend</name></member>
+    <member refid="communication-threads_8hpp_1a698b7d08413938329e2a8682f5977e90" kind="function"><name>CommGetTag</name></member>
+    <member refid="communication-threads_8hpp_1a9eaa3cca9abc5bfdd6761fd0d2643a33" kind="function"><name>CommGetSource</name></member>
+    <member refid="communication-threads_8hpp_1a234d18621118c6c6a10f67a19197dd97" kind="function"><name>CommRank</name></member>
+    <member refid="communication-threads_8hpp_1aa001fa21504d028048b23b3e827ea495" kind="function"><name>CommSize</name></member>
+    <member refid="communication-threads_8hpp_1a55b469b16b1db182b926db1061aaf378" kind="function"><name>CommAbort</name></member>
+    <member refid="communication-threads_8hpp_1a6fc86801f1126c6c13ad63f36be30306" kind="function"><name>CommRecv</name></member>
+    <member refid="communication-threads_8hpp_1ab1183ed39681daf380e3d3347d60c2d3" kind="function"><name>CommRecv</name></member>
+    <member refid="communication-threads_8hpp_1aa678bc61693466489b1e2ec3a623f10e" kind="function"><name>CommBroadcast</name></member>
+    <member refid="communication-threads_8hpp_1adc5e0c013225c0f52934c9fec79febba" kind="function"><name>CommFinalize</name></member>
+    <member refid="communication-threads_8hpp_1a2d457640717cdc175671c2e79a6bf0e4" kind="function"><name>CommBytesSent</name></member>
+    <member refid="communication-threads_8hpp_1a87a1ac07314b32ec270a8d15431e0d1d" kind="function"><name>CommBytesRecv</name></member>
+    <member refid="communication-threads_8hpp_1ae9cf9b6cb74d1d5836acf83f25b0ad0e" kind="function"><name>CommBytesReset</name></member>
+    <member refid="communication-threads_8hpp_1a21706ef89c7c3e51ed84832b8d971916" kind="function"><name>CommBarrier</name></member>
+  </compound>
+  <compound refid="communication_8hpp" kind="file"><name>communication.hpp</name>
+    <member refid="communication_8hpp_1a0d638fe48e408fa87f9b8f86164d38b1" kind="define"><name>_unused</name></member>
+    <member refid="communication_8hpp_1a9a7c47d8ca8fd3a991b1bd0f21f20ebf" kind="typedef"><name>comm_count_type</name></member>
+    <member refid="communication_8hpp_1a932616313a260262447f28706a400896" kind="typedef"><name>msg_type</name></member>
+    <member refid="communication_8hpp_1ac62b340e9c81eed652e6d89333d203b9" kind="variable"><name>bytes_sent</name></member>
+    <member refid="communication_8hpp_1add181598f4ecb064bcf5de251e3cc6c6" kind="variable"><name>bytes_recv</name></member>
+    <member refid="communication_8hpp_1a548a609c3f31f1cdbcb00164ba895ad7" kind="function"><name>CommInit</name></member>
+    <member refid="communication_8hpp_1a983d4850a07258abf98a6d3329c4dfc3" kind="function"><name>CommPrepare</name></member>
+    <member refid="communication_8hpp_1ac3b5cb18bfb9efa1763ad6de3a51fcda" kind="function"><name>CommPrepare</name></member>
+    <member refid="communication_8hpp_1ada8e5954afd4a72b9ed8260c588aaa52" kind="function"><name>CommSend</name></member>
+    <member refid="communication_8hpp_1a11f25dc5cd9200a2fec0226045852a81" kind="function"><name>CommSend</name></member>
+    <member refid="communication_8hpp_1a349fe2ff4e4d7a5a7325560bab1ca2bd" kind="function"><name>CommISend</name></member>
+    <member refid="communication_8hpp_1a698b7d08413938329e2a8682f5977e90" kind="function"><name>CommGetTag</name></member>
+    <member refid="communication_8hpp_1a234d18621118c6c6a10f67a19197dd97" kind="function"><name>CommRank</name></member>
+    <member refid="communication_8hpp_1aa001fa21504d028048b23b3e827ea495" kind="function"><name>CommSize</name></member>
+    <member refid="communication_8hpp_1a55b469b16b1db182b926db1061aaf378" kind="function"><name>CommAbort</name></member>
+    <member refid="communication_8hpp_1a6fc86801f1126c6c13ad63f36be30306" kind="function"><name>CommRecv</name></member>
+    <member refid="communication_8hpp_1ac67d41ec3e718f14cf228eae1e16cd0f" kind="function"><name>CommRecv</name></member>
+    <member refid="communication_8hpp_1aa678bc61693466489b1e2ec3a623f10e" kind="function"><name>CommBroadcast</name></member>
+    <member refid="communication_8hpp_1adc5e0c013225c0f52934c9fec79febba" kind="function"><name>CommFinalize</name></member>
+    <member refid="communication_8hpp_1a7257c7bf214f7fa18e32c2ca7cf6d1b9" kind="function"><name>CommBytesSent</name></member>
+    <member refid="communication_8hpp_1ac5f68291c7dc72da22c882400e58d491" kind="function"><name>CommBytesRecv</name></member>
+    <member refid="communication_8hpp_1ae9cf9b6cb74d1d5836acf83f25b0ad0e" kind="function"><name>CommBytesReset</name></member>
+  </compound>
+  <compound refid="constants_8hpp" kind="file"><name>constants.hpp</name>
+  </compound>
+  <compound refid="gdal_8hpp" kind="file"><name>gdal.hpp</name>
+  </compound>
+  <compound refid="grid__cell_8hpp" kind="file"><name>grid_cell.hpp</name>
+  </compound>
+  <compound refid="Layoutfile_8hpp" kind="file"><name>Layoutfile.hpp</name>
+  </compound>
+  <compound refid="logger_8hpp" kind="file"><name>logger.hpp</name>
+    <member refid="logger_8hpp_1a11b3b0770f37629ec61f15992c7fea49" kind="define"><name>RDLOG</name></member>
+    <member refid="logger_8hpp_1ae1d136d8329e931c9c486047fe0d0ae4" kind="define"><name>RDLOG_ALG_NAME</name></member>
+    <member refid="logger_8hpp_1a634102b97964c8ed1631f843c902a8d9" kind="define"><name>RDLOG_CITATION</name></member>
+    <member refid="logger_8hpp_1a4d588f57e74802645d8d5dccdaf0b3c5" kind="define"><name>RDLOG_CONFIG</name></member>
+    <member refid="logger_8hpp_1a3e45f561b75ce88a4b4f3c60fc3d4d55" kind="define"><name>RDLOG_DEBUG</name></member>
+    <member refid="logger_8hpp_1a7d76e1bb7210a10d53c44f1d80e2f215" kind="define"><name>RDLOG_ERROR</name></member>
+    <member refid="logger_8hpp_1a435aca5de6544c6c6bcfdc627f798364" kind="define"><name>RDLOG_MEM_USE</name></member>
+    <member refid="logger_8hpp_1af10bebe6a1dd10933593dd366a26291f" kind="define"><name>RDLOG_MISC</name></member>
+    <member refid="logger_8hpp_1a44549b022a0053d1e8f5f9f1a0ea631e" kind="define"><name>RDLOG_PROGRESS</name></member>
+    <member refid="logger_8hpp_1a94f728f47fd4ef27e1aaa1626b27f8ad" kind="define"><name>RDLOG_TIME_USE</name></member>
+    <member refid="logger_8hpp_1a3fdf59b5b6a653c92fd3c333adca7976" kind="define"><name>RDLOG_WARN</name></member>
+  </compound>
+  <compound refid="ManagedVector_8hpp" kind="file"><name>ManagedVector.hpp</name>
+  </compound>
+  <compound refid="memory_8hpp" kind="file"><name>memory.hpp</name>
+  </compound>
+  <compound refid="ProgressBar_8hpp" kind="file"><name>ProgressBar.hpp</name>
+    <member refid="ProgressBar_8hpp_1a889ec205c635b219999c761b28cc39ba" kind="define"><name>omp_get_thread_num</name></member>
+    <member refid="ProgressBar_8hpp_1a4353281743925f182316dba7cda58fee" kind="define"><name>omp_get_num_threads</name></member>
+  </compound>
+  <compound refid="random_8cpp" kind="file"><name>random.cpp</name>
+  </compound>
+  <compound refid="random_8hpp" kind="file"><name>random.hpp</name>
+    <member refid="random_8hpp_1aa27036445ebe04a12972c1713322463d" kind="define"><name>PRNG_THREAD_MAX</name></member>
+    <member refid="random_8hpp_1a889ec205c635b219999c761b28cc39ba" kind="define"><name>omp_get_thread_num</name></member>
+    <member refid="random_8hpp_1a4353281743925f182316dba7cda58fee" kind="define"><name>omp_get_num_threads</name></member>
+    <member refid="random_8hpp_1a59e73060d1552ccda56039c7f3d25a84" kind="define"><name>omp_get_max_threads</name></member>
+  </compound>
+  <compound refid="timer_8hpp" kind="file"><name>timer.hpp</name>
+  </compound>
+  <compound refid="version_8hpp" kind="file"><name>version.hpp</name>
+  </compound>
+  <compound refid="Barnes2014_8hpp" kind="file"><name>Barnes2014.hpp</name>
+  </compound>
+  <compound refid="depressions_8hpp" kind="file"><name>depressions.hpp</name>
+  </compound>
+  <compound refid="Lindsay2016_8hpp" kind="file"><name>Lindsay2016.hpp</name>
+  </compound>
+  <compound refid="depressions_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="depressions_2main_8cpp_1a7d55518f0db370978424dbfd8f52a1de" kind="function"><name>PerformAlgorithm</name></member>
+    <member refid="depressions_2main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="flats_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="flats_2main_8cpp_1aec786b2467838a85ac6b02f3fa5cd34a" kind="function"><name>PerformAlgorithm</name></member>
+    <member refid="flats_2main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="depressions_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="flats_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="Zhou2016_8hpp" kind="file"><name>Zhou2016.hpp</name>
+  </compound>
+  <compound refid="flat__resolution_8hpp" kind="file"><name>flat_resolution.hpp</name>
+  </compound>
+  <compound refid="flat__resolution__dinf_8hpp" kind="file"><name>flat_resolution_dinf.hpp</name>
+  </compound>
+  <compound refid="garbrecht_8hpp" kind="file"><name>garbrecht.hpp</name>
+  </compound>
+  <compound refid="generate__square__grid_8cpp" kind="file"><name>generate_square_grid.cpp</name>
+    <member refid="generate__square__grid_8cpp_1a219117de5bc5a442cefda7efb75f9f3d" kind="define"><name>XBIG</name></member>
+    <member refid="generate__square__grid_8cpp_1adbe7cde2171fe64c369c192a022c4d13" kind="define"><name>YBIG</name></member>
+    <member refid="generate__square__grid_8cpp_1aa556e24def888e89eca82a9b5867eeb5" kind="define"><name>IN_GRID</name></member>
+    <member refid="generate__square__grid_8cpp_1a16a3bdba58e0572afe05ced94db789eb" kind="define"><name>EDGE_GRID</name></member>
+    <member refid="generate__square__grid_8cpp_1a1e05b7ee40bb4976e176379a7601ff7f" kind="variable"><name>elevations</name></member>
+    <member refid="generate__square__grid_8cpp_1a5f0bb6d8a3e66525c3e6264cb8288e43" kind="variable"><name>x_max</name></member>
+    <member refid="generate__square__grid_8cpp_1ad033aea530fbbcf5bcd6cd98d882e3a5" kind="variable"><name>y_max</name></member>
+    <member refid="generate__square__grid_8cpp_1abc824f2f4055beddebd0b6f68805ff33" kind="function"><name>PrintDEM</name></member>
+    <member refid="generate__square__grid_8cpp_1ac62a105c2d87bde1a5f46fe665b311f0" kind="function"><name>GenerateDEM</name></member>
+    <member refid="generate__square__grid_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d8__flowdirs_8hpp" kind="file"><name>d8_flowdirs.hpp</name>
+  </compound>
+  <compound refid="dinf__flowdirs_8hpp" kind="file"><name>dinf_flowdirs.hpp</name>
+    <member refid="dinf__flowdirs_8hpp_1afe621d3800f4220d193de0dcf0fa0128" kind="define"><name>dinf_NO_DATA</name></member>
+  </compound>
+  <compound refid="Fairfield1991_8hpp" kind="file"><name>Fairfield1991.hpp</name>
+  </compound>
+  <compound refid="Freeman1991_8hpp" kind="file"><name>Freeman1991.hpp</name>
+  </compound>
+  <compound refid="Holmgren1994_8hpp" kind="file"><name>Holmgren1994.hpp</name>
+  </compound>
+  <compound refid="OCallaghan1984_8hpp" kind="file"><name>OCallaghan1984.hpp</name>
+  </compound>
+  <compound refid="Orlandini2003_8hpp" kind="file"><name>Orlandini2003.hpp</name>
+  </compound>
+  <compound refid="Quinn1991_8hpp" kind="file"><name>Quinn1991.hpp</name>
+  </compound>
+  <compound refid="Seibert2007_8hpp" kind="file"><name>Seibert2007.hpp</name>
+  </compound>
+  <compound refid="Tarboton1997_8hpp" kind="file"><name>Tarboton1997.hpp</name>
+  </compound>
+  <compound refid="d8__methods_8hpp" kind="file"><name>d8_methods.hpp</name>
+  </compound>
+  <compound refid="dinf__methods_8hpp" kind="file"><name>dinf_methods.hpp</name>
+  </compound>
+  <compound refid="flow__accumulation_8hpp" kind="file"><name>flow_accumulation.hpp</name>
+  </compound>
+  <compound refid="flow__accumulation__generic_8hpp" kind="file"><name>flow_accumulation_generic.hpp</name>
+  </compound>
+  <compound refid="strahler_8hpp" kind="file"><name>strahler.hpp</name>
+  </compound>
+  <compound refid="terrain__attributes_8hpp" kind="file"><name>terrain_attributes.hpp</name>
+  </compound>
+  <compound refid="misc__methods_8hpp" kind="file"><name>misc_methods.hpp</name>
+    <member refid="misc__methods_8hpp_1a6e62baeacdc52356332ff65bc9a0de81" kind="enum"><name>PerimType</name></member>
+    <member refid="misc__methods_8hpp_1a6e62baeacdc52356332ff65bc9a0de81a2e4cd4081bcf8c4ed642cdd7b49bf806" kind="enumvalue"><name>CELL_COUNT</name></member>
+    <member refid="misc__methods_8hpp_1a6e62baeacdc52356332ff65bc9a0de81acdf7e078d634e6847e3684fedb867eef" kind="enumvalue"><name>SQUARE_EDGE</name></member>
+    <member refid="misc__methods_8hpp_1aa445cdff66bec88df2fd03ad8b24c0e5" kind="function"><name>dem_surface_area</name></member>
+    <member refid="misc__methods_8hpp_1a9fffb65809435703b51ec80d09fa6fd1" kind="function"><name>Perimeter</name></member>
+  </compound>
+  <compound refid="richdem_8cpp" kind="file"><name>richdem.cpp</name>
+  </compound>
+  <compound refid="richdem_8hpp" kind="file"><name>richdem.hpp</name>
+  </compound>
+  <compound refid="A2Array2D_8hpp" kind="file"><name>A2Array2D.hpp</name>
+  </compound>
+  <compound refid="lru_8hpp" kind="file"><name>lru.hpp</name>
+  </compound>
+  <compound refid="md__z_richdem_include_richdem_depressions_README" kind="page"><name>md__z_richdem_include_richdem_depressions_README</name>
+  </compound>
+  <compound refid="md__z_richdem_include_richdem_flats_README" kind="page"><name>md__z_richdem_include_richdem_flats_README</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="dir_2bda8597732ca6a831a90043994cfd10" kind="dir"><name>/z/richdem/include/richdem/common</name>
+  </compound>
+  <compound refid="dir_813a0f334be9f45d1ed44027d4caa104" kind="dir"><name>/z/richdem/include/richdem/depressions</name>
+  </compound>
+  <compound refid="dir_61f32089a83c1baaa6391b44dff4ade3" kind="dir"><name>/z/richdem/include/richdem/flats</name>
+  </compound>
+  <compound refid="dir_d7cb2fef46e66c43594e949606c764e1" kind="dir"><name>/z/richdem/include/richdem/flowmet</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/z/richdem/include</name>
+  </compound>
+  <compound refid="dir_efe7e0b351d5c4d81dcd47da0d52dddc" kind="dir"><name>/z/richdem/include/richdem/methods</name>
+  </compound>
+  <compound refid="dir_3272288231f4daaa440fc48a1cd07d4a" kind="dir"><name>/z/richdem/include/richdem/misc</name>
+  </compound>
+  <compound refid="dir_df8ffb8cfa43f449a2b4e661b119d86b" kind="dir"><name>/z/richdem/include/richdem</name>
+  </compound>
+  <compound refid="dir_fe5f686f17547e4eb944a3e920ef803c" kind="dir"><name>/z/richdem/include/richdem/tiled</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="flow__accumulation_8hpp" kind="file" language="C++">
+    <compoundname>flow_accumulation.hpp</compoundname>
+    <includes refid="Fairfield1991_8hpp" local="no">richdem/flowmet/Fairfield1991.hpp</includes>
+    <includes refid="Freeman1991_8hpp" local="no">richdem/flowmet/Freeman1991.hpp</includes>
+    <includes refid="Holmgren1994_8hpp" local="no">richdem/flowmet/Holmgren1994.hpp</includes>
+    <includes refid="OCallaghan1984_8hpp" local="no">richdem/flowmet/OCallaghan1984.hpp</includes>
+    <includes refid="Orlandini2003_8hpp" local="no">richdem/flowmet/Orlandini2003.hpp</includes>
+    <includes refid="Quinn1991_8hpp" local="no">richdem/flowmet/Quinn1991.hpp</includes>
+    <includes refid="Seibert2007_8hpp" local="no">richdem/flowmet/Seibert2007.hpp</includes>
+    <includes refid="Tarboton1997_8hpp" local="no">richdem/flowmet/Tarboton1997.hpp</includes>
+    <includes refid="flow__accumulation__generic_8hpp" local="no">richdem/methods/flow_accumulation_generic.hpp</includes>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <incdepgraph>
+      <node id="939">
+        <label>richdem/common/ProgressBar.hpp</label>
+        <link refid="ProgressBar_8hpp"/>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>iomanip</label>
+      </node>
+      <node id="952">
+        <label>queue</label>
+      </node>
+      <node id="931">
+        <label>limits</label>
+      </node>
+      <node id="927">
+        <label>cassert</label>
+      </node>
+      <node id="930">
+        <label>stdexcept</label>
+      </node>
+      <node id="946">
+        <label>richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="951">
+        <label>richdem/methods/flow_accumulation_generic.hpp</label>
+        <link refid="flow__accumulation__generic_8hpp_source"/>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>richdem/flowmet/Freeman1991.hpp</label>
+        <link refid="Freeman1991_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="921">
+        <label>string</label>
+      </node>
+      <node id="922">
+        <label>richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="923" relation="include">
+        </childnode>
+        <childnode refid="924" relation="include">
+        </childnode>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="934">
+        <label>map</label>
+      </node>
+      <node id="933">
+        <label>unordered_set</label>
+      </node>
+      <node id="948">
+        <label>richdem/flowmet/Quinn1991.hpp</label>
+        <link refid="Quinn1991_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="925">
+        <label>fstream</label>
+      </node>
+      <node id="947">
+        <label>richdem/flowmet/Orlandini2003.hpp</label>
+        <link refid="Orlandini2003_8hpp_source"/>
+      </node>
+      <node id="943">
+        <label>random</label>
+      </node>
+      <node id="916">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp"/>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+      </node>
+      <node id="929">
+        <label>typeinfo</label>
+      </node>
+      <node id="935">
+        <label>richdem/common/version.hpp</label>
+        <link refid="version_8hpp"/>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="919" relation="include">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>ctime</label>
+      </node>
+      <node id="924">
+        <label>vector</label>
+      </node>
+      <node id="942">
+        <label>richdem/common/random.hpp</label>
+        <link refid="random_8hpp_source"/>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>richdem/flowmet/Tarboton1997.hpp</label>
+        <link refid="Tarboton1997_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="920">
+        <label>sstream</label>
+      </node>
+      <node id="940">
+        <label>sys/time.h</label>
+      </node>
+      <node id="919">
+        <label>iostream</label>
+      </node>
+      <node id="945">
+        <label>richdem/flowmet/Holmgren1994.hpp</label>
+        <link refid="Holmgren1994_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>richdem/common/ManagedVector.hpp</label>
+        <link refid="ManagedVector_8hpp_source"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+      </node>
+      <node id="949">
+        <label>richdem/flowmet/Seibert2007.hpp</label>
+        <link refid="Seibert2007_8hpp_source"/>
+      </node>
+      <node id="923">
+        <label>gdal.hpp</label>
+        <link refid="gdal_8hpp_source"/>
+      </node>
+      <node id="941">
+        <label>richdem/common/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+      </node>
+      <node id="917">
+        <label>richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>richdem/common/constants.hpp</label>
+        <link refid="constants_8hpp"/>
+      </node>
+      <node id="928">
+        <label>algorithm</label>
+      </node>
+      <node id="938">
+        <label>memory</label>
+      </node>
+      <node id="918">
+        <label>richdem/common/logger.hpp</label>
+        <link refid="logger_8hpp_source"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="953">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+      </node>
+      <node id="954">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_richdem_flow_accumulation_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_flow_accumulation_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Fairfield1991.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Freeman1991.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Holmgren1994.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/OCallaghan1984.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Orlandini2003.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Quinn1991.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Seibert2007.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/flowmet/Tarboton1997.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;richdem/methods/flow_accumulation_generic.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_Tarboton<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_Tarboton&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_Holmgren<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xparam)<sp/>{FlowAccumulation(FM_Holmgren&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum,<sp/>xparam);<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_Quinn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_Quinn&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_Freeman<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xparam)<sp/>{FlowAccumulation(FM_Freeman&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum,<sp/>xparam);<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_FairfieldLeymarie<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_FairfieldLeymarie&lt;elev_t&gt;,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_Rho8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_Rho8&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_D8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_D8&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>elev_t,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>accum_t&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FA_OCallaghan<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array2D&lt;elev_t&gt;<sp/>&amp;elevations,<sp/>Array2D&lt;accum_t&gt;<sp/>&amp;accum)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{FlowAccumulation(FM_D8&lt;elev_t&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>elevations,<sp/>accum);<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/methods/flow_accumulation.hpp"/>
+  </compounddef>
+</doxygen>

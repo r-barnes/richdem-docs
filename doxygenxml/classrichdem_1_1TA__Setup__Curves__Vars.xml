@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrichdem_1_1TA__Setup__Curves__Vars" kind="class" language="C++" prot="public">
+    <compoundname>richdem::TA_Setup_Curves_Vars</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1aa034a6d438897078761fb44ca3c1a955" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1aff2baafd8fff1bf1e9e27e58856ac07c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1a119a9d74c1fafe42d3477e5d753ed252" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::E</definition>
+        <argsstring></argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1aa8493d5fd68cc05921dbb4ab0d743157" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::F</definition>
+        <argsstring></argsstring>
+        <name>F</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1aba313603e388e601e84b41fadbff0552" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrichdem_1_1TA__Setup__Curves__Vars_1aed246b87b91e70bd51dcd89fad478ce5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double richdem::TA_Setup_Curves_Vars::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="151" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/z/richdem/include/richdem/methods/terrain_attributes.hpp" line="149" column="1" bodyfile="/z/richdem/include/richdem/methods/terrain_attributes.hpp" bodystart="149" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aff2baafd8fff1bf1e9e27e58856ac07c" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>D</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1a119a9d74c1fafe42d3477e5d753ed252" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>E</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aa8493d5fd68cc05921dbb4ab0d743157" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>F</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aba313603e388e601e84b41fadbff0552" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>G</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aed246b87b91e70bd51dcd89fad478ce5" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>H</name></member>
+      <member refid="classrichdem_1_1TA__Setup__Curves__Vars_1aa034a6d438897078761fb44ca3c1a955" prot="public" virt="non-virtual"><scope>richdem::TA_Setup_Curves_Vars</scope><name>L</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_813a0f334be9f45d1ed44027d4caa104" kind="dir">
+    <compoundname>/z/richdem/include/richdem/depressions</compoundname>
+    <innerfile refid="Barnes2014_8hpp">Barnes2014.hpp</innerfile>
+    <innerfile refid="depressions_8hpp">depressions.hpp</innerfile>
+    <innerfile refid="Lindsay2016_8hpp">Lindsay2016.hpp</innerfile>
+    <innerfile refid="depressions_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="Zhou2016_8hpp">Zhou2016.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/z/richdem/include/richdem/depressions/"/>
+  </compounddef>
+</doxygen>

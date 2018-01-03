@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="constants_8hpp" kind="file" language="C++">
+    <compoundname>constants.hpp</compoundname>
+    <includedby refid="Array2D_8hpp" local="yes">/z/richdem/include/richdem/common/Array2D.hpp</includedby>
+    <includedby refid="d8__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/d8_methods.hpp</includedby>
+    <includedby refid="dinf__methods_8hpp" local="yes">/z/richdem/include/richdem/methods/dinf_methods.hpp</includedby>
+    <includedby refid="terrain__attributes_8hpp" local="yes">/z/richdem/include/richdem/methods/terrain_attributes.hpp</includedby>
+    <includedby refid="misc__methods_8hpp" local="yes">/z/richdem/include/richdem/misc/misc_methods.hpp</includedby>
+    <includedby refid="richdem_8hpp" local="yes">/z/richdem/include/richdem/richdem.hpp</includedby>
+    <invincdepgraph>
+      <node id="95">
+        <label>/z/richdem/include/richdem/methods/d8_methods.hpp</label>
+        <link refid="d8__methods_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/z/richdem/include/richdem/tiled/A2Array2D.hpp</label>
+        <link refid="A2Array2D_8hpp"/>
+      </node>
+      <node id="99">
+        <label>/z/richdem/include/richdem/misc/misc_methods.hpp</label>
+        <link refid="misc__methods_8hpp"/>
+      </node>
+      <node id="79">
+        <label>/z/richdem/include/richdem/depressions/depressions.hpp</label>
+        <link refid="depressions_8hpp_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>/z/richdem/include/richdem/flowmet/OCallaghan1984.hpp</label>
+        <link refid="OCallaghan1984_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation_generic.hpp</label>
+        <link refid="flow__accumulation__generic_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>/z/richdem/include/richdem/flowmet/Freeman1991.hpp</label>
+        <link refid="Freeman1991_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/z/richdem/include/richdem/common/Array2D.hpp</label>
+        <link refid="Array2D_8hpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/z/richdem/include/richdem/depressions/Zhou2016.hpp</label>
+        <link refid="Zhou2016_8hpp"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>/z/richdem/include/richdem/flowmet/Quinn1991.hpp</label>
+        <link refid="Quinn1991_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/z/richdem/include/richdem/flats/flat_resolution_dinf.hpp</label>
+        <link refid="flat__resolution__dinf_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/z/richdem/include/richdem/methods/dinf_methods.hpp</label>
+        <link refid="dinf__methods_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/z/richdem/include/richdem/flowmet/d8_flowdirs.hpp</label>
+        <link refid="d8__flowdirs_8hpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/z/richdem/include/richdem/methods/flow_accumulation.hpp</label>
+        <link refid="flow__accumulation_8hpp_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/z/richdem/include/richdem/depressions/Lindsay2016.hpp</label>
+        <link refid="Lindsay2016_8hpp_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/z/richdem/include/richdem/flats/garbrecht.hpp</label>
+        <link refid="garbrecht_8hpp_source"/>
+      </node>
+      <node id="85">
+        <label>/z/richdem/include/richdem/flats/flat_resolution.hpp</label>
+        <link refid="flat__resolution_8hpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>/z/richdem/include/richdem/flowmet/Tarboton1997.hpp</label>
+        <link refid="Tarboton1997_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/z/richdem/include/richdem/richdem.hpp</label>
+        <link refid="richdem_8hpp_source"/>
+      </node>
+      <node id="98">
+        <label>/z/richdem/include/richdem/methods/terrain_attributes.hpp</label>
+        <link refid="terrain__attributes_8hpp_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>/z/richdem/include/richdem/depressions/Barnes2014.hpp</label>
+        <link refid="Barnes2014_8hpp"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/z/richdem/include/richdem/flowmet/dinf_flowdirs.hpp</label>
+        <link refid="dinf__flowdirs_8hpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/z/richdem/include/richdem/flowmet/Holmgren1994.hpp</label>
+        <link refid="Holmgren1994_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/z/richdem/include/richdem/flowmet/Fairfield1991.hpp</label>
+        <link refid="Fairfield1991_8hpp_source"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/z/richdem/include/richdem/common/constants.hpp</label>
+        <link refid="constants_8hpp"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacerichdem">richdem</innernamespace>
+    <briefdescription>
+<para>Defines a number of constants used by many of the algorithms. </para>    </briefdescription>
+    <detaileddescription>
+<para>RichDEM uses the following D8 neighbourhood. This is used by the dx[] and dy[] variables, among many others. <verbatim>234
+105
+876
+</verbatim></para><para>ArcGIS uses the following bits to indicate flow toward a given neighbour: <verbatim>32 64 128
+16  0   1
+ 8  4   2</verbatim> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_richdem_constants_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_richdem_constants_hpp_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerichdem" kindref="compound">richdem</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//Constant<sp/>used<sp/>to<sp/>hold<sp/>D8<sp/>flow<sp/>directions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>d8_flowdir_t;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//D8<sp/>Neighbour<sp/>Directions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//Facet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/>1<sp/><sp/><sp/>2<sp/><sp/><sp/>3<sp/><sp/><sp/>4<sp/><sp/>5<sp/><sp/>6<sp/><sp/>7<sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="constants_8hpp_1aa5b197c553cb75cc5bed18478bbeab41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="constants_8hpp_1aa5b197c553cb75cc5bed18478bbeab41" kindref="member">dx</ref>[9]<sp/><sp/><sp/><sp/><sp/>=<sp/>{0,<sp/>-1,<sp/>-1,<sp/><sp/>0,<sp/><sp/>1,<sp/>1,<sp/>1,<sp/>0,<sp/>-1};<sp/></highlight></codeline>
+<codeline lineno="30" refid="constants_8hpp_1a8eee3f4a3891f1bd2c44ce2df9df4fb6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="constants_8hpp_1a8eee3f4a3891f1bd2c44ce2df9df4fb6" kindref="member">dy</ref>[9]<sp/><sp/><sp/><sp/><sp/>=<sp/>{0,<sp/><sp/>0,<sp/>-1,<sp/>-1,<sp/>-1,<sp/>0,<sp/>1,<sp/>1,<sp/><sp/>1};<sp/></highlight></codeline>
+<codeline lineno="31" refid="constants_8hpp_1ae1cae59347aa5e5a245f8c387627ff05" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="constants_8hpp_1ae1cae59347aa5e5a245f8c387627ff05" kindref="member">n_diag</ref>[9]<sp/>=<sp/>{0,<sp/><sp/>0,<sp/><sp/>1,<sp/><sp/>0,<sp/><sp/>1,<sp/>0,<sp/>1,<sp/>0,<sp/><sp/>1};<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="constants_8hpp_1aa1178408028bc31fecd19513050d219f" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="constants_8hpp_1aa1178408028bc31fecd19513050d219f" kindref="member">d8_inverse</ref>[9]<sp/>=<sp/>{0,5,6,7,8,1,2,3,4};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="constants_8hpp_1a6e09a55d55a50ef455b5d18df7fa9d67" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/><ref refid="constants_8hpp_1a6e09a55d55a50ef455b5d18df7fa9d67" kindref="member">fdarrows</ref>[9]<sp/>=<sp/>{L</highlight><highlight class="stringliteral">&apos;·&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;←&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↖&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↑&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↗&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;→&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↘&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↓&apos;</highlight><highlight class="normal">,L</highlight><highlight class="stringliteral">&apos;↙&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="constants_8hpp_1a37622d7ed12bb4389b2bb066ddda9970" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="constants_8hpp_1a37622d7ed12bb4389b2bb066ddda9970" kindref="member">SQRT2</ref><sp/>=<sp/>1.414213562373095048801688724209698078569671875376948;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="constants_8hpp_1a8fd8834b599b4523a7fe0d378a832f57" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="constants_8hpp_1a8fd8834b599b4523a7fe0d378a832f57" kindref="member">dr</ref>[9]<sp/>=<sp/>{0,1,SQRT2,1,SQRT2,1,SQRT2,1,SQRT2};<sp/></highlight><highlight class="comment">//TODO:<sp/>Check<sp/>these<sp/>for<sp/>new<sp/>D8<sp/>directions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="constants_8hpp_1aeaccaa412ae3919c0e0ab6a8ee00848f" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1aeaccaa412ae3919c0e0ab6a8ee00848f" kindref="member">d8_arcgis</ref>[9]<sp/>=<sp/>{0,16,32,64,128,1,2,4,8};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="constants_8hpp_1a464cfb1cd027369dd6e36c1e33369abe" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1a464cfb1cd027369dd6e36c1e33369abe" kindref="member">FLOWDIR_NO_DATA</ref><sp/>=<sp/>255;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment">//(i.e.<sp/>that<sp/>it<sp/>has<sp/>no<sp/>local<sp/>gradient)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d8_flowdir_t<sp/><ref refid="constants_8hpp_1a09b183c5986b6feec4b3b2ad9edbd144" kindref="member">NO_FLOW</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="constants_8hpp_1ae7c3eb510787052eedc26c9a6eb2072a" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="constants_8hpp_1ae7c3eb510787052eedc26c9a6eb2072a" kindref="member">ACCUM_NO_DATA</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//These<sp/>are<sp/>used<sp/>predominantly<sp/>by<sp/>the<sp/>parallel<sp/>algorithms/programs<sp/>for<sp/>working</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//on<sp/>tiled<sp/>datasets.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="constants_8hpp_1af770d1c22aae5f3114acae5b2e6cd8a6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1af770d1c22aae5f3114acae5b2e6cd8a6" kindref="member">GRID_LEFT</ref><sp/><sp/><sp/>=<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="63" refid="constants_8hpp_1a795163e9a236e14b8ba7caece3d07280" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1a795163e9a236e14b8ba7caece3d07280" kindref="member">GRID_TOP</ref><sp/><sp/><sp/><sp/>=<sp/>2;<sp/></highlight></codeline>
+<codeline lineno="64" refid="constants_8hpp_1a4d410dde31b397d1a411066e4476aab4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1a4d410dde31b397d1a411066e4476aab4" kindref="member">GRID_RIGHT</ref><sp/><sp/>=<sp/>4;<sp/></highlight></codeline>
+<codeline lineno="65" refid="constants_8hpp_1a229f1a97f2bd40d6e836d1e86a6fee39" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="constants_8hpp_1a229f1a97f2bd40d6e836d1e86a6fee39" kindref="member">GRID_BOTTOM</ref><sp/>=<sp/>8;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/z/richdem/include/richdem/common/constants.hpp"/>
+  </compounddef>
+</doxygen>
