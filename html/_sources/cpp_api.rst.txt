@@ -1,4 +1,0 @@
-RichDEM C++ Reference
-=====================
-
-.. doxygenindex::
